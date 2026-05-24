@@ -1,13 +1,128 @@
 import Link from "next/link";
 import { Instagram, MapPin, Mail } from "lucide-react";
 
-const WORKS = [
-  { title: "Untitled No. 1", medium: "Mixed media on canvas", year: "2024", gradient: "from-orange-500 via-pink-500 to-purple-700" },
-  { title: "Florence Series I", medium: "Oil on linen", year: "2024", gradient: "from-amber-300 via-rose-400 to-red-700" },
-  { title: "Miami Light", medium: "Acrylic on panel", year: "2024", gradient: "from-sky-400 via-cyan-500 to-emerald-600" },
-  { title: "Proud Love", medium: "Mixed media", year: "2024", gradient: "from-fuchsia-500 via-pink-600 to-rose-700" },
-  { title: "Untitled No. 5", medium: "Oil on canvas", year: "2024", gradient: "from-slate-400 via-zinc-500 to-stone-700" },
-  { title: "Studio Notes", medium: "Charcoal on paper", year: "2024", gradient: "from-neutral-300 via-stone-400 to-stone-700" },
+interface Work {
+  title: string;
+  medium: string;
+  year: string;
+  /** background tile style */
+  art: React.ReactNode;
+}
+
+const WORKS: Work[] = [
+  {
+    title: "Untitled No. 1",
+    medium: "Mixed media on canvas",
+    year: "2024",
+    art: (
+      <svg viewBox="0 0 400 500" className="h-full w-full" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="#7c2d12" />
+            <stop offset="55%" stopColor="#dc2626" />
+            <stop offset="100%" stopColor="#fef3c7" />
+          </linearGradient>
+        </defs>
+        <rect width="400" height="500" fill="url(#g1)" />
+        <path d="M 30 120 Q 200 60 380 180 T 360 380 Q 200 460 40 360 Z" fill="#000" opacity="0.35" />
+        <circle cx="280" cy="140" r="70" fill="#fef3c7" opacity="0.8" />
+        <path d="M 60 380 L 340 420 L 200 470 Z" fill="#1c1917" opacity="0.5" />
+      </svg>
+    ),
+  },
+  {
+    title: "Florence Series I",
+    medium: "Oil on linen",
+    year: "2024",
+    art: (
+      <svg viewBox="0 0 400 500" className="h-full w-full" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <linearGradient id="g2" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stopColor="#fde68a" />
+            <stop offset="40%" stopColor="#f59e0b" />
+            <stop offset="100%" stopColor="#7c2d12" />
+          </linearGradient>
+        </defs>
+        <rect width="400" height="500" fill="url(#g2)" />
+        <rect x="50" y="320" width="80" height="180" fill="#1c1917" opacity="0.7" />
+        <rect x="160" y="260" width="60" height="240" fill="#292524" opacity="0.6" />
+        <rect x="240" y="290" width="100" height="210" fill="#1c1917" opacity="0.75" />
+        <circle cx="320" cy="120" r="55" fill="#fef3c7" />
+      </svg>
+    ),
+  },
+  {
+    title: "Miami Light",
+    medium: "Acrylic on panel",
+    year: "2024",
+    art: (
+      <svg viewBox="0 0 400 500" className="h-full w-full" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <linearGradient id="g3" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stopColor="#fb7185" />
+            <stop offset="35%" stopColor="#f97316" />
+            <stop offset="65%" stopColor="#06b6d4" />
+            <stop offset="100%" stopColor="#0c4a6e" />
+          </linearGradient>
+        </defs>
+        <rect width="400" height="500" fill="url(#g3)" />
+        <rect y="280" width="400" height="220" fill="#0c4a6e" opacity="0.6" />
+        <rect y="280" width="400" height="3" fill="#fef3c7" opacity="0.6" />
+      </svg>
+    ),
+  },
+  {
+    title: "Proud Love",
+    medium: "Mixed media",
+    year: "2024",
+    art: (
+      <svg viewBox="0 0 400 500" className="h-full w-full" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <radialGradient id="g4" cx="50%" cy="50%" r="60%">
+            <stop offset="0%" stopColor="#fef3c7" />
+            <stop offset="40%" stopColor="#ec4899" />
+            <stop offset="100%" stopColor="#581c87" />
+          </radialGradient>
+        </defs>
+        <rect width="400" height="500" fill="url(#g4)" />
+        <path d="M 200 150 C 150 100, 80 130, 100 200 S 200 320, 200 380 C 200 320, 300 250, 300 200 S 250 100, 200 150 Z" fill="#fb7185" opacity="0.9" />
+        <path d="M 200 160 C 160 120, 110 140, 125 195 S 200 295, 200 350 C 200 295, 275 245, 275 195 S 240 120, 200 160 Z" fill="#fef3c7" opacity="0.6" />
+      </svg>
+    ),
+  },
+  {
+    title: "Untitled No. 5",
+    medium: "Oil on canvas",
+    year: "2024",
+    art: (
+      <svg viewBox="0 0 400 500" className="h-full w-full" preserveAspectRatio="xMidYMid slice">
+        <rect width="400" height="500" fill="#0c0a09" />
+        <path d="M 40 100 Q 200 200 360 80" stroke="#fef3c7" strokeWidth="20" fill="none" opacity="0.9" />
+        <path d="M 30 200 Q 200 320 370 220" stroke="#dc2626" strokeWidth="18" fill="none" opacity="0.85" />
+        <path d="M 60 320 Q 200 420 340 340" stroke="#fef3c7" strokeWidth="14" fill="none" opacity="0.7" />
+        <circle cx="80" cy="430" r="40" fill="#dc2626" opacity="0.8" />
+        <circle cx="320" cy="440" r="25" fill="#fef3c7" opacity="0.8" />
+      </svg>
+    ),
+  },
+  {
+    title: "Studio Notes",
+    medium: "Charcoal on paper",
+    year: "2024",
+    art: (
+      <svg viewBox="0 0 400 500" className="h-full w-full" preserveAspectRatio="xMidYMid slice">
+        <rect width="400" height="500" fill="#f5f5f4" />
+        <g stroke="#1c1917" strokeLinecap="round" fill="none">
+          <path d="M 60 80 Q 200 40 340 90" strokeWidth="3" opacity="0.85" />
+          <path d="M 80 140 Q 200 110 320 150" strokeWidth="2.5" opacity="0.7" />
+          <path d="M 70 220 L 330 230" strokeWidth="2" opacity="0.6" />
+          <path d="M 100 280 Q 200 320 300 285" strokeWidth="3" opacity="0.8" />
+          <path d="M 50 360 Q 200 410 350 360" strokeWidth="4" opacity="0.9" />
+          <circle cx="200" cy="180" r="50" strokeWidth="2.5" opacity="0.5" />
+        </g>
+      </svg>
+    ),
+  },
 ];
 
 export default function FlyMiamiArtPage() {
@@ -71,9 +186,9 @@ export default function FlyMiamiArtPage() {
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {WORKS.map((w) => (
             <figure key={w.title} className="group cursor-pointer">
-              <div
-                className={`aspect-[4/5] w-full bg-gradient-to-br ${w.gradient} transition-transform duration-500 group-hover:scale-[1.02]`}
-              />
+              <div className="aspect-[4/5] w-full overflow-hidden transition-transform duration-500 group-hover:scale-[1.02]">
+                {w.art}
+              </div>
               <figcaption className="mt-3 flex items-baseline justify-between text-sm">
                 <span className="serif text-lg italic">{w.title}</span>
                 <span className="text-xs uppercase tracking-wider text-white/50">
