@@ -69,8 +69,8 @@ export const entities: Entity[] = [
   },
   {
     slug: "atelier-liquor-deli",
-    legalName: "Atelier Liquor and Deli",
-    shortName: "Atelier Liquor & Deli",
+    legalName: "Atelier Liquor and Deli Inc",
+    shortName: "Atelier Liquor & Bites",
     legalSuffix: "Inc",
     state: "FL",
     status: "active",

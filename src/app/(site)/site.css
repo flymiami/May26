@@ -1,0 +1,15 @@
+.site-root {
+  font-family: var(--font-site-sans), system-ui, sans-serif;
+}
+
+.site-root .serif {
+  font-family: var(--font-site-serif), Georgia, serif;
+}
+
+.site-root h1,
+.site-root h2,
+.site-root h3 {
+  font-family: var(--font-site-serif), Georgia, serif;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}

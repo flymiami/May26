@@ -4,6 +4,7 @@ import {
   ArrowLeft,
   Banknote,
   Building2,
+  ExternalLink,
   Megaphone,
   Receipt,
   TrendingUp,
@@ -27,12 +28,18 @@ export function generateStaticParams() {
   return entities.map((e) => ({ entity: e.slug }));
 }
 
+// Map of entity slug → public website route inside this app
+const PUBLIC_SITES: Record<string, string> = {
+  "fly-miami-art": "/art",
+};
+
 export default function EntityPage({ params }: { params: { entity: string } }) {
   const entity = getEntity(params.entity);
   if (!entity) notFound();
   const k = kpisFor(entity);
   const parent = entity.parentSlug ? getEntity(entity.parentSlug) : null;
   const children = entities.filter((e) => e.parentSlug === entity.slug);
+  const publicSite = PUBLIC_SITES[entity.slug];
 
   return (
     <>
@@ -40,11 +47,20 @@ export default function EntityPage({ params }: { params: { entity: string } }) {
         title={entity.legalName}
         description={entity.blurb}
         actions={
-          <Button asChild size="sm" variant="outline">
-            <Link href="/entities">
-              <ArrowLeft className="mr-2 h-4 w-4" /> All entities
-            </Link>
-          </Button>
+          <>
+            {publicSite ? (
+              <Button asChild size="sm" variant="outline">
+                <Link href={publicSite} target="_blank">
+                  <ExternalLink className="mr-2 h-4 w-4" /> View public site
+                </Link>
+              </Button>
+            ) : null}
+            <Button asChild size="sm" variant="outline">
+              <Link href="/entities">
+                <ArrowLeft className="mr-2 h-4 w-4" /> All entities
+              </Link>
+            </Button>
+          </>
         }
       />
       <div className="space-y-8 p-4 md:p-6">
