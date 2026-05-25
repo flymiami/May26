@@ -31,6 +31,8 @@ export function generateStaticParams() {
 // Map of entity slug → public website route inside this app
 const PUBLIC_SITES: Record<string, string> = {
   "fly-miami-art": "/art",
+  "pilates-miami": "/pilates",
+  "atelier-liquor-deli": "/atelier",
 };
 
 export default function EntityPage({ params }: { params: { entity: string } }) {

@@ -148,10 +148,14 @@ export default function FlyMiamiArtPage() {
             <span className="italic text-white/70">Art.</span>
           </h1>
           <p className="serif mt-8 max-w-xl text-xl text-white/70 md:text-2xl">
-            Original paintings and mixed-media works by{" "}
+            Rubber Duck Pop Art and mixed-media works by{" "}
             <span className="italic">Facundo Yebne</span>. Studio in Miami,
             shown in Florence.
           </p>
+          <div className="mt-4 flex flex-wrap items-center gap-4 text-xs uppercase tracking-[0.25em] text-white/50">
+            <span className="border border-amber-400/60 px-3 py-1 text-amber-300">Florence Biennale Award Winner</span>
+            <span>18K+ followers</span>
+          </div>
         </div>
 
         <div className="flex flex-wrap items-center gap-6 text-xs uppercase tracking-[0.25em] text-white/50">
@@ -223,9 +227,9 @@ export default function FlyMiamiArtPage() {
           </div>
           <div className="space-y-6 md:col-span-7 md:col-start-6">
             <p className="serif text-2xl leading-snug text-white/90 md:text-3xl">
-              FLY Miami Art is the studio practice of Facundo Yebne — paintings,
-              works on paper, and mixed media that travel between Miami and
-              Florence.
+              FLY Miami Art is the studio practice of Facundo Yebne — Rubber
+              Duck Pop Art, paintings and mixed media that travel between
+              Miami and Florence. Winner of the Florence Biennale Award.
             </p>
             <p className="text-base text-white/70">
               Each piece is original and signed. The studio takes on a small
