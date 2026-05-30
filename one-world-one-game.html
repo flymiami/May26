@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ONE WORLD, ONE GAME — FLY Miami Art at Kimpton EPIC</title>
+<meta name="description" content="ONE WORLD, ONE GAME: a joyful new exhibition by Facundo Yebne (FLY) at the Kimpton EPIC Hotel, Miami. Opening reception Wednesday, June 3, 2026." />
+<style>
+  :root{
+    --ink:#10162a;
+    --paper:#fbf7ef;
+    --accent:#ffc629;      /* duck yellow */
+    --accent-2:#e8413a;    /* flag red */
+    --accent-3:#1f7a8c;    /* peacock */
+    --muted:#5b6172;
+    --line:#e6ddcd;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    color:var(--ink);
+    background:var(--paper);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1040px;margin:0 auto;padding:0 24px;}
+  h1,h2,h3{font-weight:800;letter-spacing:-.02em;line-height:1.05;}
+  a{color:inherit;}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;
+    background:
+      radial-gradient(circle at 15% 20%, rgba(255,198,41,.35), transparent 40%),
+      radial-gradient(circle at 85% 15%, rgba(31,122,140,.30), transparent 42%),
+      radial-gradient(circle at 70% 90%, rgba(232,65,58,.25), transparent 45%),
+      var(--ink);
+    color:#fff;
+    padding:96px 0 88px;
+    overflow:hidden;
+  }
+  .eyebrow{
+    text-transform:uppercase;letter-spacing:.28em;font-size:13px;
+    color:var(--accent);font-weight:700;margin-bottom:22px;
+  }
+  .hero h1{font-size:clamp(44px,8vw,104px);}
+  .hero h1 .amp{color:var(--accent);}
+  .hero .lede{
+    margin-top:24px;max-width:640px;font-size:clamp(17px,2.4vw,21px);
+    color:#e9ecf5;font-weight:400;
+  }
+  .meta-row{
+    display:flex;flex-wrap:wrap;gap:14px 36px;margin-top:36px;
+    font-size:15px;color:#cdd2e0;
+  }
+  .meta-row b{color:#fff;font-weight:700;}
+  .cta{
+    display:inline-block;margin-top:38px;background:var(--accent);
+    color:var(--ink);font-weight:800;text-decoration:none;
+    padding:16px 34px;border-radius:999px;font-size:16px;
+    transition:transform .15s ease, box-shadow .15s ease;
+    box-shadow:0 10px 30px rgba(255,198,41,.35);
+  }
+  .cta:hover{transform:translateY(-2px);box-shadow:0 14px 38px rgba(255,198,41,.5);}
+  .cta.secondary{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.4);
+    box-shadow:none;margin-left:12px;}
+  .cta.secondary:hover{border-color:#fff;}
+
+  /* ---------- SECTIONS ---------- */
+  section{padding:80px 0;border-bottom:1px solid var(--line);}
+  .kicker{
+    text-transform:uppercase;letter-spacing:.22em;font-size:12px;
+    font-weight:800;color:var(--accent-2);margin-bottom:16px;
+  }
+  section h2{font-size:clamp(28px,4.5vw,44px);margin-bottom:22px;}
+  .prose p{font-size:18px;color:#272d40;margin-bottom:20px;max-width:760px;}
+  .prose p .hl{background:linear-gradient(transparent 60%, var(--accent) 60%);padding:0 2px;}
+
+  /* ---------- WORKS ---------- */
+  .works{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:10px;}
+  .work{
+    background:#fff;border:1px solid var(--line);border-radius:18px;
+    padding:28px 24px;position:relative;overflow:hidden;
+  }
+  .work .dot{width:42px;height:42px;border-radius:50%;margin-bottom:18px;}
+  .work:nth-child(1) .dot{background:var(--accent);}
+  .work:nth-child(2) .dot{background:var(--accent-2);}
+  .work:nth-child(3) .dot{background:var(--accent-3);}
+  .work h3{font-size:20px;margin-bottom:8px;}
+  .work p{font-size:15px;color:var(--muted);}
+
+  /* ---------- DETAILS ---------- */
+  .details-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:start;}
+  .info-list{list-style:none;}
+  .info-list li{padding:18px 0;border-bottom:1px solid var(--line);}
+  .info-list li:last-child{border-bottom:none;}
+  .info-list .label{font-size:12px;text-transform:uppercase;letter-spacing:.18em;
+    color:var(--accent-3);font-weight:800;margin-bottom:4px;}
+  .info-list .value{font-size:17px;font-weight:600;}
+  .info-list .value small{display:block;font-weight:400;color:var(--muted);font-size:14px;margin-top:2px;}
+  .rsvp-card{
+    background:var(--ink);color:#fff;border-radius:22px;padding:38px 32px;
+    position:sticky;top:24px;
+  }
+  .rsvp-card h3{font-size:24px;margin-bottom:10px;}
+  .rsvp-card p{color:#c9cee0;font-size:15px;margin-bottom:24px;}
+  .rsvp-card .cta{margin-top:0;width:100%;text-align:center;}
+  .cap-note{font-size:13px;color:#9aa0b4;margin-top:16px;}
+
+  /* ---------- ARTIST ---------- */
+  .artist{display:grid;grid-template-columns:1fr;gap:8px;}
+  .badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px;}
+  .badge{background:#fff;border:1px solid var(--line);border-radius:999px;
+    padding:8px 16px;font-size:13px;font-weight:700;color:#3a4156;}
+
+  /* ---------- FOOTER ---------- */
+  footer{background:var(--ink);color:#cdd2e0;padding:56px 0;text-align:center;}
+  footer .big{font-size:clamp(26px,5vw,40px);color:#fff;font-weight:800;margin-bottom:14px;}
+  footer a{color:var(--accent);text-decoration:none;font-weight:700;}
+  footer .small{font-size:13px;color:#7d8398;margin-top:24px;}
+
+  @media(max-width:820px){
+    .works{grid-template-columns:1fr;}
+    .details-grid{grid-template-columns:1fr;}
+    .rsvp-card{position:static;}
+  }
+</style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="wrap">
+      <div class="eyebrow">FLY Miami Art · Kimpton EPIC Hotel</div>
+      <h1>ONE WORLD,<br>ONE GAME</h1>
+      <p class="lede">A joyful new exhibition by <b>Facundo Yebne (FLY)</b> — where the humble rubber duck becomes a universal symbol of connection, unconditional love, and community.</p>
+      <div class="meta-row">
+        <span><b>Opening Reception</b> · Wednesday, June 3, 2026 · 6:00–7:30 PM</span>
+        <span><b>On View</b> · June 3 – July 27, 2026</span>
+        <span><b>Kimpton EPIC Hotel</b> · Downtown Miami</span>
+      </div>
+      <a class="cta" href="https://www.eventbrite.com/e/epic-art-welcomes-facundo-yebne-tickets-1990510413229" target="_blank" rel="noopener">RSVP on Eventbrite →</a>
+      <a class="cta secondary" href="#details">Event details</a>
+    </div>
+  </header>
+
+  <!-- STATEMENT -->
+  <section id="statement">
+    <div class="wrap prose">
+      <div class="kicker">The Show</div>
+      <h2>A love letter to everything that unites us</h2>
+      <p><b>ONE WORLD, ONE GAME</b> is staged in a summer when the world turns its eyes to the same field. The exhibition braids together three celebrations of belonging: the <span class="hl">FIFA World Cup</span>, <span class="hl">Pride</span>, and the <span class="hl">250th anniversary of the United States</span>.</p>
+      <p>Through FLY's signature ducks — sculpted from thousands of tiny resin figures and finished in jersey stripes, flags, and the colors of nations — he reimagines the beautiful game as a metaphor for the human one. Every team, every flag, every fan stands shoulder to shoulder. <b>UnityBeak</b> returns as the show's beating heart, joined by new works including a <b>World Cup Duck</b> crowned with a soccer-ball head and the flags of the competing nations, and a Brazilian jersey piece created for the occasion.</p>
+      <p>At its core, the show asks a simple question: <span class="hl">if we can come together for a game, why not for each other?</span> Playful, monumental, and unmistakably Miami, ONE WORLD, ONE GAME invites every visitor, from every corner of the world, onto the same team.</p>
+    </div>
+  </section>
+
+  <!-- WORKS -->
+  <section id="works">
+    <div class="wrap">
+      <div class="kicker">On View</div>
+      <h2>Featured works</h2>
+      <div class="works">
+        <div class="work">
+          <div class="dot"></div>
+          <h3>UnityBeak</h3>
+          <p>The monumental Rubber Duck at the heart of the show — first created for the Lincoln Road BID and the City of Miami Beach for International Pride Month.</p>
+        </div>
+        <div class="work">
+          <div class="dot"></div>
+          <h3>World Cup Duck</h3>
+          <p>A new piece crowned with a soccer-ball head and wrapped in the flags of the competing nations — rivalry reimagined as celebration.</p>
+        </div>
+        <div class="work">
+          <div class="dot"></div>
+          <h3>Brazilian Jersey Piece</h3>
+          <p>Created specially for the occasion — jersey stripes and national color rendered in FLY's unmistakable resin-duck language.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DETAILS -->
+  <section id="details">
+    <div class="wrap">
+      <div class="kicker">Plan your visit</div>
+      <h2>Event details</h2>
+      <div class="details-grid">
+        <ul class="info-list">
+          <li>
+            <div class="label">Opening Reception</div>
+            <div class="value">Wednesday, June 3, 2026 · 6:00–7:30 PM
+              <small>Complimentary wine, champagne, and passed bites</small></div>
+          </li>
+          <li>
+            <div class="label">Exhibition Run</div>
+            <div class="value">June 3 – July 27, 2026</div>
+          </li>
+          <li>
+            <div class="label">Location</div>
+            <div class="value">Kimpton EPIC Hotel
+              <small>270 Biscayne Boulevard Way, Miami, FL 33131</small></div>
+          </li>
+          <li>
+            <div class="label">Parking</div>
+            <div class="value">Discounted on-site parking — $19
+              <small>Validation stickers provided for all guests at the door</small></div>
+          </li>
+        </ul>
+
+        <aside class="rsvp-card">
+          <h3>You're invited</h3>
+          <p>Join us for the opening night of ONE WORLD, ONE GAME. Space is limited, so please reserve your spot in advance.</p>
+          <a class="cta" href="https://www.eventbrite.com/e/epic-art-welcomes-facundo-yebne-tickets-1990510413229" target="_blank" rel="noopener">Reserve your spot →</a>
+          <p class="cap-note">Reception capacity is limited to 50 guests — early RSVP recommended.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTIST -->
+  <section id="artist">
+    <div class="wrap prose artist">
+      <div class="kicker">The Artist</div>
+      <h2>Facundo Yebne — FLY</h2>
+      <p>Facundo Yebne, known as <b>FLY</b>, is a Miami-based artist whose joyful, large-scale work turns the humble rubber duck into a universal symbol of connection, unconditional love, and community. An engineer and entrepreneur by training, FLY discovered his artistic calling in early 2024.</p>
+      <p>What began as experimentation — with neon, LED, optic fiber, and thousands of tiny resin ducks — quickly grew into ambitious public art. He debuted at <b>Red Dot Miami</b> (December 2024), collaborated with <b>BOSS at Merrick Park</b>, and in March 2025 created <b>UnityBeak</b>, a pair of monumental Rubber Ducks commissioned by the Lincoln Road BID and the City of Miami Beach for International Pride Month. The work moved nearly everyone who passed it and caught the eye of the <b>Florence Biennale</b>, which invited him to its XV edition in October 2025 — where he created <b>UnityBeak Firenze</b> hand-in-hand with the local community and won an award for Installation Art.</p>
+      <p>FLY serves on the City of Miami Beach LGBTQIA+ Advisory Committee. He believes art belongs where everyone can reach it — sparking conversation, memory, and joy.</p>
+      <div class="badges">
+        <span class="badge">Red Dot Miami 2024</span>
+        <span class="badge">BOSS · Merrick Park</span>
+        <span class="badge">UnityBeak · Lincoln Road</span>
+        <span class="badge">XV Florence Biennale — Installation Art Award</span>
+        <span class="badge">City of Miami Beach LGBTQIA+ Advisory Committee</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap">
+      <div class="big">One world. One game. One team, if we choose to be.</div>
+      <a class="cta" href="https://www.eventbrite.com/e/epic-art-welcomes-facundo-yebne-tickets-1990510413229" target="_blank" rel="noopener">RSVP on Eventbrite →</a>
+      <p class="small">
+        Facundo Yebne (FLY) · Fly Future LLC · Kimpton EPIC Hotel, 270 Biscayne Boulevard Way, Miami, FL 33131<br>
+        <a href="https://www.instagram.com/flymiami.art/" target="_blank" rel="noopener">@flymiami.art</a> · fy@designsuitesmiami.com · 786-538-0490
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
