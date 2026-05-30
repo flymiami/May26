@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FLY Concierge — Find the Piece That Belongs in Your Room</title>
+<meta name="description" content="A $17 pass into the AI concierge built from Facundo Yebne's voice, mission, and full body of work. Find or design the exact piece for your wall.">
+<style>
+  :root {
+    --bg: #0a0a0a;
+    --bg-soft: #131313;
+    --bg-card: #1a1a1a;
+    --ink: #f5f1ea;
+    --ink-soft: #a8a39b;
+    --accent: #ffb627;
+    --accent-soft: #f4d35e;
+    --line: #2a2a2a;
+    --danger: #d93b3b;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Inter', 'Helvetica Neue', system-ui, sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+  header {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(10,10,10,0.85); backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 16px 24px; max-width: 1100px; margin: 0 auto;
+  }
+  .logo { font-weight: 800; font-size: 22px; letter-spacing: 0.5px; }
+  .logo span { color: var(--accent); }
+  .nav-cta {
+    background: var(--accent); color: #1a1a1a; padding: 10px 20px;
+    border-radius: 999px; text-decoration: none; font-weight: 700;
+    font-size: 14px; transition: transform 0.2s;
+  }
+  .nav-cta:hover { transform: scale(1.05); }
+
+  .hero {
+    min-height: 100vh; display: flex; align-items: center;
+    padding: 120px 24px 80px; position: relative;
+    background: radial-gradient(ellipse at top right, rgba(255,182,39,0.08), transparent 60%);
+  }
+  .hero-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 60px;
+    align-items: center; max-width: 1100px; margin: 0 auto;
+  }
+  .eyebrow {
+    text-transform: uppercase; letter-spacing: 3px; font-size: 12px;
+    color: var(--accent); font-weight: 700; margin-bottom: 24px;
+  }
+  h1 {
+    font-size: clamp(38px, 5vw, 64px); line-height: 1.05;
+    font-weight: 800; letter-spacing: -1.5px; margin-bottom: 24px;
+  }
+  h1 em { color: var(--accent); font-style: normal; }
+  .hero p.lead {
+    font-size: 19px; color: var(--ink-soft); margin-bottom: 36px;
+    max-width: 540px;
+  }
+  .cta-row { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
+  .btn-primary {
+    background: var(--accent); color: #1a1a1a;
+    padding: 18px 32px; border-radius: 999px; text-decoration: none;
+    font-weight: 700; font-size: 16px; display: inline-block;
+    border: none; cursor: pointer; transition: transform 0.2s;
+  }
+  .btn-primary:hover { transform: scale(1.04); }
+  .btn-secondary {
+    color: var(--ink); text-decoration: underline;
+    font-size: 15px; padding: 18px 8px;
+  }
+  .hero-image {
+    aspect-ratio: 1/1; border-radius: 16px;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2a2418 100%);
+    display: flex; align-items: center; justify-content: center;
+    position: relative; overflow: hidden;
+    border: 1px solid var(--line);
+  }
+  .duck {
+    font-size: 200px; filter: drop-shadow(0 0 40px rgba(255,182,39,0.4));
+    animation: float 6s ease-in-out infinite;
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+  .hero-image-caption {
+    position: absolute; bottom: 24px; left: 24px; right: 24px;
+    font-size: 13px; color: var(--ink-soft); font-style: italic;
+  }
+
+  section { padding: 100px 0; border-top: 1px solid var(--line); }
+  .section-eyebrow {
+    text-transform: uppercase; letter-spacing: 3px; font-size: 12px;
+    color: var(--accent); font-weight: 700; margin-bottom: 16px;
+    text-align: center;
+  }
+  h2 {
+    font-size: clamp(32px, 4vw, 48px); line-height: 1.1;
+    font-weight: 800; letter-spacing: -1px; text-align: center;
+    margin-bottom: 16px; max-width: 800px; margin-left: auto; margin-right: auto;
+  }
+  .section-sub {
+    text-align: center; font-size: 18px; color: var(--ink-soft);
+    max-width: 640px; margin: 0 auto 60px;
+  }
+
+  .offer-card {
+    background: var(--bg-card); border: 1px solid var(--line);
+    border-radius: 20px; padding: 48px;
+    max-width: 720px; margin: 0 auto;
+    position: relative;
+  }
+  .offer-card::before {
+    content: ""; position: absolute; top: 0; left: 24px; right: 24px;
+    height: 3px; background: linear-gradient(90deg, var(--accent), var(--accent-soft));
+    border-radius: 0 0 4px 4px;
+  }
+  .offer-title { font-size: 28px; font-weight: 800; margin-bottom: 8px; }
+  .offer-price {
+    font-size: 56px; font-weight: 900; color: var(--accent);
+    margin: 24px 0 8px; letter-spacing: -2px;
+  }
+  .offer-price-note { font-size: 14px; color: var(--ink-soft); margin-bottom: 32px; }
+  .offer-features { list-style: none; margin-bottom: 32px; }
+  .offer-features li {
+    padding: 14px 0; border-top: 1px solid var(--line);
+    display: flex; gap: 14px; align-items: flex-start;
+  }
+  .offer-features li::before {
+    content: "→"; color: var(--accent); font-weight: 700; flex-shrink: 0;
+  }
+  .offer-features strong { color: var(--ink); }
+
+  .components-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px; margin-top: 40px;
+  }
+  .component {
+    background: var(--bg-card); border: 1px solid var(--line);
+    border-radius: 16px; padding: 32px;
+  }
+  .component-num {
+    font-size: 14px; font-weight: 700; color: var(--accent);
+    letter-spacing: 2px; margin-bottom: 12px;
+  }
+  .component-title { font-size: 20px; font-weight: 700; margin-bottom: 12px; }
+  .component-desc { color: var(--ink-soft); font-size: 15px; }
+
+  .bumps-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 24px;
+    max-width: 900px; margin: 40px auto 0;
+  }
+  .bump {
+    background: var(--bg-card); border: 1px solid var(--line);
+    border-radius: 16px; padding: 32px; position: relative;
+  }
+  .bump-badge {
+    position: absolute; top: -12px; right: 24px;
+    background: var(--accent); color: #1a1a1a;
+    padding: 4px 14px; border-radius: 999px;
+    font-size: 12px; font-weight: 700; letter-spacing: 0.5px;
+  }
+  .bump-price { font-size: 32px; font-weight: 800; color: var(--accent); margin: 16px 0 8px; }
+  .bump-title { font-size: 20px; font-weight: 700; margin-bottom: 12px; }
+  .bump-desc { color: var(--ink-soft); font-size: 15px; }
+
+  .ladder {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px; margin-top: 40px;
+  }
+  .tier {
+    background: var(--bg-card); border: 1px solid var(--line);
+    border-radius: 16px; padding: 28px; text-align: center;
+    position: relative;
+  }
+  .tier.featured {
+    border-color: var(--accent);
+    background: linear-gradient(180deg, rgba(255,182,39,0.05), var(--bg-card));
+  }
+  .tier-label {
+    font-size: 11px; letter-spacing: 2px; text-transform: uppercase;
+    color: var(--ink-soft); margin-bottom: 12px;
+  }
+  .tier-name { font-size: 20px; font-weight: 700; margin-bottom: 16px; }
+  .tier-price { font-size: 32px; font-weight: 800; color: var(--accent); }
+  .tier-price small { font-size: 14px; color: var(--ink-soft); font-weight: 500; }
+  .tier-desc { font-size: 14px; color: var(--ink-soft); margin-top: 16px; }
+
+  .story-section {
+    background: linear-gradient(180deg, transparent, rgba(255,182,39,0.03));
+  }
+  .story-quote {
+    font-size: clamp(24px, 3vw, 36px); font-weight: 700;
+    line-height: 1.3; max-width: 800px; margin: 0 auto;
+    text-align: center; font-style: italic;
+  }
+  .story-quote::before, .story-quote::after { content: '"'; color: var(--accent); }
+  .story-attr {
+    text-align: center; margin-top: 32px;
+    color: var(--ink-soft); font-size: 14px;
+    letter-spacing: 2px; text-transform: uppercase;
+  }
+
+  .guarantee {
+    background: var(--bg-card); border: 1px solid var(--accent);
+    border-radius: 20px; padding: 48px;
+    max-width: 720px; margin: 0 auto; text-align: center;
+  }
+  .guarantee-icon {
+    font-size: 48px; margin-bottom: 16px; display: block;
+  }
+  .guarantee-title { font-size: 24px; font-weight: 700; margin-bottom: 16px; }
+  .guarantee-text { color: var(--ink-soft); font-size: 16px; }
+
+  .commission-section {
+    background: radial-gradient(ellipse at center, rgba(255,182,39,0.06), transparent 70%);
+  }
+  .commission-card {
+    max-width: 800px; margin: 0 auto;
+    background: var(--bg-card); border: 1px solid var(--line);
+    border-radius: 20px; padding: 56px;
+  }
+  .commission-price {
+    font-size: 64px; font-weight: 900; color: var(--accent);
+    letter-spacing: -2px; margin: 24px 0 8px;
+  }
+  .commission-features {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+    margin: 32px 0; list-style: none;
+  }
+  .commission-features li {
+    padding: 12px 0; color: var(--ink-soft);
+    display: flex; gap: 12px;
+  }
+  .commission-features li::before {
+    content: "✦"; color: var(--accent); flex-shrink: 0;
+  }
+
+  .final-cta {
+    text-align: center; padding: 120px 24px;
+    background: linear-gradient(180deg, var(--bg) 0%, #1a1408 100%);
+  }
+  .final-cta h2 { margin-bottom: 32px; }
+
+  footer {
+    border-top: 1px solid var(--line);
+    padding: 40px 24px; text-align: center;
+    color: var(--ink-soft); font-size: 14px;
+  }
+
+  .modal-backdrop {
+    position: fixed; inset: 0; background: rgba(0,0,0,0.85);
+    display: none; align-items: center; justify-content: center;
+    z-index: 200; padding: 24px;
+  }
+  .modal-backdrop.open { display: flex; }
+  .modal {
+    background: var(--bg-card); border: 1px solid var(--line);
+    border-radius: 20px; padding: 40px; max-width: 520px;
+    width: 100%; position: relative;
+  }
+  .modal-close {
+    position: absolute; top: 16px; right: 16px;
+    background: transparent; border: none; color: var(--ink-soft);
+    font-size: 24px; cursor: pointer;
+  }
+  .modal h3 { font-size: 24px; margin-bottom: 8px; }
+  .modal p { color: var(--ink-soft); margin-bottom: 24px; }
+  .modal input, .modal textarea {
+    width: 100%; padding: 14px 16px; background: var(--bg);
+    border: 1px solid var(--line); border-radius: 10px;
+    color: var(--ink); font-size: 15px; font-family: inherit;
+    margin-bottom: 12px;
+  }
+  .modal textarea { min-height: 90px; resize: vertical; }
+  .modal input:focus, .modal textarea:focus {
+    outline: none; border-color: var(--accent);
+  }
+  .modal .btn-primary { width: 100%; margin-top: 8px; }
+
+  @media (max-width: 768px) {
+    .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+    .hero-image { max-width: 360px; margin: 0 auto; }
+    .duck { font-size: 140px; }
+    .bumps-grid { grid-template-columns: 1fr; }
+    .commission-features { grid-template-columns: 1fr; }
+    .commission-card, .offer-card, .guarantee { padding: 32px 24px; }
+    .nav-cta { padding: 8px 16px; font-size: 13px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <div class="logo">FLY <span>·</span></div>
+    <a href="#start" class="nav-cta">Start the Concierge → $17</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-grid">
+    <div>
+      <div class="eyebrow">The FLY Concierge</div>
+      <h1>Find the piece that <em>belongs</em> in your room. In under five minutes.</h1>
+      <p class="lead">A $17 pass into the AI concierge built from Facundo Yebne's voice, his mission, and his entire body of work. You answer a few questions about your room. It walks you to the one piece that's already yours, with the story to tell when people stop and ask about it.</p>
+      <div class="cta-row">
+        <a href="#start" class="btn-primary">Start the Concierge → $17</a>
+        <a href="#how" class="btn-secondary">How it works</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="duck">🦆</div>
+      <div class="hero-image-caption">"Have you ever seen a happy duck?"</div>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="container">
+    <div class="section-eyebrow">What You Get</div>
+    <h2>The Concierge does the choosing. Your room and your feeling are the inputs.</h2>
+    <p class="section-sub">Five things happen inside the $17 pass. You don't browse. You're walked to the one.</p>
+    <div class="components-grid">
+      <div class="component">
+        <div class="component-num">01</div>
+        <div class="component-title">The Piece Already Yours</div>
+        <p class="component-desc">Answer a short set of questions about your room, your light, and the feeling you want it to hold. The Concierge returns the works built for your scale and your mood, with the right size and finish recommended for your wall.</p>
+      </div>
+      <div class="component">
+        <div class="component-num">02</div>
+        <div class="component-title">Reserve It Before It's Gone</div>
+        <p class="component-desc">The best FLY originals are one of one. See in real time what's available, what's reserved, and what's currently with a show. Place a hold on your piece the moment you know it's yours.</p>
+      </div>
+      <div class="component">
+        <div class="component-num">03</div>
+        <div class="component-title">Your One of One, Designed With You</div>
+        <p class="component-desc">If nothing in the catalog is exactly the memory you're chasing, the Concierge builds the commission brief in Facundo's own creative language and routes it to the studio. Draft proposal back in 3 to 7 business days.</p>
+      </div>
+      <div class="component">
+        <div class="component-num">04</div>
+        <div class="component-title">The Story You Get to Tell</div>
+        <p class="component-desc">The origin of your specific piece. Why the duck. What it's made of. Some pieces hold around 3,000 hand placed ducks. So when a guest stops in front of it, you already have the line that opens every conversation.</p>
+      </div>
+      <div class="component">
+        <div class="component-num">05</div>
+        <div class="component-title">The Glow Map</div>
+        <p class="component-desc">Where to hang it, how high, and how to light the UV layer so the piece reads as two pieces, one in daylight and one after dark. The same placement Facundo uses at his shows, mapped to your room.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-eyebrow">The Offer</div>
+    <h2>$17 to find your piece. Credited toward your first purchase.</h2>
+    <p class="section-sub">The pass costs nothing if you buy. And nothing if you don't.</p>
+    <div class="offer-card">
+      <div class="offer-title">The FLY Concierge Pass</div>
+      <div class="offer-price">$17</div>
+      <div class="offer-price-note">Fully credited toward your first piece. Refunded if the Concierge doesn't find or design a piece you love.</div>
+      <ul class="offer-features">
+        <li><span><strong>The match in under five minutes.</strong> The full FLY catalog narrowed to the two or three pieces built for your room.</span></li>
+        <li><span><strong>Real time availability.</strong> See what's open, what's on hold, and what's in a show. Hold yours on the spot.</span></li>
+        <li><span><strong>Custom commission access.</strong> Brief the studio in minutes. Custom pieces from $2,500. Signature installations from $15,000.</span></li>
+        <li><span><strong>The Glow Map.</strong> Placement and lighting plan tuned to your room, day and night.</span></li>
+        <li><span><strong>The story to tell.</strong> The origin, the meaning, the line that opens every conversation about your piece.</span></li>
+      </ul>
+      <a href="#start" class="btn-primary" style="width:100%; text-align:center;">Start the Concierge → $17</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-eyebrow">Add to Your Pass</div>
+    <h2>Two add ons most buyers say yes to.</h2>
+    <div class="bumps-grid">
+      <div class="bump">
+        <div class="bump-badge">Most Popular</div>
+        <div class="bump-title">The Gift They'll FaceTime About</div>
+        <div class="bump-price">$47</div>
+        <p class="bump-desc">A signed mini duck plus the Concierge gift design service. The AI matches the duck to the person, ships with a story card written in Facundo's voice. The gift arrives already carrying meaning.</p>
+      </div>
+      <div class="bump">
+        <div class="bump-title">Whole Home or Property Curation</div>
+        <div class="bump-price">$97</div>
+        <p class="bump-desc">A multi piece plan across walls or rooms so the pieces speak to each other. Built for homeowners doing more than one wall, and for designers and hospitality buyers placing across a property.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="story-section">
+  <div class="container">
+    <div class="section-eyebrow">The Mission</div>
+    <p class="story-quote">This is the rare piece strangers have cried in front of, because it pulls up their own childhood. Now you own both the piece and the reason it moves people.</p>
+    <p class="story-attr">— Facundo Yebne, Florence Biennale recipient, City of Miami Beach installation artist</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-eyebrow">The Path</div>
+    <h2>Where the relationship goes from here.</h2>
+    <p class="section-sub">The pass is the entry. The rest is for the people who want in.</p>
+    <div class="ladder">
+      <div class="tier featured">
+        <div class="tier-label">Start Here</div>
+        <div class="tier-name">The Concierge Pass</div>
+        <div class="tier-price">$17</div>
+        <p class="tier-desc">Your match, the story, the placement plan. Credited to your first piece.</p>
+      </div>
+      <div class="tier">
+        <div class="tier-label">Belong</div>
+        <div class="tier-name">Founding Membership</div>
+        <div class="tier-price">$97<small>/mo</small></div>
+        <p class="tier-desc">First 50 members lock in $97/mo for life. $197/mo after. First dibs, members editions, events, monthly live call with Facundo.</p>
+      </div>
+      <div class="tier">
+        <div class="tier-label">Define Your Space</div>
+        <div class="tier-name">Signature Commission</div>
+        <div class="tier-price">$15,000<small>+</small></div>
+        <p class="tier-desc">A commissioned piece or installation designed directly with Facundo. White glove install. Private line to the artist.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-eyebrow">The Guarantee</div>
+    <h2>You only pay for the piece you love.</h2>
+    <div class="guarantee">
+      <span class="guarantee-icon">🦆</span>
+      <div class="guarantee-title">The Love It On Your Wall Guarantee</div>
+      <p class="guarantee-text">The $17 pass is fully credited toward your first piece. If the Concierge doesn't find or design a piece you love, you get the $17 back, no questions and no call required. Every physical piece ships with a 14 day exchange on undamaged pieces in original packaging.</p>
+    </div>
+  </div>
+</section>
+
+<section class="commission-section">
+  <div class="container">
+    <div class="section-eyebrow">For The Serious Collector</div>
+    <h2>A signature piece, designed directly with the artist.</h2>
+    <div class="commission-card">
+      <div class="component-num">The FLY Signature Commission</div>
+      <div class="commission-price">$15,000+</div>
+      <p style="color: var(--ink-soft); font-size: 17px;">A commissioned signature work or installation that defines the room, lobby, or property, designed directly with Facundo, finished with the UV and neon treatment, and installed white glove. Plus an ongoing private line to the artist.</p>
+      <ul class="commission-features">
+        <li>Designed 1 on 1 with Facundo</li>
+        <li>Bi weekly design sessions through the build</li>
+        <li>White glove production and install</li>
+        <li>Private line to the artist for what's next</li>
+        <li>Lifetime Founding Membership included</li>
+        <li>Studio visits and event priority</li>
+      </ul>
+      <p style="font-size: 14px; color: var(--ink-soft); margin-bottom: 24px;">Limited to 2 to 3 commissions per month to protect the work. Waitlist applies.</p>
+      <a href="#start" class="btn-primary">Request a Commission Consultation</a>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta" id="start">
+  <div class="container">
+    <div class="section-eyebrow">Start Here</div>
+    <h2>Five minutes to the one piece that's already yours.</h2>
+    <p class="section-sub">$17. Credited to your first piece. Refunded if it isn't for you.</p>
+    <button class="btn-primary" onclick="openModal()">Start the Concierge → $17</button>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>FLY · Facundo Yebne · Miami, Florida</p>
+    <p style="margin-top: 8px;">"Have you ever seen a happy duck?"</p>
+  </div>
+</footer>
+
+<div class="modal-backdrop" id="modal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <h3>Start the Concierge</h3>
+    <p>Tell us where to reach you. Facundo or the Concierge team will guide you through your match within 24 hours.</p>
+    <form id="conciergeForm" onsubmit="handleSubmit(event)">
+      <input type="text" name="name" placeholder="Your name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="text" name="room" placeholder="Tell us about your room (one line)">
+      <textarea name="feeling" placeholder="The feeling you want the piece to hold"></textarea>
+      <button type="submit" class="btn-primary">Send to the Concierge</button>
+    </form>
+    <p style="font-size: 12px; color: var(--ink-soft); margin-top: 16px; text-align: center;">Payment of $17 will be processed once your match is ready. Refundable.</p>
+  </div>
+</div>
+
+<script>
+  function openModal() {
+    document.getElementById('modal').classList.add('open');
+  }
+  function closeModal() {
+    document.getElementById('modal').classList.remove('open');
+  }
+  document.getElementById('modal').addEventListener('click', (e) => {
+    if (e.target.id === 'modal') closeModal();
+  });
+  function handleSubmit(e) {
+    e.preventDefault();
+    const data = Object.fromEntries(new FormData(e.target));
+    const submissions = JSON.parse(localStorage.getItem('fly_leads') || '[]');
+    submissions.push({ ...data, ts: new Date().toISOString() });
+    localStorage.setItem('fly_leads', JSON.stringify(submissions));
+    const modal = document.querySelector('.modal');
+    modal.innerHTML = '<h3>You\'re in.</h3><p>Facundo or the Concierge team will be in touch within 24 hours with your match. Keep an eye on your inbox.</p><button class="btn-primary" onclick="closeModal()" style="width:100%;">Close</button>';
+  }
+</script>
+
+</body>
+</html>
