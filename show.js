@@ -14,7 +14,7 @@ const ARTIST = {
 };
 
 // emoji fallback per theme so it looks alive even before photos are dropped in /images
-const THEME_ART = { USA:"🇺🇸", PRIDE:"🏳️‍🌈", FIFA:"⚽", LOVE:"💗", MIAMI:"🦩" };
+const THEME_ART = { USA:"🦅", PRIDE:"🌈", FIFA:"⚽", LOVE:"💗", MIAMI:"🦩" };
 
 const ART = [
   {n:1, slug:"united-kuakies", title:"United Kuakies of America", theme:"USA",
