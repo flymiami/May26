@@ -2,7 +2,7 @@ name: Deploy kiosk to GitHub Pages
 
 on:
   push:
-    branches: [claude/clock-cord-cross-device-p9Rcy]
+    branches: [main, claude/clock-cord-cross-device-p9Rcy]
   workflow_dispatch:
 
 permissions:
