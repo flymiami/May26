@@ -80,7 +80,7 @@ window.KIOSK = {
   art: [
     {% for product in collections['kiosk'].products %}{
       title: {{ product.title | json }},
-      price: {{ product.price | money | json }},
+      price: {{ product.price | money_without_trailing_zeros | json }},
       img: {% if product.featured_image %}{{ product.featured_image | image_url: width: 700 | json }}{% else %}""{% endif %},
       desc: {{ product.description | strip_html | strip_newlines | json }},
       url: {{ product.url | json }}
