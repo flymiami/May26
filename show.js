@@ -18,10 +18,10 @@ const THEME_ART = { USA:"🦅", PRIDE:"🌈", FIFA:"⚽", LOVE:"💗", MIAMI:"�
 
 const ART = [
   {n:1, slug:"united-kuakies", title:"United Kuakies of America", theme:"USA",
-   medium:"Tiny resin ducks (solid)", size:"12 × 18 in", price:1500, loc:"16th Floor",
+   medium:"Tiny resin ducks (solid)", size:"12 × 18 in", price:2000, loc:"16th Floor",
    desc:"An iconic flag reimagined, every red, white and blue stripe hand-built from solid resin ducks in perfect formation. Patriotism through playful precision."},
   {n:2, slug:"dont-kuack-liberty", title:"Don't Kuack With Liberty", theme:"USA",
-   medium:"Tiny resin ducks (solid)", size:"18 × 24 in", price:2500, loc:"16th Floor",
+   medium:"Tiny resin ducks (solid)", size:"18 × 24 in", price:2600, loc:"16th Floor",
    desc:"Lady Liberty rebuilt from hundreds of tiny resin ducks, a symbol of freedom run through repetition, humor and material transformation into my pop vocabulary."},
   {n:3, slug:"peace-pride", title:"Peace, We All Need Some, Pride", theme:"PRIDE",
    medium:"Mini rubber ducks", size:"36 × 36 in", price:3000, loc:"16th Floor · Pride wall",
@@ -59,7 +59,7 @@ const ART = [
 ];
 
 let selected = null;
-let ttsOn = true;
+let ttsOn = false;
 
 /* ---------- render gallery ---------- */
 const gallery = document.getElementById("gallery");

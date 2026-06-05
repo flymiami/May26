@@ -68,7 +68,7 @@
         <button class="btn" id="ask">Ask</button>
         <button class="btn alt" id="mic" title="Speak">🎤</button>
       </div>
-      <div class="speakhint" id="ttsToggle">🔊 Voice ON · tap to mute</div>
+      <div class="speakhint" id="ttsToggle">🔇 Voice OFF · tap to unmute</div>
     </aside>
   </main>
 </div>
@@ -92,7 +92,7 @@ window.KIOSK = {
 (function(){
   var ARTIST_HANDLE = "@flymiami.art";
   var ART = (window.KIOSK && window.KIOSK.art) || [];
-  var ttsOn = true, selected = null;
+  var ttsOn = false, selected = null;
 
   document.getElementById("aboutText").innerHTML =
     (window.KIOSK.about || "") + ' <b>' + ART.length + ' works</b> on view. Tap any piece for its story, or ask me anything. Find me at <b>' + ARTIST_HANDLE + '</b>.';

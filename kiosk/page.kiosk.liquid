@@ -98,7 +98,7 @@
         <button class="btn" id="ask">Ask</button>
         <button class="btn alt" id="mic" title="Speak">🎤</button>
       </div>
-      <div class="speakhint" id="ttsToggle">🔊 Voice ON · tap to mute</div>
+      <div class="speakhint" id="ttsToggle">🔇 Voice OFF · tap to unmute</div>
     </aside>
   </main>
 </div>
@@ -124,11 +124,11 @@ const CDN = "https://cdn.shopify.com/s/files/1/0997/7974/0016/files/";
 const ART = [
   {n:1, slug:"united-kuakies", title:"United Kuakies of America", theme:"USA",
    img:CDN+"kiosk-united-kuakies.jpg?v=1780520926",
-   medium:"Tiny resin ducks (solid)", size:"12 × 18 in", price:1500, loc:"16th Floor",
+   medium:"Tiny resin ducks (solid)", size:"12 × 18 in", price:2000, loc:"16th Floor",
    desc:"An iconic flag reimagined, every red, white and blue stripe hand-built from solid resin ducks in perfect formation. Patriotism through playful precision."},
   {n:2, slug:"dont-kuack-liberty", title:"Don't Kuack With Liberty", theme:"USA",
    img:CDN+"kiosk-dont-kuack-liberty.jpg?v=1780520926",
-   medium:"Tiny resin ducks (solid)", size:"18 × 24 in", price:2500, loc:"16th Floor",
+   medium:"Tiny resin ducks (solid)", size:"18 × 24 in", price:2600, loc:"16th Floor",
    desc:"Lady Liberty rebuilt from hundreds of tiny resin ducks, a symbol of freedom run through repetition, humor and material transformation into my pop vocabulary."},
   {n:3, slug:"peace-pride", title:"Peace, We All Need Some, Pride", theme:"PRIDE",
    img:"",
@@ -177,7 +177,7 @@ const ART = [
 ];
 
 let selected = null;
-let ttsOn = true;
+let ttsOn = false;
 
 /* persistent About panel */
 document.getElementById("aboutText").innerHTML =
