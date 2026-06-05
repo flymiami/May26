@@ -67,15 +67,15 @@
 
   root.innerHTML='<div class="fkhead"><div class="brand">FLY MIAMI <small>FACUNDO YEBNE · KIMPTON EPIC · 2026</small></div><div class="live">Tap an artwork &nbsp;·&nbsp; or ask me anything</div></div>'+
   '<div class="fkabout"><h2>About the show &amp; the artist</h2><p id="fkAbout"></p><div class="atags"><span class="USA">USA 250</span><span class="PRIDE">Pride</span><span class="FIFA">FIFA World Cup 2026</span></div></div>'+
-  '<div class="fkmain"><section class="fkgal" id="fkGal"></section><aside class="fkguide"><div class="fkchat" id="fkChat"></div><div class="fkchips" id="fkChips"></div><div class="inrow"><input id="fkQ" placeholder="Ask about the show…" autocomplete="off"/><button class="btn" id="fkAsk">Ask</button><button class="btn alt" id="fkMic" title="Speak">🎤</button></div><div class="speakhint" id="fkTts">🔇 Voice OFF · tap to unmute</div></aside></div>';
+  '<div class="fkmain"><section class="fkgal" id="fkGal"></section><aside class="fkguide"><div class="fkchat" id="fkChat"></div><div class="fkchips" id="fkChips"></div><div class="inrow"><input id="fkQ" placeholder="Ask about the show…" autocomplete="off"/><button class="btn" id="fkAsk">Ask</button><button class="btn alt" id="fkMic" title="Speak">🎤</button></div><div class="speakhint" id="fkTts">🔊 Voice ON · tap to mute</div></aside></div>';
 
-  var ttsOn = false,selected=null;
+  var ttsOn = true,selected=null;
   document.getElementById("fkAbout").innerHTML="<b>"+ARTIST.name+" (FLY) at the "+ARTIST.show+", "+ARTIST.when+".</b> "+ARTIST.about+" <b>13 works</b> across three threads — patriotism, Pride and the World Cup — priced $1,000–$10,000. Tap any piece to hear its story, or ask me anything. Find me at <b>"+ARTIST.handle+"</b>.";
   var gal=document.getElementById("fkGal");
   ART.forEach(function(a){var c=document.createElement("div");c.className="card";c.dataset.slug=a.slug;var em=TH[a.theme]||"🦆";var vis=a.img?'<img src="'+a.img+'" alt="'+a.title+'" onerror="this.style.display=\'none\';this.parentNode.insertAdjacentText(\'beforeend\',\''+em+'\')">':em;c.innerHTML='<div class="thumb"><span class="tag '+a.theme+'">'+a.theme+'</span>'+vis+'</div><div class="meta"><h3>'+a.n+'. '+a.title+'</h3><div class="sub">'+a.medium+' · '+a.size+'</div><div class="price">$'+a.price.toLocaleString()+'</div></div>';c.onclick=function(){selectArt(a.slug);};gal.appendChild(c);});
   var chat=document.getElementById("fkChat");
-  function say(t,who){who=who||"fy";var b=document.createElement("div");b.className="bubble "+who;b.innerHTML=t;chat.appendChild(b);chat.scrollTop=chat.scrollHeight;if(who==="fy"&&ttsOn)speak(t.replace(/<[^>]+>/g," "));}
-  function selectArt(slug){selected=ART.filter(function(a){return a.slug===slug;})[0];var cs=root.querySelectorAll(".card");for(var i=0;i<cs.length;i++)cs[i].classList.toggle("sel",cs[i].dataset.slug===slug);say("<b>"+selected.title+"</b>, "+selected.desc+"<br><br><i>"+selected.medium+" · "+selected.size+" · "+selected.loc+" · $"+selected.price.toLocaleString()+"</i>");}
+  function say(t,who){who=who||"fy";var b=document.createElement("div");b.className="bubble "+who;b.innerHTML=t;chat.appendChild(b);chat.scrollTop=chat.scrollHeight;}
+  function selectArt(slug){selected=ART.filter(function(a){return a.slug===slug;})[0];var cs=root.querySelectorAll(".card");for(var i=0;i<cs.length;i++)cs[i].classList.toggle("sel",cs[i].dataset.slug===slug);say("<b>"+selected.title+"</b>, "+selected.desc+"<br><br><i>"+selected.medium+" · "+selected.size+" · "+selected.loc+" · $"+selected.price.toLocaleString()+"</i>");playClip(slug);}
   function answer(qRaw){var q=qRaw.toLowerCase();var hit=ART.filter(function(a){return q.indexOf(a.title.toLowerCase().split(" ")[0])>=0||a.title.toLowerCase().split(" ").some(function(w){return w.length>3&&q.indexOf(w)>=0;});})[0];
   if(/who are you|your name|about you|who is|artist|facundo|\bfly\b/.test(q))return "<b>"+ARTIST.about+"</b>";
   if(/where|when|show|exhibit|epic|hotel|address/.test(q))return "This is <b>"+ARTIST.show+"</b>, "+ARTIST.when+". Themes: "+ARTIST.themes+". Find me at "+ARTIST.handle+".";
@@ -94,13 +94,15 @@
   var chips=["Who are you?","Tell me about the ducks","Show me the FIFA wall","What's on the Pride wall?","How much is Proud Love Pink?","When & where is the show?"];
   var cb=document.getElementById("fkChips");
   chips.forEach(function(t){var el=document.createElement("div");el.className="chip";el.textContent=t;el.onclick=function(){handleAsk(t);};cb.appendChild(el);});
-  var voice=null;
-  function pickVoice(){var vs=speechSynthesis.getVoices();voice=vs.filter(function(v){return /en-US/i.test(v.lang)&&/male|Daniel|Alex|Google US/i.test(v.name);})[0]||vs.filter(function(v){return /en/i.test(v.lang);})[0]||vs[0];}
-  if("speechSynthesis" in window){speechSynthesis.onvoiceschanged=pickVoice;pickVoice();}
-  function speak(t){if(!("speechSynthesis" in window))return;speechSynthesis.cancel();var u=new SpeechSynthesisUtterance(t);u.voice=voice;u.rate=1;u.pitch=1;speechSynthesis.speak(u);}
-  document.getElementById("fkTts").onclick=function(){ttsOn=!ttsOn;this.textContent=ttsOn?"🔊 Voice ON · tap to mute":"🔇 Voice OFF · tap to unmute";if(!ttsOn)speechSynthesis.cancel();};
+  /* FLY's own recordings: drop MP3s named by slug at the URL below (audio/welcome.mp3, audio/united-kuakies.mp3, ...) */
+  var AUDIO_BASE="https://flymiami.github.io/May26/audio/";
+  var currentAudio=null;
+  function stopClip(){if(currentAudio){try{currentAudio.pause();}catch(e){}currentAudio=null;}}
+  function playClip(slug){if(!ttsOn||!slug)return;stopClip();var a=new Audio(AUDIO_BASE+slug+".mp3");currentAudio=a;a.play().catch(function(){});}
+  document.getElementById("fkTts").onclick=function(){ttsOn=!ttsOn;this.textContent=ttsOn?"🔊 Voice ON · tap to mute":"🔇 Voice OFF · tap to unmute";if(!ttsOn)stopClip();};
   var mic=document.getElementById("fkMic");
   var SR=window.SpeechRecognition||window.webkitSpeechRecognition;
   if(SR){var rec=new SR();rec.lang="en-US";rec.interimResults=false;mic.onclick=function(){try{rec.start();mic.textContent="…";}catch(e){}};rec.onresult=function(e){mic.textContent="🎤";handleAsk(e.results[0][0].transcript);};rec.onerror=function(){mic.textContent="🎤";};rec.onend=function(){mic.textContent="🎤";};}else{mic.style.display="none";}
   say("👋 Hi, I'm <b>Facundo</b>. Welcome to my EPIC show, thousands of rubber ducks for peace, love and joy. Tap any piece to hear its story, or just ask me anything.");
+  document.addEventListener("click",function(){playClip("welcome");},{once:true});
 })();

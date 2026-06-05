@@ -59,7 +59,7 @@ const ART = [
 ];
 
 let selected = null;
-let ttsOn = false;
+let ttsOn = true;
 
 /* ---------- render gallery ---------- */
 const gallery = document.getElementById("gallery");
@@ -89,7 +89,6 @@ function say(text, who="fy"){
   b.innerHTML = text;
   chat.appendChild(b);
   chat.scrollTop = chat.scrollHeight;
-  if(who==="fy" && ttsOn) speak(text.replace(/<[^>]+>/g," "));
 }
 
 function selectArt(slug){
@@ -97,6 +96,7 @@ function selectArt(slug){
   document.querySelectorAll(".card").forEach(c=>c.classList.toggle("sel", c.dataset.slug===slug));
   say(`<b>${selected.title}</b>, ${selected.desc}<br><br>` +
       `<i>${selected.medium} · ${selected.size} · ${selected.loc} · $${selected.price.toLocaleString()}</i>`);
+  playClip(slug);
 }
 
 /* ---------- tiny offline answer engine ---------- */
@@ -142,22 +142,24 @@ const chips = ["Who are you?","Tell me about the ducks","Show me the FIFA wall",
 const chipBox = document.getElementById("chips");
 chips.forEach(t=>{ const el=document.createElement("div"); el.className="chip"; el.textContent=t; el.onclick=()=>handleAsk(t); chipBox.appendChild(el); });
 
-/* ---------- voice out (Web Speech) ---------- */
-let voice=null;
-function pickVoice(){
-  const vs = speechSynthesis.getVoices();
-  voice = vs.find(v=>/en-US/i.test(v.lang) && /male|Daniel|Alex|Google US/i.test(v.name)) ||
-          vs.find(v=>/en/i.test(v.lang)) || vs[0];
-}
-if("speechSynthesis" in window){ speechSynthesis.onvoiceschanged = pickVoice; pickVoice(); }
-function speak(t){
-  if(!("speechSynthesis" in window)) return;
-  speechSynthesis.cancel();
-  const u = new SpeechSynthesisUtterance(t); u.voice=voice; u.rate=1; u.pitch=1; speechSynthesis.speak(u);
+/* ---------- voice out (FLY's own recordings) ---------- */
+/* Record short MP3 clips and name them by slug, then drop them in /audio.
+   Needed files: audio/welcome.mp3 plus one per artwork, e.g. audio/united-kuakies.mp3.
+   No clip yet means it simply stays silent, never a robot voice. */
+const AUDIO_BASE = "audio/";
+let currentAudio = null;
+function stopClip(){ if(currentAudio){ try{ currentAudio.pause(); }catch(e){} currentAudio=null; } }
+function playClip(slug){
+  if(!ttsOn || !slug) return;
+  stopClip();
+  const a = new Audio(AUDIO_BASE + slug + ".mp3");
+  currentAudio = a;
+  a.play().catch(()=>{});   /* silent if the clip is missing or autoplay is blocked */
 }
 document.getElementById("ttsToggle").onclick = function(){
-  ttsOn=!ttsOn; this.textContent = ttsOn ? "🔊 Voice ON · tap to mute" : "🔇 Voice OFF · tap to unmute";
-  if(!ttsOn) speechSynthesis.cancel();
+  ttsOn = !ttsOn;
+  this.textContent = ttsOn ? "🔊 Voice ON · tap to mute" : "🔇 Voice OFF · tap to unmute";
+  if(!ttsOn) stopClip();
 };
 
 /* ---------- voice in (optional, Chrome/Android) ---------- */
@@ -174,3 +176,5 @@ if(SR){
 /* ---------- welcome ---------- */
 say(`👋 Hi, I'm <b>Facundo</b>. Welcome to my EPIC show, thousands of rubber ducks for peace, love and joy. ` +
     `Tap any piece to hear its story, or just ask me anything.`);
+/* play the welcome clip on the visitor's first tap (browsers block audio before a gesture) */
+document.addEventListener("click", function(){ playClip("welcome"); }, {once:true});
