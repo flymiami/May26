@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<link rel="preconnect" href="https://cdn.shopify.com" crossorigin />
+<link rel="dns-prefetch" href="https://cdn.shopify.com" />
 <title>FLY MIAMI · Kiosk</title>
 <style>
   :root{--bg:#0a0a12;--panel:#14141f;--ink:#f4f4f8;--muted:#9aa0b5;--accent:#ff3da6;--accent2:#36c5ff;--gold:#ffcf4d}
@@ -81,7 +83,7 @@ window.KIOSK = {
     {% for product in collections['kiosk'].products %}{
       title: {{ product.title | json }},
       price: {{ product.price | money_without_trailing_zeros | json }},
-      img: {% if product.featured_image %}{{ product.featured_image | image_url: width: 700 | json }}{% else %}""{% endif %},
+      img: {% if product.featured_image %}{{ product.featured_image | image_url: width: 420 | json }}{% else %}""{% endif %},
       desc: {{ product.description | strip_html | strip_newlines | json }},
       url: {{ product.url | json }},
       handle: {{ product.handle | json }}
@@ -105,7 +107,7 @@ window.KIOSK = {
   ART.forEach(function(a, i){
     var c = document.createElement("div");
     c.className = "card"; c.dataset.i = i;
-    var visual = a.img ? '<img src="'+a.img+'" alt="'+escapeAttr(a.title)+'" onerror="this.style.display=\'none\';this.parentNode.insertAdjacentText(\'beforeend\',\'🦆\')">' : "🦆";
+    var visual = a.img ? '<img src="'+a.img+'" alt="'+escapeAttr(a.title)+'" loading="lazy" decoding="async" onerror="this.style.display=\'none\';this.parentNode.insertAdjacentText(\'beforeend\',\'🦆\')">' : "🦆";
     c.innerHTML = '<div class="thumb">'+visual+'</div><div class="meta"><h3>'+(i+1)+'. '+escapeHtml(a.title)+'</h3><div class="price">'+escapeHtml(a.price)+'</div></div>';
     c.onclick = function(){ selectArt(i); };
     gallery.appendChild(c);
