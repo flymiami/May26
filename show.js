@@ -6,7 +6,7 @@ const ARTIST = {
   site: "flymiami.art",
   show: "Kimpton EPIC Hotel, Downtown Miami",
   when: "Summer 2026 (June to July)",
-  themes: "USA 250 · Miami Pride · FIFA World Cup 2026",
+  themes: "USA 250 · Pride · FIFA World Cup 2026",
   about:
     "I'm Facundo Yebne, FLY. I build sculptures and wall works out of thousands of rubber and resin ducks. " +
     "One material, one message: peace, love, and joy. This EPIC residency lands right as the world arrives in " +

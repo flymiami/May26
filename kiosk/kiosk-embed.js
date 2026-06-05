@@ -46,7 +46,7 @@
   var st = document.createElement("style"); st.textContent = CSS; document.head.appendChild(st);
   var root = document.createElement("div"); root.id = "flykiosk"; document.body.appendChild(root);
 
-  var ARTIST={name:"Facundo Yebne",handle:"@flymiami.art",show:"Kimpton EPIC Hotel, Downtown Miami",when:"Summer 2026 (June to July)",themes:"USA 250 · Miami Pride · FIFA World Cup 2026",about:"I'm Facundo Yebne, FLY. I build sculptures and wall works out of thousands of rubber and resin ducks. One material, one message: peace, love, and joy. This EPIC residency lands right as the world arrives in Miami for the World Cup, Pride, and the USA 250th, so the whole floor is built around unity."};
+  var ARTIST={name:"Facundo Yebne",handle:"@flymiami.art",show:"Kimpton EPIC Hotel, Downtown Miami",when:"Summer 2026 (June to July)",themes:"USA 250 · Pride · FIFA World Cup 2026",about:"I'm Facundo Yebne, FLY. I build sculptures and wall works out of thousands of rubber and resin ducks. One material, one message: peace, love, and joy. This EPIC residency lands right as the world arrives in Miami for the World Cup, Pride, and the USA 250th, so the whole floor is built around unity."};
   var TH={USA:"🦅",PRIDE:"🌈",FIFA:"⚽",LOVE:"💗",MIAMI:"🦩"};
   var C="https://cdn.shopify.com/s/files/1/0997/7974/0016/files/";
   var ART=[
@@ -66,7 +66,7 @@
   ];
 
   root.innerHTML='<div class="fkhead"><div class="brand">FLY MIAMI <small>FACUNDO YEBNE · KIMPTON EPIC · 2026</small></div><div class="live">Tap an artwork &nbsp;·&nbsp; or ask me anything</div></div>'+
-  '<div class="fkabout"><h2>About the show &amp; the artist</h2><p id="fkAbout"></p><div class="atags"><span class="USA">USA 250</span><span class="PRIDE">Miami Pride</span><span class="FIFA">FIFA World Cup 2026</span></div></div>'+
+  '<div class="fkabout"><h2>About the show &amp; the artist</h2><p id="fkAbout"></p><div class="atags"><span class="USA">USA 250</span><span class="PRIDE">Pride</span><span class="FIFA">FIFA World Cup 2026</span></div></div>'+
   '<div class="fkmain"><section class="fkgal" id="fkGal"></section><aside class="fkguide"><div class="fkchat" id="fkChat"></div><div class="fkchips" id="fkChips"></div><div class="inrow"><input id="fkQ" placeholder="Ask about the show…" autocomplete="off"/><button class="btn" id="fkAsk">Ask</button><button class="btn alt" id="fkMic" title="Speak">🎤</button></div><div class="speakhint" id="fkTts">🔇 Voice OFF · tap to unmute</div></aside></div>';
 
   var ttsOn = false,selected=null;
