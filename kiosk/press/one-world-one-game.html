@@ -3,40 +3,44 @@
 <head>
 <meta charset="UTF-8" />
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
   *{margin:0;padding:0;box-sizing:border-box}
-  body{font-family:'Inter',-apple-system,Arial,sans-serif;background:#e9e9ee;display:flex;justify-content:center;padding:24px}
-  .page{width:900px;min-height:1165px;background:#fff;padding:38px 52px 26px;color:#16161d;position:relative}
-  .topbar{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:3px solid #16161d;padding-bottom:10px}
-  .brand{font-weight:900;font-size:25px;letter-spacing:1px}
+  body{font-family:'Inter','Helvetica Neue',Arial,sans-serif;background:#e9e9ee;display:flex;justify-content:center;padding:24px}
+  .page{width:900px;min-height:1165px;background:#fff;padding:34px 50px 24px;color:#16161d;position:relative}
+  .topbar{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:3px solid #16161d;padding-bottom:9px}
+  .brand{font-weight:900;font-size:24px;letter-spacing:1px}
   .brand span{color:#ff2e9a}
-  .fir{font-size:11px;font-weight:700;letter-spacing:2.5px;color:#6b6b78;text-transform:uppercase;padding-bottom:3px}
-  h1{font-size:45px;font-weight:900;line-height:.98;letter-spacing:-1px;margin-top:18px}
+  .fir{font-size:10.5px;font-weight:700;letter-spacing:2.5px;color:#6b6b78;text-transform:uppercase;padding-bottom:3px}
+  h1{font-size:44px;font-weight:900;line-height:.98;letter-spacing:-1px;margin-top:16px}
   h1 .dot{color:#ff2e9a}
-  .sub{font-size:13.5px;font-weight:600;color:#3a3a46;margin-top:9px;line-height:1.42;max-width:780px}
-  .strip{display:flex;gap:9px;margin:14px 0 0}
-  .strip figure{flex:1;position:relative;border-radius:8px;overflow:hidden;background:#1c1c2b;height:150px}
-  .strip.small figure{height:96px}
+  .sub{font-size:13.5px;font-weight:700;color:#3a3a46;margin-top:8px;line-height:1.4;max-width:800px}
+  .strip{display:flex;gap:8px;margin:13px 0 0}
+  .strip figure{flex:1;position:relative;border-radius:8px;overflow:hidden;background:#1c1c2b;height:158px}
+  .strip figure.hero{flex:1.18}
+  .strip.small figure{height:104px}
   .strip img{width:100%;height:100%;object-fit:cover;display:block}
-  .strip figcaption{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(0,0,0,.82));color:#fff;font-size:9.5px;font-weight:600;padding:15px 8px 5px;letter-spacing:.2px}
+  .strip figcaption{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(0,0,0,.82));color:#fff;font-size:9.5px;font-weight:700;padding:15px 8px 5px;letter-spacing:.2px}
   .body{margin-top:12px;display:flex;gap:22px}
-  .col{flex:1;font-size:11.6px;line-height:1.5;color:#26262f}
+  .col{flex:1;font-size:11.4px;line-height:1.5;color:#26262f}
   .col p{margin-bottom:6px}
   .col p strong{color:#16161d}
-  .lead{font-size:12.4px;font-weight:600;color:#16161d}
-  .quote{border-left:4px solid #ff2e9a;padding:4px 0 4px 14px;margin:5px 0 9px;font-size:11.8px;font-style:italic;color:#16161d;line-height:1.46}
-  .quote span{display:block;font-style:normal;font-weight:700;font-size:10.5px;color:#6b6b78;margin-top:4px}
-  .details{background:#16161d;color:#fff;border-radius:10px;padding:12px 18px;margin-top:4px}
-  .details h3{font-size:10.5px;letter-spacing:2.5px;color:#ff2e9a;text-transform:uppercase;margin-bottom:7px}
-  .details .row{display:flex;font-size:11px;line-height:1.45;padding:2.5px 0;border-bottom:1px solid #ffffff14}
-  .details .row:last-child{border-bottom:none}
-  .details .k{width:70px;color:#9a9aa8;font-weight:700;flex-shrink:0}
-  .details .v{color:#f2f2f5}
-  .contact{display:flex;justify-content:space-between;align-items:center;margin-top:12px;border-top:3px solid #16161d;padding-top:9px}
+  .lead{font-size:12.2px;font-weight:600;color:#16161d}
+  .quote{border-left:4px solid #ff2e9a;padding:3px 0 3px 13px;margin:4px 0 0;font-size:11.6px;font-style:italic;color:#16161d;line-height:1.45}
+  .quote span{display:block;font-style:normal;font-weight:700;font-size:10px;color:#6b6b78;margin-top:3px}
+  .band{display:flex;gap:22px;background:#16161d;color:#fff;border-radius:12px;padding:14px 20px;margin-top:12px}
+  .band h3{font-size:10px;letter-spacing:2.3px;color:#ff2e9a;text-transform:uppercase;margin-bottom:6px}
+  .band .about{flex:1.25;font-size:10.8px;line-height:1.5;color:#d7d9e6}
+  .band .about b{color:#fff}
+  .band .det{flex:1}
+  .band .row{display:flex;font-size:10.6px;line-height:1.4;padding:2.5px 0;border-bottom:1px solid #ffffff14}
+  .band .row:last-child{border-bottom:none}
+  .band .k{width:54px;color:#9a9aa8;font-weight:700;flex-shrink:0}
+  .band .v{color:#f2f2f5}
+  .hl{background:#ff2e9a;color:#fff;font-weight:700;padding:0 5px;border-radius:3px}
+  .contact{display:flex;justify-content:space-between;align-items:center;margin-top:11px;border-top:3px solid #16161d;padding-top:9px}
   .contact .m{font-size:11.5px;line-height:1.5}
   .contact .m b{font-size:12.5px}
   .contact .tag{font-weight:900;font-size:12.5px;color:#ff2e9a;letter-spacing:.5px}
-  .end{text-align:center;font-weight:900;letter-spacing:3px;color:#c8c8d0;font-size:12px;margin-top:8px}
+  .end{text-align:center;font-weight:900;letter-spacing:3px;color:#c8c8d0;font-size:12px;margin-top:7px}
 </style>
 </head>
 <body>
@@ -47,47 +51,54 @@
   </div>
 
   <h1>ONE WORLD<span class="dot">.</span> ONE GAME<span class="dot">.</span></h1>
-  <div class="sub">A FLY Miami exhibition by Facundo Yebne at the Kimpton EPIC Hotel, Downtown Miami. Thousands of rubber and resin ducks, built around the 2026 FIFA World Cup, Miami Pride, and the 250th anniversary of the United States.</div>
+  <div class="sub">Miami artist FLY turns thousands of rubber ducks into a World Cup, a Pride celebration, and a love letter to two nations. Kimpton EPIC Hotel · June 3 to July 27, 2026.</div>
 
   <div class="strip">
-    <figure><img src="https://cdn.shopify.com/s/files/1/0997/7974/0016/files/kiosk-world-cup-duck.jpg?v=1780520926" alt="World Cup Duck"><figcaption>World Cup Duck · the favorite nations in ducks</figcaption></figure>
-    <figure><img src="https://cdn.shopify.com/s/files/1/0997/7974/0016/files/kiosk-proud-love-pink.jpg?v=1780520926" alt="Proud Love Pink"><figcaption>Proud Love Pink · on the terrace</figcaption></figure>
-    <figure><img src="https://cdn.shopify.com/s/files/1/0997/7974/0016/files/kiosk-dont-kuack-liberty.jpg?v=1780520926" alt="Don't Kuack With Liberty"><figcaption>Don't Kuack With Liberty · solid resin ducks</figcaption></figure>
+    <figure><img src="images/world-cup-duck.jpg" alt="World Cup Duck"><figcaption>World Cup Duck · the favorite nations in ducks</figcaption></figure>
+    <figure class="hero"><img src="images/one-world-one-game.jpg" alt="One World One Game"><figcaption>One World, One Game · the namesake canvas</figcaption></figure>
+    <figure><img src="images/proud-love-pink.jpg" alt="Proud Love Pink"><figcaption>Proud Love Pink · on the terrace</figcaption></figure>
   </div>
 
   <div class="body">
     <div class="col">
-      <p class="lead">MIAMI, FL. Facundo Yebne, known as FLY, presents ONE WORLD. ONE GAME. at the Kimpton EPIC Hotel. The show lives in two spaces, the lobby and the 16th floor, and is built entirely from thousands of mini rubber and resin ducks.</p>
-      <p>Three threads run through it: the 2026 FIFA World Cup, Miami Pride, and the 250th anniversary of the United States. The message is unity. Identical little ducks, placed by hand, become images the whole world recognizes.</p>
-      <p>In the lobby stands <strong>UnityBeak Trilogy: Love</strong>, a single sculpture of thousands of mini rubber ducks. It is the only piece downstairs, and the first thing every guest meets.</p>
-      <p>The 16th floor opens onto a right wall built like a <strong>World Cup fixture</strong>. Groups sit on each side and move toward the center. As nations advance, their jerseys are built in ducks and hung, so the wall keeps changing through the tournament. It runs from the USA at one end to Argentina at the other.</p>
-      <p><strong>USA side</strong>, FLY's adopted home and the tournament host: Don't Kuack With Liberty, the Statue of Liberty in solid tiny resin ducks; America Peace in mini rubber ducks; United Kuakies of America in solid tiny resin ducks; and the Pulisic jersey for the USA.</p>
+      <p class="lead">MIAMI, FL. As the world arrives for the 2026 FIFA World Cup, Facundo Yebne, the Miami artist known as FLY, opens ONE WORLD. ONE GAME. at the Kimpton EPIC Hotel.</p>
+      <p>FLY is the artist whose rubber duck installations took over Lincoln Road and drew coverage from Time Out, GayCities, Wire Magazine, Artburst Miami and Revista Viagem. <span class="hl">Award, [biennale name], year</span> For his most ambitious work yet, he fills the hotel's lobby and 16th floor with large scale pop art built entirely from mini rubber and resin ducks.</p>
+      <p>Three summer moments run through it: the World Cup, Miami Pride, and the 250th anniversary of the United States. The message is unity. Identical little ducks, placed by hand, become images the whole world recognizes.</p>
+      <p>In the lobby stands <strong>UnityBeak Trilogy: Love</strong>, a single sculpture of thousands of mini rubber ducks, the first thing every guest meets.</p>
+      <p>The 16th floor opens onto a right wall built like a <strong>World Cup fixture</strong>. Groups sit on each side and advance toward the center. As nations move forward, their jerseys are built in ducks and hung, so the wall changes through the tournament, from the USA at one end to Argentina at the other.</p>
+      <p><strong>USA side</strong>, FLY's adopted home and the tournament host: Don't Kuack With Liberty, America Peace, United Kuakies of America, and the Pulisic jersey.</p>
     </div>
     <div class="col">
-      <p><strong>Argentina side</strong>, FLY's birthplace and the defending champion: a flag in mini rubber ducks with a glow in the dark resin center; a heart in yellow, white and light blue for the Argentine flag; and the Messi jersey. Between the ends hang the flags of Mexico, Japan, Brazil and France, the rotating section that updates as teams advance.</p>
-      <p>At the center is the show's namesake. <strong>One World, One Game</strong> is a 36 by 36 inch canvas with a circle split in four: the American flag in mini rubber ducks, a soccer ball in glow in the dark resin ducks, the colors of the rainbow, and the South American continent.</p>
-      <p>Glass doors at the end of the wall open to the terrace, where <strong>Proud Love Pink</strong> stops passers by. The left wall holds a giant Polaroid selfie spot, edged in rubber ducks of many colors and sizes with a white center for guests to sign, alongside a peace sign and a smiley face in the colors of the Pride flag.</p>
-      <p>An interactive kiosk tells the story of each work in the artist's own voice. The show holds 13 one of a kind originals, from $1,000 to $10,000, each signed with a Certificate of Authenticity and viewable at flymiami.art.</p>
-      <div class="quote">One material, one message: peace, love, and joy. I place thousands of rubber and resin ducks by hand until they become something we all recognize.<span>Facundo Yebne, FLY</span></div>
-      <div class="details">
-        <h3>Exhibition Details</h3>
-        <div class="row"><div class="k">Show</div><div class="v">ONE WORLD. ONE GAME. by Facundo Yebne (FLY Miami)</div></div>
-        <div class="row"><div class="k">Where</div><div class="v">Kimpton EPIC Hotel, 270 Biscayne Blvd Way, Miami FL 33131 (lobby and 16th floor)</div></div>
-        <div class="row"><div class="k">When</div><div class="v">Summer 2026 · June to July</div></div>
-        <div class="row"><div class="k">Works</div><div class="v">13 originals · $1,000 to $10,000</div></div>
-        <div class="row"><div class="k">Online</div><div class="v">flymiami.art · Instagram @flymiami.art</div></div>
-      </div>
+      <p><strong>Argentina side</strong>, FLY's birthplace and the defending champion: a flag with a glow in the dark center, a heart in yellow, white and light blue, and the Messi jersey. Between the ends hang the flags of Mexico, Japan, Brazil and France, the section that updates as teams advance.</p>
+      <p>At the center hangs the show's namesake. <strong>One World, One Game</strong> is a 36 by 36 inch canvas, a circle split in four: the American flag, a glow in the dark soccer ball, the colors of the rainbow, and the South American continent.</p>
+      <p>Glass doors open to the terrace, where <strong>Proud Love Pink</strong> stops passers by. The left wall holds a giant Polaroid selfie spot, edged in rubber ducks for guests to sign, beside a peace sign and a smiley in the colors of the Pride flag.</p>
+      <p>An interactive kiosk tells the story of every work in the artist's own voice. Return during the tournament and the show is different each week.</p>
+      <div class="quote">One material, one message: peace, love, and joy. Soccer is the one language the whole planet speaks, and I build my art the same way, one small duck at a time, until thousands of them become something we all recognize.<span>Facundo Yebne, FLY</span></div>
+    </div>
+  </div>
+
+  <div class="band">
+    <div class="about">
+      <h3>About the Artist</h3>
+      Facundo Yebne (FLY) is a Miami based pop artist who builds sculptures and wall works from thousands of rubber and resin ducks. <b>One material, one message: peace, love and joy.</b> His rubber duck installations on Lincoln Road drew crowds and press from Time Out, GayCities, Wire Magazine, Artburst Miami and Revista Viagem. <span class="hl">Recognized at the [biennale name], [award], [year]</span> ONE WORLD. ONE GAME. holds 13 one of a kind originals, each signed with a Certificate of Authenticity, from $1,000 to $10,000 at flymiami.art.
+    </div>
+    <div class="det">
+      <h3>Exhibition Details</h3>
+      <div class="row"><div class="k">Dates</div><div class="v">June 3 to July 27, 2026</div></div>
+      <div class="row"><div class="k">Where</div><div class="v">Kimpton EPIC Hotel, 270 Biscayne Blvd Way, Miami FL 33131 (lobby and 16th floor)</div></div>
+      <div class="row"><div class="k">Works</div><div class="v">13 originals · $1,000 to $10,000</div></div>
+      <div class="row"><div class="k">Online</div><div class="v">flymiami.art · @flymiami.art</div></div>
     </div>
   </div>
 
   <div class="strip small">
-    <figure><img src="https://cdn.shopify.com/s/files/1/0997/7974/0016/files/kiosk-messi-argentina-sm.jpg?v=1780521057" alt="Messi Argentina"><figcaption>Messi, Argentina</figcaption></figure>
-    <figure><img src="https://cdn.shopify.com/s/files/1/0997/7974/0016/files/kiosk-pulisic-usa.jpg?v=1780520926" alt="Pulisic for USA"><figcaption>Pulisic, USA</figcaption></figure>
-    <figure><img src="https://cdn.shopify.com/s/files/1/0997/7974/0016/files/kiosk-united-kuakies.jpg?v=1780520926" alt="United Kuakies of America"><figcaption>United Kuakies of America</figcaption></figure>
+    <figure><img src="images/pulisic-usa.jpg" alt="Pulisic for USA"><figcaption>Pulisic, for the USA</figcaption></figure>
+    <figure><img src="images/corazon-argentina.jpg" alt="Heart for Argentina"><figcaption>A heart for Argentina</figcaption></figure>
+    <figure><img src="images/dont-kuack-liberty.jpg" alt="Don't Kuack With Liberty"><figcaption>Don't Kuack With Liberty</figcaption></figure>
   </div>
 
   <div class="contact">
-    <div class="m"><b>Media Contact:</b> Facundo Yebne<br>fly@flymiami.art · +1 786 538 0490</div>
+    <div class="m"><b>Media Contact:</b> Facundo Yebne · fly@flymiami.art · +1 786 538 0490</div>
     <div class="tag">#OneWorldOneGame</div>
   </div>
   <div class="end">###</div>
