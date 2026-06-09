@@ -56,20 +56,38 @@ Continuance.
 - **June 9, 2026 1:05 PM** — Mark confirms Prego is handling substitution.
 - **June 9, 2026 2:39 PM** — Don drops the communication point: *"When can we expect payment?"*
 
-## 5. Open item — the "signed my name" / trial-date question
+## 5. The "signed my name" / trial-date question — RESOLVED FROM THE FILINGS
 
-Two separate issues, opposite conclusions — must be resolved by **looking at the
-actual signature blocks** on DIN 107, 116, 166, 173 and orders 119, 169, 175
-(pull from Miami-Dade Clerk OCS):
+The actual trial-continuance motions were pulled from the Drive and the signature
+pages examined directly. **See `02a_signature-findings.md` for the full write-up
+and `evidence/` for the rendered signature pages.**
 
-- **Signed "/s/ Don Hayden, counsel for Plaintiff"** → routine and proper; an
-  attorney signs continuances as counsel, and scheduling is generally within
-  counsel's authority. The live issue there is the **duty to keep you informed**
-  (Fla. Bar Rule 4-1.4) given four resets.
-- **Your actual signature / "/s/ Facundo Yebne" on a verification, affidavit, or
-  agreed order you never authorized** → potential **forgery, fraud on the court,
-  and Rule 4-8.4(c)**. This is the serious scenario and goes to professional-
-  responsibility counsel.
+**Finding:** Both Plaintiff motions to continue trial carry your electronic
+signature in the block — `By: s/ Facundo Yebne — On behalf of Plaintiff` —
+directly beneath `By: s/ Donald Hayden`:
+
+| Motion | Filing # | Your signature present? |
+|---|---|---|
+| 2026-01-23 Plaintiff's Motion to Continue Trial Period | 240136084 | **Yes — `s/ Facundo Yebne, On behalf of Plaintiff`** |
+| 2026-03-18 Unopposed Motion to Continue Trial Period | 244106089-A | **Yes — `s/ Facundo Yebne, On behalf of Plaintiff`** |
+
+**Why this matters:** Fla. R. Civ. P. **1.460** (amended eff. Jan 1, 2025) requires
+a motion to continue trial to be **signed by the named *party*** — not the
+attorney — except for good cause shown. The amendment exists to force the *client*
+to personally know about and consent to delaying their own trial. So:
+
+- The signatures are **required by rule**, which is why they appear — not gratuitous.
+- **But** if you did not authorize or know about them, affixing `s/ Facundo Yebne`
+  is a **false representation to the court that you, the party, requested/consented
+  to the continuance**, defeats the exact protection the rule provides, and
+  implicates **Fla. R. Jud. Admin. 2.515** (the "s/" format represents the named
+  person authorized the signature), **Bar Rule 4-8.4(c)** (dishonesty/
+  misrepresentation) and **4-3.3** (candor to the tribunal). Whether it rises to
+  forgery is for professional-responsibility/criminal counsel to assess.
+
+**The one fact that decides it is yours to confirm:** did you authorize either
+signature, and were you told the trial was being moved? You have stated you were
+not. If that holds, this is the strongest item in the file.
 
 *Not legal advice — for use with new counsel (F. Prego) and any professional-
-responsibility attorney. Verify all DIN numbers and dates at the Clerk before filing.*
+responsibility attorney.*
