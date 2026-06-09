@@ -23,9 +23,10 @@ the substitution of counsel and will contact you directly. I am requesting that
 the complete client file be released to Mr. Prego promptly — all pleadings,
 discovery, deposition transcripts and exhibits, expert materials and reports,
 correspondence, filed and draft motions, and the trial-preparation work product —
-so the transition does not prejudice the case ahead of the July 29 calendar call
-and the August trial period. Please confirm the file will be made available this
-week.
+so the transition does not prejudice the case. The **June 24, 2026 hearing on the
+motion for partial summary judgment (the valet claim)** is two weeks away, with the
+July 29 calendar call and the August trial period to follow. Given that timing,
+please confirm the file will be made available to Mr. Prego this week.
 
 **2. Communication.** Your June 9 email is the first time in this engagement that
 a concern about communication on my part has been raised. The record reflects the
