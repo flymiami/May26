@@ -33,6 +33,7 @@ Engagement letter discloses only **Don Hayden ($600, discounted from $740), Darc
 - **Annie Rosenthal** — never listed; rates moved $425 → $350 → $435, none in January, none in writing. Identifiable overcharge from the $350→$435 jump alone ≈ **$3,349**.
 - **Victor Sanabria** — first appears Aug 2025 at $0/hr, then bills $550/hr from Sept 2025, no advance written disclosure. **>$33,000** total.
 - **Viviana Vazquez** — paralegal rate $175 → $200 in March 2026 (not January, no notice). **$295** overcharge on Inv. 14334 alone.
+- **Yaque (`Yaque@mfh.law`)** — appears on MFH case email (May 4, 2026 "Mediation-May 5… IN PERSON"), **not in the engagement letter and not in any email to the client's work address** (found only via `fyebne@gmail.com`). Fifth undisclosed timekeeper; verify whether "Yaque" bills time on any invoice.
 
 ### Firm's own discretionary discounts (rates are negotiable)
 - Inv. 11129 (Oct 2024): voluntary **10%** discount = $985.
