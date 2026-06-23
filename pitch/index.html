@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>DUCKHAUS™ — Interactive Investor Pitch</title>
+<style>
+  :root{
+    --duck:#FFD23F; --duck-deep:#F7B500; --ink:#141414; --ink2:#2b2b2b;
+    --paper:#FFFDF5; --muted:#6b6b6b; --line:#ececdf; --accent:#FF6B35; --pond:#1aa3a3;
+    --shadow:0 12px 40px rgba(20,20,20,.12);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{
+    font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
+    background:radial-gradient(1200px 700px at 80% -10%,#fff6d6 0%,var(--paper) 55%);
+    color:var(--ink); overflow:hidden;
+  }
+  .deck{position:relative;height:100vh;width:100vw}
+  .slide{
+    position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;
+    padding:6vh 9vw;opacity:0;transform:translateY(24px) scale(.99);
+    transition:opacity .5s ease,transform .5s ease;pointer-events:none;overflow-y:auto;
+  }
+  .slide.active{opacity:1;transform:none;pointer-events:auto}
+  .kicker{font-size:.8rem;letter-spacing:.22em;text-transform:uppercase;color:var(--duck-deep);font-weight:700;margin-bottom:.6rem}
+  h1{font-size:clamp(2.2rem,6vw,5rem);line-height:1.02;letter-spacing:-.02em;margin-bottom:1rem}
+  h2{font-size:clamp(1.6rem,3.6vw,2.8rem);line-height:1.05;letter-spacing:-.01em;margin-bottom:1.2rem}
+  p.lead{font-size:clamp(1rem,1.6vw,1.35rem);color:var(--ink2);max-width:60ch;line-height:1.5}
+  .sub{color:var(--muted);font-size:1rem;max-width:64ch;line-height:1.55}
+  .pill{display:inline-block;background:var(--duck);color:var(--ink);font-weight:700;
+    padding:.35rem .8rem;border-radius:999px;font-size:.85rem;margin:.25rem .35rem .25rem 0}
+  .grid{display:grid;gap:1rem;margin-top:1.6rem}
+  .g2{grid-template-columns:repeat(2,1fr)} .g3{grid-template-columns:repeat(3,1fr)} .g4{grid-template-columns:repeat(4,1fr)}
+  .card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:1.1rem 1.2rem;box-shadow:var(--shadow);
+    transition:transform .25s ease,box-shadow .25s ease}
+  .card:hover{transform:translateY(-5px);box-shadow:0 18px 50px rgba(20,20,20,.18)}
+  .card .big{font-size:clamp(1.6rem,3vw,2.4rem);font-weight:800;color:var(--ink)}
+  .card .lbl{font-size:.82rem;color:var(--muted);margin-top:.25rem;line-height:1.35}
+  .src{font-size:.7rem;color:#b7b7a8;margin-top:.5rem}
+  ul.clean{list-style:none;margin-top:1rem;max-width:62ch}
+  ul.clean li{padding:.5rem 0 .5rem 1.8rem;position:relative;color:var(--ink2);font-size:1.02rem;line-height:1.45;border-bottom:1px dashed var(--line)}
+  ul.clean li:before{content:"🦆";position:absolute;left:0;top:.45rem;font-size:1rem}
+  .flow{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem;margin-top:1.6rem}
+  .node{background:#fff;border:2px solid var(--duck);border-radius:14px;padding:.8rem 1rem;font-weight:700;box-shadow:var(--shadow);
+    cursor:default;transition:transform .2s,background .2s}
+  .node:hover{transform:scale(1.06);background:var(--duck)}
+  .node small{display:block;font-weight:500;color:var(--muted);font-size:.72rem;margin-top:.15rem}
+  .arrow{color:var(--duck-deep);font-size:1.5rem;font-weight:800}
+  /* chart */
+  .chart{display:flex;align-items:flex-end;gap:2.4rem;height:46vh;margin-top:1.4rem;padding:0 1rem;border-bottom:3px solid var(--ink)}
+  .bar-wrap{display:flex;flex-direction:column;align-items:center;flex:1;height:100%;justify-content:flex-end}
+  .bar{width:72%;background:linear-gradient(180deg,var(--duck),var(--duck-deep));border-radius:10px 10px 0 0;
+    height:0;transition:height 1s cubic-bezier(.22,1,.36,1);position:relative;box-shadow:var(--shadow)}
+  .bar .val{position:absolute;top:-2rem;left:50%;transform:translateX(-50%);font-weight:800;font-size:1.1rem;white-space:nowrap}
+  .bar.ebit{background:linear-gradient(180deg,var(--pond),#0f7a7a)}
+  .bar-label{margin-top:.7rem;font-weight:700}
+  .bar-label small{display:block;color:var(--muted);font-weight:500}
+  .legend{display:flex;gap:1.4rem;margin-top:1rem;font-size:.85rem;color:var(--muted)}
+  .swatch{display:inline-block;width:14px;height:14px;border-radius:4px;vertical-align:middle;margin-right:.4rem}
+  table{width:100%;border-collapse:collapse;margin-top:1.2rem;font-size:.95rem}
+  th,td{text-align:left;padding:.6rem .7rem;border-bottom:1px solid var(--line)}
+  th{color:var(--muted);font-weight:600;font-size:.78rem;text-transform:uppercase;letter-spacing:.08em}
+  td.num{font-weight:700;text-align:right}
+  .ask-steps{counter-reset:step;display:grid;gap:1rem;margin-top:1.4rem}
+  .step{background:#fff;border:1px solid var(--line);border-left:6px solid var(--duck);border-radius:12px;padding:1rem 1.2rem;box-shadow:var(--shadow);position:relative}
+  .step h3{font-size:1.15rem;margin-bottom:.25rem}
+  .step:before{counter-increment:step;content:counter(step);position:absolute;right:1rem;top:.7rem;font-size:2.4rem;font-weight:800;color:var(--duck);opacity:.5}
+  .quote{font-size:clamp(1.2rem,2.4vw,2rem);line-height:1.35;font-weight:600;max-width:46ch;border-left:6px solid var(--duck);padding-left:1.4rem;color:var(--ink)}
+  /* nav */
+  .nav{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:14px;z-index:50;
+    background:rgba(255,255,255,.85);backdrop-filter:blur(8px);padding:8px 14px;border-radius:999px;box-shadow:var(--shadow);border:1px solid var(--line)}
+  .nav button{border:none;background:var(--ink);color:#fff;width:34px;height:34px;border-radius:50%;cursor:pointer;font-size:1rem;display:grid;place-items:center;transition:background .2s}
+  .nav button:hover{background:var(--duck-deep)}
+  .dots{display:flex;gap:7px}
+  .dot{width:9px;height:9px;border-radius:50%;background:#d8d8c8;cursor:pointer;transition:transform .2s,background .2s}
+  .dot.on{background:var(--duck-deep);transform:scale(1.35)}
+  .counter{font-size:.8rem;color:var(--muted);min-width:42px;text-align:center;font-variant-numeric:tabular-nums}
+  .progress{position:fixed;top:0;left:0;height:4px;background:var(--duck-deep);width:0;z-index:60;transition:width .4s ease}
+  .brandmark{position:fixed;top:20px;left:36px;font-weight:800;letter-spacing:.04em;z-index:40;font-size:1rem}
+  .brandmark span{color:var(--duck-deep)}
+  .tag{position:fixed;top:20px;right:36px;z-index:40;font-size:.72rem;color:var(--muted);letter-spacing:.12em;text-transform:uppercase}
+  .hint{position:fixed;bottom:70px;left:50%;transform:translateX(-50%);font-size:.72rem;color:var(--muted);z-index:40;opacity:.75}
+  .duckhero{font-size:clamp(4rem,14vw,12rem);line-height:1;filter:drop-shadow(0 18px 30px rgba(247,181,0,.35));animation:bob 3s ease-in-out infinite}
+  @keyframes bob{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-14px) rotate(3deg)}}
+  .disclaimer{font-size:.72rem;color:#b0b0a0;margin-top:1.4rem;max-width:70ch;line-height:1.4}
+  @media(max-width:760px){.g2,.g3,.g4{grid-template-columns:1fr 1fr}.slide{padding:9vh 7vw}.chart{gap:1rem}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<div class="brandmark">DUCK<span>HAUS</span>™</div>
+<div class="tag">Investor Pitch · Miami · 2026</div>
+<div class="deck" id="deck">
+
+  <!-- 1 TITLE -->
+  <section class="slide active">
+    <div style="display:flex;align-items:center;gap:5vw;flex-wrap:wrap">
+      <div>
+        <div class="kicker">Artist-led lifestyle brand conglomerate</div>
+        <h1>The <span style="color:var(--duck-deep)">Pop&nbsp;Mart × KAWS × Supreme</span><br/>of the rubber duck.</h1>
+        <p class="lead">One owned character IP — extended across art, collectibles, apparel, and creative workshops. Launched from the world's biggest art stage: Miami.</p>
+        <div style="margin-top:1.4rem">
+          <span class="pill">Own the IP</span><span class="pill">Blind-box scarcity</span><span class="pill">4 revenue verticals</span>
+        </div>
+      </div>
+      <div class="duckhero">🦆</div>
+    </div>
+  </section>
+
+  <!-- 2 THESIS -->
+  <section class="slide">
+    <div class="kicker">The thesis</div>
+    <h2>We're not a product company.<br/>We're a character-IP holding company.</h2>
+    <p class="sub">The moat is <b>owning the IP</b> — the single lever that separates the winners from the losers in this category.</p>
+    <div class="grid g2">
+      <div class="card"><div class="big">~67%</div><div class="lbl">Pop Mart gross margin as an <b>IP owner</b> — historically a 30×+ P/E.</div><div class="src">Pop Mart FY2024 filing</div></div>
+      <div class="card"><div class="big">&lt;1×</div><div class="lbl">Funko trades under 1× revenue as an <b>IP licensee</b> (~$1B rev → ~$243M cap).</div><div class="src">stockanalysis.com, 2026</div></div>
+    </div>
+    <p class="sub" style="margin-top:1.2rem"><b>The takeaway:</b> the market pays for owning the character. So we own it.</p>
+  </section>
+
+  <!-- 3 WHY A DUCK -->
+  <section class="slide">
+    <div class="kicker">Why a duck</div>
+    <h2>The most loved, baggage-free icon on earth — <br/>with collector behavior <em>already</em> proven.</h2>
+    <ul class="clean">
+      <li><b>"Duck-Duck-Jeep"</b> — millions of Jeep owners spontaneously gift rubber ducks to each other. Organic, viral, peer-to-peer brand behavior we didn't have to create.</li>
+      <li><b>CelebriDucks</b> sells premium artisan ducks at ~$17–20, signed editions at collector premiums — people already pay collectible prices for art ducks.</li>
+      <li><b>The white space:</b> the niche is real but fragmented — <b>no design-led IP brand owns it yet.</b></li>
+    </ul>
+  </section>
+
+  <!-- 4 WHY NOW -->
+  <section class="slide">
+    <div class="kicker">Why now</div>
+    <h2>Four tailwinds, all blowing the same way.</h2>
+    <div class="grid g4">
+      <div class="card"><div class="big">28%</div><div class="lbl">of global toy sales in 2024 were <b>adults buying for themselves</b> ("kidults").</div><div class="src">Circana</div></div>
+      <div class="card"><div class="big">+23%</div><div class="lbl">avg resale premium on Labubu — proof scarcity + "chase" variants work.</div><div class="src">StockX / Forbes, 2025</div></div>
+      <div class="card"><div class="big">$252B</div><div class="lbl">creator economy (2025) — community is the new moat.</div><div class="src">ElectroIQ / Market.us</div></div>
+      <div class="card"><div class="big">~$547M</div><div class="lbl">Art Basel Miami Beach 2024 impact (~75k attendees) — a free annual stage.</div><div class="src">City of Miami Beach</div></div>
+    </div>
+  </section>
+
+  <!-- 5 MARKET -->
+  <section class="slide">
+    <div class="kicker">The opportunity</div>
+    <h2>We sit at the intersection of huge, growing markets.</h2>
+    <table>
+      <thead><tr><th>Market we touch</th><th>Size</th><th>Note</th></tr></thead>
+      <tbody>
+        <tr><td>Licensed merchandise</td><td class="num">$369.6B</td><td>Characters = #1 segment ($149.8B)</td></tr>
+        <tr><td>Global toy market</td><td class="num">$123B</td><td>Adults = 28% of sales</td></tr>
+        <tr><td>Streetwear</td><td class="num">~$200B</td><td>Tees, socks, underwear, drops</td></tr>
+        <tr><td>Global art market</td><td class="num">$59.6B</td><td>Growth at the low / volume end</td></tr>
+        <tr><td>Designer / art toys</td><td class="num">$6–20B</td><td>Blind-box ~$14.25B</td></tr>
+        <tr><td>Creative workshops</td><td class="num">~$1.8B</td><td>Craft economy ~$43–55B</td></tr>
+      </tbody>
+    </table>
+    <p class="sub" style="margin-top:1rem"><b>SOM (3–5 yr):</b> a focused artist-IP brand can credibly reach <b>$5–25M revenue</b> pre-breakout. MSCHF raised at a $200M valuation; Pop Mart is the (extreme) upside — one character → ~$1.8B.</p>
+  </section>
+
+  <!-- 6 COMPS -->
+  <section class="slide">
+    <div class="kicker">Comps = our roadmap</div>
+    <h2>We're in good company — and it shows the path.</h2>
+    <div class="grid g3">
+      <div class="card"><div class="big">$2.1B</div><div class="lbl"><b>Supreme</b> — the drop/scarcity bible. Acquisition value at peak.</div></div>
+      <div class="card"><div class="big">$200M</div><div class="lbl"><b>MSCHF</b> — artist-led drops are venture-fundable (raise valuation).</div></div>
+      <div class="card"><div class="big">$75–95M</div><div class="lbl"><b>Stance / MeUndies</b> — socks & underwear are standalone DTC businesses.</div></div>
+      <div class="card"><div class="big">Sold out</div><div class="lbl"><b>KAWS × Uniqlo</b> — art credibility → mass collabs in hours.</div></div>
+      <div class="card"><div class="big">~$1.8B</div><div class="lbl"><b>Pop Mart</b> — one character, owned IP, blind boxes. The upside.</div></div>
+      <div class="card" style="border-color:var(--accent)"><div class="big" style="color:var(--accent)">⚠ Funko</div><div class="lbl">Licenses others' IP → low margin, low multiple. <b>The trap we avoid.</b></div></div>
+    </div>
+  </section>
+
+  <!-- 7 FLYWHEEL -->
+  <section class="slide">
+    <div class="kicker">Business model</div>
+    <h2>The conglomerate flywheel.</h2>
+    <p class="sub">Each vertical de-risks the others and makes the character more famous — which lifts the value of everything. No single SKU is load-bearing.</p>
+    <div class="flow">
+      <div class="node">🎨 Art<small>credibility + PR</small></div><span class="arrow">→</span>
+      <div class="node">🦆 Collectibles<small>margin + scarcity</small></div><span class="arrow">→</span>
+      <div class="node">👕 Apparel<small>volume + walking ads</small></div><span class="arrow">→</span>
+      <div class="node">🖌️ Workshops<small>community + repeat</small></div><span class="arrow">↺</span>
+    </div>
+    <p class="sub" style="margin-top:1.4rem"><b>Capital-light:</b> start apparel on print-on-demand (no inventory risk); pre-sell scarce collectible drops to capture factory margins <em>without</em> inventory overhang — the core trick of the drop model.</p>
+  </section>
+
+  <!-- 8 PROJECTIONS -->
+  <section class="slide" data-chart="1">
+    <div class="kicker">Illustrative model · directional, not a forecast</div>
+    <h2>A disciplined, drop-led ramp.</h2>
+    <div class="chart" id="chart">
+      <div class="bar-wrap"><div class="bar" data-h="11"><span class="val">$1.0M</span></div><div class="bar-label">Yr 1<small>48% GM</small></div></div>
+      <div class="bar-wrap"><div class="bar" data-h="40"><span class="val">$3.7M</span></div><div class="bar-label">Yr 2<small>53% GM</small></div></div>
+      <div class="bar-wrap"><div class="bar" data-h="100"><span class="val">$9.4M</span></div><div class="bar-label">Yr 3<small>58% GM</small></div></div>
+      <div class="bar-wrap"><div class="bar ebit" data-h="11"><span class="val">~$1.0M</span></div><div class="bar-label">Yr 3 EBITDA<small>profitable</small></div></div>
+    </div>
+    <div class="legend">
+      <span><span class="swatch" style="background:var(--duck-deep)"></span>Revenue</span>
+      <span><span class="swatch" style="background:var(--pond)"></span>EBITDA</span>
+      <span>At ~6.8–9× EBITDA → <b>~$7–9M+ enterprise value on fundamentals alone</b>, before any IP-breakout premium.</span>
+    </div>
+  </section>
+
+  <!-- 9 THE ASK -->
+  <section class="slide">
+    <div class="kicker">The ask</div>
+    <h2>A phased raise that proves demand before dilution.</h2>
+    <p class="sub">A single "Shark Tank"-style deal averages <b>~$286K for ~24.7% equity</b> — too dilutive for an IP play. Instead:</p>
+    <div class="ask-steps">
+      <div class="step"><h3>Crowdfund the flagship drop</h3><div class="sub">~$40–80K of <b>demand</b> (zero dilution). Pre-sells inventory, proves demand, builds the list.</div></div>
+      <div class="step"><h3>~$500K pre-seed SAFE · ~$4–6M cap</h3><div class="sub">Where a celebrity / strategic angel adds real value — distribution + halo, on clean terms.</div></div>
+      <div class="step"><h3>Seed · $1.5–3M</h3><div class="sub">Once LTV:CAC ≥ 3:1 + a breakout hero SKU are proven — at 3–5× the valuation.</div></div>
+    </div>
+  </section>
+
+  <!-- 10 USE OF FUNDS -->
+  <section class="slide">
+    <div class="kicker">Use of ~$500K pre-seed</div>
+    <h2>Build the IP. Protect the IP. Sell the IP.</h2>
+    <div class="grid g3">
+      <div class="card"><div class="big">35%</div><div class="lbl">Inventory & production — first owned-IP duck runs + hero apparel</div></div>
+      <div class="card"><div class="big">20%</div><div class="lbl">Brand, content & community — the character's "world"</div></div>
+      <div class="card"><div class="big">15%</div><div class="lbl">Miami flagship + workshop launch (Art Basel / Wynwood)</div></div>
+      <div class="card"><div class="big">15%</div><div class="lbl">Disciplined marketing — scale only what holds LTV:CAC ≥ 3:1</div></div>
+      <div class="card"><div class="big">10%</div><div class="lbl">Key hires — free the founder to create IP</div></div>
+      <div class="card" style="border-color:var(--pond)"><div class="big" style="color:var(--pond)">5%</div><div class="lbl">Legal / IP — <b>trademark the characters: the asset itself</b></div></div>
+    </div>
+  </section>
+
+  <!-- 11 CLOSE -->
+  <section class="slide" style="background:radial-gradient(900px 600px at 70% 10%,#fff0bf,transparent)">
+    <div class="kicker">The pitch in one breath</div>
+    <p class="quote">"Kidults made adults 28% of the $123B toy market. Pop Mart turned one character into a ~$1.8B business by owning its IP. We're doing that with the most universally loved icon on earth — the duck — across art, apparel, and workshops, launched from Miami. We've already pre-sold our first drop. We're raising $500K to own the next great character IP before anyone else does."</p>
+    <div style="margin-top:2rem;display:flex;align-items:center;gap:1rem;flex-wrap:wrap">
+      <span class="pill" style="font-size:1rem;padding:.6rem 1.2rem">Let's build the pond. 🦆</span>
+      <span class="sub">DUCKHAUS™ (working name) · Design Suites Miami</span>
+    </div>
+    <p class="disclaimer">Third-party market-sizing figures are directional (definitions vary 2–10×); primary sources (Circana, Art Basel/UBS, Licensing International, company filings, Carta, StockX/Forbes) are prioritized throughout. Financial projections are illustrative assumptions for discussion, not forecasts. Full sourcing in the companion market-research report.</p>
+  </section>
+
+</div>
+
+<div class="hint" id="hint">← → arrows · click dots · spacebar to advance</div>
+<div class="nav">
+  <button id="prev" aria-label="Previous">‹</button>
+  <div class="dots" id="dots"></div>
+  <span class="counter" id="counter">1 / 11</span>
+  <button id="next" aria-label="Next">›</button>
+</div>
+
+<script>
+  const slides=[...document.querySelectorAll('.slide')];
+  const dotsWrap=document.getElementById('dots');
+  const counter=document.getElementById('counter');
+  const progress=document.getElementById('progress');
+  let i=0, charted=false;
+  slides.forEach((_,n)=>{const d=document.createElement('div');d.className='dot'+(n===0?' on':'');d.onclick=()=>go(n);dotsWrap.appendChild(d);});
+  const dots=[...document.querySelectorAll('.dot')];
+
+  function animateChart(){
+    if(charted)return;charted=true;
+    document.querySelectorAll('#chart .bar').forEach(b=>{
+      setTimeout(()=>{b.style.height=(b.dataset.h*0.9+5)+'%';},120);
+    });
+  }
+  function go(n){
+    i=Math.max(0,Math.min(slides.length-1,n));
+    slides.forEach((s,k)=>s.classList.toggle('active',k===i));
+    dots.forEach((d,k)=>d.classList.toggle('on',k===i));
+    counter.textContent=(i+1)+' / '+slides.length;
+    progress.style.width=((i)/(slides.length-1)*100)+'%';
+    if(slides[i].dataset.chart)animateChart();
+    document.getElementById('hint').style.opacity = i===0?'0.75':'0';
+  }
+  document.getElementById('next').onclick=()=>go(i+1);
+  document.getElementById('prev').onclick=()=>go(i-1);
+  document.addEventListener('keydown',e=>{
+    if(e.key==='ArrowRight'||e.key===' '||e.key==='PageDown'){e.preventDefault();go(i+1);}
+    if(e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();go(i-1);}
+    if(e.key==='Home')go(0); if(e.key==='End')go(slides.length-1);
+  });
+  // swipe
+  let x0=null;
+  document.addEventListener('touchstart',e=>x0=e.touches[0].clientX,{passive:true});
+  document.addEventListener('touchend',e=>{if(x0===null)return;const dx=e.changedTouches[0].clientX-x0;if(Math.abs(dx)>50)go(i+(dx<0?1:-1));x0=null;},{passive:true});
+  go(0);
+</script>
+</body>
+</html>
