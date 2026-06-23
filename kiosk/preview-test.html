@@ -1,5 +1,109 @@
-/* FLY MIAMI · EPIC kiosk guide, offline, no API keys. */
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>FLY MIAMI · EPIC · Ask Facundo</title>
+<style>
+  :root{
+    --bg:#0a0a12; --panel:#14141f; --ink:#f4f4f8; --muted:#9aa0b5;
+    --accent:#ff3da6; --accent2:#36c5ff; --gold:#ffcf4d;
+    --usa:#3b5bdb; --pride:#ff5ca0; --fifa:#2bd47a;
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html,body{margin:0;height:100%;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    overflow:hidden}
+  #app{display:flex;flex-direction:column;height:100vh}
+  header{padding:22px 28px 14px;display:flex;align-items:center;justify-content:space-between;
+    border-bottom:1px solid #ffffff14}
+  .brand{font-weight:800;letter-spacing:.5px;font-size:26px}
+  .brand small{display:block;font-weight:500;color:var(--muted);font-size:13px;letter-spacing:2px;margin-top:2px}
+  .live{font-size:12px;color:var(--muted)}
+  #about{padding:14px 28px;border-bottom:1px solid #ffffff14;background:#0d0d18;
+    max-height:24vh;overflow-y:auto}
+  #about h2{margin:0 0 6px;font-size:15px;letter-spacing:.5px;color:var(--accent)}
+  #about p{margin:0;font-size:13.5px;line-height:1.5;color:#d7d9e6;max-width:1100px}
+  #about p b{color:var(--ink)}
+  .abouttags{margin-top:8px;display:flex;flex-wrap:wrap;gap:6px}
+  .abouttags span{font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;
+    padding:4px 9px;border-radius:999px}
+  .abouttags .USA{color:#fff;background:var(--usa)} .abouttags .PRIDE{color:#fff;background:var(--pride)}
+  .abouttags .FIFA{color:#062;background:var(--fifa)}
+  main{flex:1;display:flex;min-height:0}
+  #gallery{flex:1.4;overflow-y:auto;padding:20px;display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(220px,1fr));grid-auto-rows:max-content;gap:16px;align-content:start}
+  .card{background:var(--panel);border:1px solid #ffffff14;border-radius:18px;overflow:hidden;
+    cursor:pointer;transition:transform .12s ease,border-color .12s ease;display:flex;flex-direction:column}
+  .card:active{transform:scale(.97)}
+  .card.sel{border-color:var(--accent)}
+  .thumb{min-height:200px;flex:0 0 auto;overflow:hidden;background:#1d1d2b;display:flex;align-items:center;justify-content:center;
+    font-size:46px;position:relative}
+  .thumb img{display:block;width:100%;height:200px;object-fit:cover}
+  .tag{position:absolute;top:8px;left:8px;font-size:10px;font-weight:700;letter-spacing:1px;
+    padding:4px 8px;border-radius:999px;background:#000a;text-transform:uppercase}
+  .tag.USA{color:#fff;background:var(--usa)} .tag.PRIDE{color:#fff;background:var(--pride)}
+  .tag.FIFA{color:#062;background:var(--fifa)} .tag.LOVE{color:#321;background:var(--gold)}
+  .meta{padding:12px 14px}
+  .meta h3{margin:0 0 4px;font-size:15px;line-height:1.2}
+  .meta .sub{color:var(--muted);font-size:12px}
+  .meta .price{margin-top:6px;font-weight:700;color:var(--gold);font-size:14px}
+  #guide{flex:1;min-width:340px;max-width:460px;border-left:1px solid #ffffff14;
+    display:flex;flex-direction:column;background:#0d0d18}
+  #chat{flex:1;overflow-y:auto;padding:18px;display:flex;flex-direction:column;gap:12px}
+  .bubble{max-width:90%;padding:12px 15px;border-radius:16px;font-size:15px;line-height:1.4;animation:pop .18s ease}
+  @keyframes pop{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+  .me{align-self:flex-end;background:var(--accent2);color:#012;border-bottom-right-radius:4px}
+  .fy{align-self:flex-start;background:#1c1c2b;border-bottom-left-radius:4px}
+  .fy b{color:var(--accent)}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;padding:10px 14px;border-top:1px solid #ffffff14}
+  .chip{background:#1c1c2b;border:1px solid #ffffff1a;color:var(--ink);font-size:13px;
+    padding:8px 12px;border-radius:999px;cursor:pointer}
+  .chip:active{background:var(--accent);color:#012}
+  .inrow{display:flex;gap:8px;padding:12px 14px;border-top:1px solid #ffffff14}
+  #q{flex:1;background:#1c1c2b;border:1px solid #ffffff1a;border-radius:14px;color:var(--ink);
+    padding:12px 14px;font-size:15px;outline:none}
+  .btn{background:var(--accent);color:#012;border:none;border-radius:14px;padding:0 16px;
+    font-weight:700;font-size:15px;cursor:pointer}
+  .btn.alt{background:#1c1c2b;color:var(--ink);border:1px solid #ffffff1a}
+  .speakhint{font-size:11px;color:var(--muted);text-align:center;padding:4px 0 10px}
+  @media(max-width:820px){
+    main{flex-direction:column} #guide{max-width:none;border-left:none;border-top:1px solid #ffffff14}
+    #gallery{display:block;flex:none;max-height:46vh}
+    #gallery .card{margin-bottom:16px}
+    .thumb{min-height:230px} .thumb img{height:230px}
+  }
+</style>
+</head>
+<body>
+<div id="app">
+  <header>
+    <div class="brand">FLY MIAMI <small>FACUNDO YEBNE · KIMPTON EPIC · 2026</small></div>
+    <div class="live">Tap an artwork &nbsp;·&nbsp; or ask me anything</div>
+  </header>
+  <section id="about">
+    <h2>About the show &amp; the artist</h2>
+    <p id="aboutText"></p>
+    <div class="abouttags">
+      <span class="USA">USA 250</span><span class="PRIDE">Pride</span><span class="FIFA">FIFA World Cup 2026</span>
+    </div>
+  </section>
+  <main>
+    <section id="gallery"></section>
+    <aside id="guide">
+      <div id="chat"></div>
+      <div class="chips" id="chips"></div>
+      <div class="inrow">
+        <input id="q" placeholder="Ask about the show…" autocomplete="off" />
+        <button class="btn" id="ask">Ask</button>
+        <button class="btn alt" id="mic" title="Speak">🎤</button>
+      </div>
+      <div class="speakhint" id="ttsToggle">🔇 Voice OFF · tap to unmute</div>
+    </aside>
+  </main>
+</div>
+<script>
+/* FLY MIAMI · EPIC kiosk guide, offline, no API keys. Images on Shopify CDN. */
 const ARTIST = {
   name: "Facundo Yebne",
   handle: "@flymiami.art",
@@ -13,64 +117,87 @@ const ARTIST = {
     "Miami for the World Cup, Pride, and the USA 250th, so the whole floor is built around unity.",
 };
 
-// emoji fallback per theme so it looks alive even before photos are dropped in /images
 const THEME_ART = { USA:"🦅", PRIDE:"🌈", FIFA:"⚽", LOVE:"💗", MIAMI:"🦩" };
+
+const CDN = "https://cdn.shopify.com/s/files/1/0997/7974/0016/files/";
 
 const ART = [
   {n:1, slug:"united-kuakies", title:"United Kuakies of America", theme:"USA",
+   img:CDN+"kiosk-united-kuakies.jpg?v=1780520926",
    medium:"Tiny resin ducks (solid)", size:"12 × 18 in", price:2000, loc:"16th Floor",
    desc:"An iconic flag reimagined, every red, white and blue stripe hand-built from solid resin ducks in perfect formation. Patriotism through playful precision."},
   {n:2, slug:"dont-kuack-liberty", title:"Don't Kuack With Liberty", theme:"USA",
+   img:CDN+"kiosk-dont-kuack-liberty.jpg?v=1780520926",
    medium:"Tiny resin ducks (solid)", size:"18 × 24 in", price:2600, loc:"16th Floor",
    desc:"Lady Liberty rebuilt from hundreds of tiny resin ducks, a symbol of freedom run through repetition, humor and material transformation into my pop vocabulary."},
   {n:3, slug:"peace-pride", title:"Peace, We All Need Some, Pride", theme:"PRIDE",
+   img:"",
    medium:"Mini rubber ducks", size:"36 × 36 in", price:3000, loc:"16th Floor · Pride wall",
    desc:"The universal peace symbol reimagined across the Pride spectrum. Color and repetition become a call for shared humanity and visibility."},
   {n:4, slug:"love-for-argentina", title:"Love For Argentina", theme:"FIFA",
+   img:CDN+"kiosk-love-for-argentina.jpg?v=1780520926",
    medium:"Mini rubber ducks + glow resin", size:"18 × 24 in", price:2000, loc:"16th Floor",
    desc:"A love letter to my homeland in sky-blue and white, mini rubber ducks layered with glowing resin that comes alive after dark."},
   {n:5, slug:"corazon-argentina", title:"Corazón de Argentina", theme:"FIFA",
+   img:CDN+"kiosk-corazon-argentina.jpg?v=1780520927",
    medium:"Resin ducks (solid + neon)", size:"16 × 16 in", price:1000, loc:"16th Floor",
    desc:"A heart for the homeland, intimate in scale, vivid in feeling. Solid and neon resin ducks build a glowing core in Argentina's colors."},
   {n:6, slug:"america-peace", title:"America Peace", theme:"USA",
+   img:CDN+"kiosk-america-peace.jpg?v=1780520926",
    medium:"Mini rubber ducks", size:"20 × 20 in", price:1000, loc:"16th Floor",
    desc:"A meditation on the American dream through a peace symbol. A quiet manifesto bridging the show's USA and Peace threads."},
   {n:7, slug:"polaroid", title:"Polaroid", theme:"USA",
+   img:"",
    medium:"Rubber ducks, several sizes", size:"50 × 70 in", price:3000, loc:"16th Floor",
    desc:"A monumental snapshot built from rubber ducks at multiple scales, the most nostalgic of frames stretched into a billboard for memory and material."},
   {n:8, slug:"messi-argentina", title:"Messi Argentina", theme:"FIFA",
+   img:CDN+"kiosk-messi-argentina-sm.jpg?v=1780521057",
    medium:"Resin ducks (solid + glow)", size:"18 × 24 in", price:1600, loc:"16th Floor · near terrace",
    desc:"A tribute to Lionel Messi, sport, art and innovation in sky-blue and white. Glow-in-the-dark resin anchors the FIFA wall."},
   {n:9, slug:"pulisic-usa", title:"Pulisic for USA", theme:"FIFA",
+   img:CDN+"kiosk-pulisic-usa.jpg?v=1780520926",
    medium:"Resin ducks (solid + glow)", size:"18 × 24 in", price:1600, loc:"16th Floor · near elevator",
    desc:"Christian Pulisic for Team USA, the man carrying American football into the 2026 World Cup, in resin ducks that glow when the lights drop."},
   {n:10, slug:"its-so-miami", title:"It's so Miami", theme:"PRIDE",
+   img:CDN+"its-so-miami.jpg?v=1780513463",
    medium:"Tiny resin flamingos", size:"30 × 30 in", price:5000, loc:"16th Floor · Pride side",
    desc:"Miami in one image, built from resin flamingos, not ducks. The city's queer-coded flamingo meets a sunset reimagined in Pride color."},
   {n:11, slug:"unitybeak-love", title:"UnityBeak Trilogy: Love", theme:"LOVE",
+   img:"",
    medium:"Mini rubber ducks (sculpture)", size:"4' × 3.5' × 4.2'", price:10000, loc:"Lobby · left of entrance",
    desc:"Love as a unifying force connecting individuality into a shared whole, thousands of mini rubber ducks in three dimensions, the first thing that welcomes you."},
   {n:12, slug:"proud-love-pink", title:"Proud Love Pink", theme:"PRIDE",
+   img:CDN+"kiosk-proud-love-pink.jpg?v=1780520926",
    medium:"Medium rubber ducks over fiberglass", size:"~7.5' tall on cherub base", price:10000, loc:"16th Floor · center",
    desc:"A pink heart rising from a classical cherub base, medium rubber ducks in layers of pink and red. Love monumentalized, a statement on pride, visibility and devotion."},
   {n:13, slug:"world-cup-duck", title:"World Cup Duck", theme:"FIFA",
+   img:CDN+"kiosk-world-cup-duck.jpg?v=1780520926",
    medium:"Mini rubber ducks (sculpture)", size:"4' × 3.5' × 4.2'", price:10000, loc:"Lobby / 16th Floor",
    desc:"A message of unity in the mixed flags of the favorite nations of FIFA World Cup 2026, thousands of mini rubber ducks assembled in three dimensions."},
 ];
 
 let selected = null;
-let ttsOn = true;
+let ttsOn = false;
 
-/* ---------- render gallery ---------- */
+/* persistent About panel */
+document.getElementById("aboutText").innerHTML =
+  `<b>${ARTIST.name} (FLY) at the ${ARTIST.show}, ${ARTIST.when}.</b> ` +
+  ARTIST.about +
+  ` <b>13 works</b> across three threads — patriotism, Pride and the World Cup — priced $1,000–$10,000. ` +
+  `Tap any piece to hear its story, or ask me anything. Find me at <b>${ARTIST.handle}</b>.`;
+
 const gallery = document.getElementById("gallery");
 ART.forEach(a=>{
   const c = document.createElement("div");
   c.className = "card"; c.dataset.slug = a.slug;
+  const emoji = THEME_ART[a.theme]||"🦆";
+  const visual = a.img
+    ? `<img src="${a.img}" alt="${a.title}" onerror="this.style.display='none';this.parentNode.insertAdjacentText('beforeend','${emoji}')">`
+    : emoji;
   c.innerHTML = `
     <div class="thumb">
       <span class="tag ${a.theme}">${a.theme}</span>
-      <img src="images/${a.slug}.jpg" alt="${a.title}"
-           onerror="this.style.display='none';this.parentNode.insertAdjacentText('beforeend','${THEME_ART[a.theme]||'🦆'}')">
+      ${visual}
     </div>
     <div class="meta">
       <h3>${a.n}. ${a.title}</h3>
@@ -81,7 +208,6 @@ ART.forEach(a=>{
   gallery.appendChild(c);
 });
 
-/* ---------- chat ---------- */
 const chat = document.getElementById("chat");
 function say(text, who="fy"){
   const b = document.createElement("div");
@@ -89,6 +215,7 @@ function say(text, who="fy"){
   b.innerHTML = text;
   chat.appendChild(b);
   chat.scrollTop = chat.scrollHeight;
+  if(who==="fy" && ttsOn) speak(text.replace(/<[^>]+>/g," "));
 }
 
 function selectArt(slug){
@@ -96,10 +223,8 @@ function selectArt(slug){
   document.querySelectorAll(".card").forEach(c=>c.classList.toggle("sel", c.dataset.slug===slug));
   say(`<b>${selected.title}</b>, ${selected.desc}<br><br>` +
       `<i>${selected.medium} · ${selected.size} · ${selected.loc} · $${selected.price.toLocaleString()}</i>`);
-  playClip(slug);
 }
 
-/* ---------- tiny offline answer engine ---------- */
 function answer(qRaw){
   const q = qRaw.toLowerCase();
   const hit = ART.find(a=> q.includes(a.title.toLowerCase().split(" ")[0]) ||
@@ -132,37 +257,31 @@ function handleAsk(text){
   setTimeout(()=>say(answer(text)), 250);
 }
 
-/* ---------- input wiring ---------- */
 const q = document.getElementById("q");
 document.getElementById("ask").onclick = ()=>{ handleAsk(q.value); q.value=""; };
 q.addEventListener("keydown", e=>{ if(e.key==="Enter"){ handleAsk(q.value); q.value=""; }});
 
-/* suggestion chips */
 const chips = ["Who are you?","Tell me about the ducks","Show me the FIFA wall","What's on the Pride wall?","How much is Proud Love Pink?","When & where is the show?"];
 const chipBox = document.getElementById("chips");
 chips.forEach(t=>{ const el=document.createElement("div"); el.className="chip"; el.textContent=t; el.onclick=()=>handleAsk(t); chipBox.appendChild(el); });
 
-/* ---------- voice out (FLY's own recordings) ---------- */
-/* Record short MP3 clips and name them by slug, then drop them in /audio.
-   Needed files: audio/welcome.mp3 plus one per artwork, e.g. audio/united-kuakies.mp3.
-   No clip yet means it simply stays silent, never a robot voice. */
-const AUDIO_BASE = "audio/";
-let currentAudio = null;
-function stopClip(){ if(currentAudio){ try{ currentAudio.pause(); }catch(e){} currentAudio=null; } }
-function playClip(slug){
-  if(!ttsOn || !slug) return;
-  stopClip();
-  const a = new Audio(AUDIO_BASE + slug + ".mp3");
-  currentAudio = a;
-  a.play().catch(()=>{});   /* silent if the clip is missing or autoplay is blocked */
+let voice=null;
+function pickVoice(){
+  const vs = speechSynthesis.getVoices();
+  voice = vs.find(v=>/en-US/i.test(v.lang) && /male|Daniel|Alex|Google US/i.test(v.name)) ||
+          vs.find(v=>/en/i.test(v.lang)) || vs[0];
+}
+if("speechSynthesis" in window){ speechSynthesis.onvoiceschanged = pickVoice; pickVoice(); }
+function speak(t){
+  if(!("speechSynthesis" in window)) return;
+  speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(t); u.voice=voice; u.rate=1; u.pitch=1; speechSynthesis.speak(u);
 }
 document.getElementById("ttsToggle").onclick = function(){
-  ttsOn = !ttsOn;
-  this.textContent = ttsOn ? "🔊 Voice ON · tap to mute" : "🔇 Voice OFF · tap to unmute";
-  if(!ttsOn) stopClip();
+  ttsOn=!ttsOn; this.textContent = ttsOn ? "🔊 Voice ON · tap to mute" : "🔇 Voice OFF · tap to unmute";
+  if(!ttsOn) speechSynthesis.cancel();
 };
 
-/* ---------- voice in (optional, Chrome/Android) ---------- */
 const mic = document.getElementById("mic");
 const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
 if(SR){
@@ -173,8 +292,9 @@ if(SR){
   rec.onend = ()=>{ mic.textContent="🎤"; };
 } else { mic.style.display="none"; }
 
-/* ---------- welcome ---------- */
 say(`👋 Hi, I'm <b>Facundo</b>. Welcome to my EPIC show, thousands of rubber ducks for peace, love and joy. ` +
     `Tap any piece to hear its story, or just ask me anything.`);
-/* play the welcome clip on the visitor's first tap (browsers block audio before a gesture) */
-document.addEventListener("click", function(){ playClip("welcome"); }, {once:true});
+</script>
+</body>
+</html>
+
