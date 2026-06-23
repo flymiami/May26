@@ -20,3 +20,6 @@ FACTUAL RULES (non-negotiable):
 * Never invent facts, details, numbers, photos, artwork names, layouts, dates, or quotes.
 * Use only what the user gives or what exists in the repo/files.
 * If a fact is missing, leave it out or ask. Never fill the gap with a guess.
+
+WORKFLOW RULES:
+* Whenever the user must paste, update, edit, or upload something into another place or file (Shopify theme code, a Drive file, an admin screen, etc.), ALWAYS give a direct link to the exact destination, not just instructions.
