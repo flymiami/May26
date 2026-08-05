@@ -1,210 +1,251 @@
 # Witness Report for Fernando — Design Suites Miami, Inc. v. Castle Beach Club COA
 
 Case No. 2022-003970-CA-01 (11th Judicial Circuit, Miami-Dade)
-Lists cross-referenced (all filed, in the Drive):
+Built from the four filed lists attached to Fernando's email, read in full:
 - Plaintiff's Fact Witness List, Filing 228767866, 8/5/2025 (MFH)
 - Plaintiff's Expert Witness List, Filing 230859769, 9/4/2025 (MFH)
-- Defendant's Witness and Exhibit List, Filing 228779767, 8/5/2025 (Sarasua / Mintzer Sarowitz)
-- Defendant's Rebuttal Expert Disclosure, Filing 231979525, 9/19/2025 (Bartolone / Mintzer Sarowitz)
-- 7/27/2026 Defendant Trial Witness List: email attachment only, not in the Drive, could not be read. See open items.
+- Defendant's Rebuttal Expert Disclosure, Filing 231979525, 9/19/2025 (Bartolone)
+- Defendant's Trial Witness List, Filing 253337668, 7/27/2026 (Bartolone) — the operative, most recent defense list
 
 Draft for Facundo to add his own facts. Not legal advice.
 
 ---
 
-## WHO CALLED WHOM (quick map)
+## WHAT CHANGED IN THE 7/27/2026 DEFENSE LIST (read this first)
+The Association's current trial list drops the placeholder entities (TransUnion, Castle Beach Investment Corp.) and adds five named third-party witnesses. They map the Association's defense to the storage claim:
+- Manuel Villar Mujica (c/o defense counsel) — likely property manager or management-company rep.
+- Brian Macias, Coast to Coast General Contractors, Inc. (Hollywood) — general contractor. There to say the Association DID repair / remediate.
+- Milton Perez, The Falcon Group (Miami) — engineering / reserve-study firm. There to give a cause-of-damage or building-condition opinion (blame the structure, the age, or something other than neglect).
+- Kevin St. Hillaire, Doyle Security Services (Plantation) — security vendor. Likely access logs and who entered the storage/valet areas, or a counter to the harassment narrative.
+- Julio Hernandez, Daikin Applied (Miami) — HVAC / chiller vendor. Likely to attribute the "white liquid from the ceiling" to HVAC condensate and rebut the "toxic gas from the generator" causation.
+- Gregory Register, RA — same rebuttal expert (element/LCE question).
 
-DSM (Plaintiff) called:
-1. Facundo Yebne
-2. George N. Tsiolis
-3. Castle Beach Corporate Representative
-4. Jackie Diaz-Sampol
-5. Omar Fuentes
-6. Carlos (Castle Beach employee, last name TBD)
-7. Mark Balzli
-8. Lorenzo Draghi
-9. Shane Jensen
-10. Eitan Lusim
-11. Any witness on the Association's list
+Action: these five names are new. I have no folder evidence on them yet. Pull the Association's production for each (repair invoices, Falcon reports, Daikin service tickets, Doyle access logs, the management contract) so the cross can be tightened. Questions below are built from their roles.
 
-Castle Beach (Defendant) called:
+---
+
+## WHO CALLED WHOM
+
+DSM (Plaintiff) called (8/5/2025 fact + 9/4/2025 expert):
+1. Facundo Yebne — Corporate Rep of Design Suites
+2. George N. Tsiolis — Former President of Castle Beach
+3. Corporate Representative of Castle Beach
+4. Jackie Diaz-Sampol — Building Manager of Castle Beach
+5. Omar Fuentes — Management Engineer / Maintenance Employee
+6. Carlos Fuentes — Employee at Castle Beach
+7. Mark Balzli — attorney who participated in Design Suites' closing on the Property
+8. Lorenzo Draghi — Tenant of a CU-14 storage unit
+9. Shane Jensen — Former board member of Castle Beach
+10. Eitan Lusim — Former board member of Castle Beach
+Experts: Andrew Bernstein, CPA (damages); Gustavo Alberti, AIA-NCARB (valet stand is an LCE of CU-14).
+
+Castle Beach (Defendant) called (7/27/2026 trial list):
 1. Jackie Diaz-Sampol
 2. Omar Fuentes
-3. Castle Beach Corporate Representative
-4. TransUnion records custodian (c/o Garcia-Menocal, Irias & Pastori, LLP)
-5. Castle Beach Investment Corp. (storage-space lease agreements, Feb 2019)
-6. Photographers / videographers (impeachment and rebuttal only)
-7. Any witness on DSM's list
+3. Manuel Villar Mujica
+4. Carlos Fuentes
+5. Brian Macias (Coast to Coast General Contractors)
+6. Milton Perez (The Falcon Group)
+7. Kevin St. Hillaire (Doyle Security Services)
+8. Julio Hernandez (Daikin Applied)
+9. Gregory Register, RA (expert)
+Plus catch-alls: all of Plaintiff's witnesses, prior-list witnesses, rebuttal/impeachment, deposition-preserved testimony, photographers/videographers, and all records custodians.
 
-Called by both sides: Jackie Diaz-Sampol, Omar Fuentes, Castle Beach Corporate Representative. Whoever calls them first, both sides examine.
-
-Experts:
-- DSM (Plaintiff): Andrew Bernstein, CPA, CFF, CVA (forensic accounting / damages); Gustavo Alberti, AIA-NCARB (valet room is a limited common element). Both names verified from the 9/4/2025 Plaintiff Expert list.
-- Castle Beach (Defendant): Gregory Register (common-element opinion, rebuttal to Alberti). Verified from the 9/19/2025 Defendant Rebuttal Expert disclosure. Watch for any separate defense rebuttal DAMAGES expert.
+On both sides: Jackie Diaz-Sampol, Omar Fuentes, Carlos Fuentes, and the Castle Beach corporate rep. Whoever calls them first, both sides examine.
 
 ---
 
-## FACT WITNESSES
+## FACT WITNESSES — QUESTIONS
 
-### 1. Facundo Yebne — called by DSM (you)
-Background: DSM principal and corporate representative. Your direct testimony carries the valet (Item 2) and storage (Item 3) damages narrative, the 2007 Settlement Agreement and 1996 Hotel Agreement, and the harassment/retaliation timeline (fines, trash compactor, locked upper-tower rooms) documented since Dec 10, 2025.
-Context to establish on direct:
-- Chain of title / rights to the valet operation and the CU-14 lobby and storage spaces.
-- The 50/50 valet split (1996 Hotel Agreement 7(b); 2007 Settlement 1.E) and how the Association stopped honoring it.
-- Documented income: lobby income 2020-2024 ($696,225.60), storage loss figures, the electrical panel issue.
-- The storage failure itself: flooding, burst pipes, ceiling deterioration, toxic-gas emission from the generator, units made unusable and unrentable.
-- Every harassment act, with dates and your evidence.
-Themes you will be cross-examined on: whether the valet room is a common element you had no right to monetize; whether your damages numbers are supported; whether you mitigated.
-FAC TO ADD: your own timeline and specifics.
+### 1. Facundo Yebne — DSM Corporate Rep (you; both sides may examine)
+Cross-reference: 2007 Settlement Agreement 1.E, 1996 Hotel Agreement 7(b), lobby income 2020-2024 ($696,225.60), storage-loss figures, harassment log from Dec 10, 2025.
+Direct (establish):
+- Your title to CU-14 and the lobby/storage spaces; the chain of rights.
+- The 50/50 valet split under the 1996 Hotel Agreement and the 2007 Settlement, and when the Association stopped honoring it.
+- Year-by-year income from the lobby spaces and the storage units, and what became unrentable.
+- The storage failure you observed: exterior-wall and floor/ceiling flooding, burst/broken pipes, toxic gas from the generator, white liquid dripping from the ceiling.
+- Each harassment act since Dec 2025, with dates and your evidence (fines, trash compactor, locked upper-tower rooms).
+Prepare for cross on: whether the valet room is a common element you had no right to monetize, whether your damages numbers are supported, and whether you mitigated.
+FAC TO ADD: your timeline and specifics.
 
-### 2. George N. Tsiolis — called by DSM
-Contact on list: 229 Hibiscus Ave, Pompano Beach FL 33062.
-Background: Former Castle Beach President. Deposed. His deposition is one of our strongest documents, but his loss testimony cuts against our valet number, so control the scope.
-Cross-reference (his deposition): valet revenue ~$188,091 for 2021 (pp. 87-88); admitted valet operation runs at roughly a $450,000-$550,000 loss; storage income went UP because more spaces were rented (pp. 93-96).
-Why he matters: a former Association president confirming valet economics and rising storage occupancy undercuts the Association's "you owe us / valet is worthless to you" posture and supports the storage-income claim.
-Proposed questions:
+### 2. George N. Tsiolis — Former President of Castle Beach (called by us)
+229 Hibiscus Ave, Pompano Beach FL 33062. Deposed.
+Cross-reference (his deposition): 2021 valet revenue ~$188,091 (pp. 87-88); valet runs a ~$450,000-$550,000 loss; storage income went UP because more spaces were rented (pp. 93-96).
+Questions:
 - Confirm the 2021 valet revenue figure and its basis.
-- Who set valet rates and who collected the money during your tenure?
-- Confirm storage spaces were increasingly rented and income rose.
-- Pin down the source of his "loss" figure: is it gross revenue net of Association-chosen expenses, or a real economic loss? Separate revenue from expense.
-- Were you aware of the 50/50 split obligation? Was it honored?
-- Any board discussion about pressuring DSM (fines, access, compactor)?
+- Who set valet rates during your tenure, who collected the cash, and where it was deposited.
+- Confirm storage spaces were increasingly rented and storage income rose.
+- The "loss" number: is it gross revenue minus Association-chosen expenses, or a true economic loss? Break revenue apart from expense.
+- Were you aware of the 50/50 valet split? Was it honored while you were president?
+- Any board discussion about pressuring Design Suites through fines, access, or the compactor.
 
-### 3. Castle Beach Corporate Representative — called by both
-Background: The Association's designated corporate rep (c/o Nicole M. Sarasua, Esq., Mintzer Sarowitz / defense counsel). Binds the Association on knowledge, records, and board decisions.
-Why: authenticate board minutes, fine ledgers, valet revenue and expense ledgers, storage-lease records, maintenance history; lock in the Association's positions before trial.
-Proposed questions:
-- Authenticate the valet revenue and expense records and the storage rent roll.
-- Board authorizations for each fine levied against DSM since 2024.
-- Decision-making on the trash compactor placement and locking the upper-tower rooms.
+### 3. Castle Beach Corporate Representative (both sides)
+c/o Nicole M. Sarasua, Esq., Mintzer Sarowitz. Binds the Association.
+Questions:
+- Authenticate the valet revenue and expense ledgers and the storage rent roll.
+- Board authorization for each fine against Design Suites since 2024.
+- Who decided the trash-compactor placement and the locking of the upper-tower rooms, and when.
 - The Association's accounting for valet revenue and the 50/50 split.
-- Board minutes on storage maintenance; any insurance claims for the flooding or generator damage.
-- Any communications with counsel Balzli about DSM.
+- Every storage maintenance request and the Association's response; any insurance claim for the flooding or generator damage.
+- The scope of the Coast to Coast, Falcon Group, Daikin, and Doyle engagements and what each was paid.
 
-### 4. Jackie Diaz-Sampol — called by both
-Contact on Defendant list: c/o defense counsel, 1000 NW 57th Court, Suite 300, Miami 33126.
-Background: Castle Beach board member. On both lists; expect a friendly-to-Association witness.
-Why: board-level intent behind the fines, access restrictions, and the decision not to repair storage; what the board knew about the valet/storage economics.
-Proposed questions:
-- Your role and tenure on the board.
-- Board votes on DSM fines, compactor, locked rooms; who proposed them and why.
-- Board knowledge of the storage condition and any decision not to repair.
-- What you were told about DSM's contractual rights.
-- Any statements about forcing DSM out or pressuring settlement.
+### 4. Jackie Diaz-Sampol — Building Manager of Castle Beach (both sides)
+Questions:
+- Your role and dates as building manager.
+- Every storage complaint you received from Design Suites or its tenants, and what you did with each.
+- The flooding, the pipes, the generator odor, the ceiling liquid: when you first knew, who you told, what was ordered.
+- Who directed the fines, the compactor placement, and the locking of the upper-tower rooms.
+- Your communications with Coast to Coast, Falcon, Daikin, and Doyle.
+- What you were told about Design Suites' contractual rights to the valet and storage.
 
-### 5. Omar Fuentes — called by both
-Contact on Defendant list: c/o defense counsel.
-Background: Castle Beach engineer / maintenance / management. The ground-truth witness on physical condition and access.
-Why: who locked the rooms, who placed the compactor, the flooding and generator facts, condition and use of the valet room and storage units.
-Proposed questions:
+### 5. Omar Fuentes — Management Engineer / Maintenance (both sides)
+The ground-truth witness on physical condition and access.
+Questions:
 - Every maintenance request on the storage areas and how each was handled.
-- The flooding events: dates, cause, and the Association's response.
-- The generator and the toxic-gas / emission issue near the storage units.
-- Who directed the locking of the upper-tower rooms and when.
-- Placement and operation of the trash compactor near DSM's area.
-- Any instructions to restrict DSM's access or operations.
+- The flooding events: dates, source (exterior wall, floor, ceiling, burst pipe), and the response.
+- The generator and the toxic-gas / emission issue by the storage units.
+- The white liquid from the ceiling: what it was, what caused it, who you reported it to.
+- Who directed the locking of the upper-tower rooms and the compactor placement.
+- Any instruction to restrict Design Suites' access or operations.
 
-### 6. Carlos (Castle Beach employee, last name to confirm) — called by DSM
-Background: Association employee. Corroborates operational, access, and condition facts, likely alongside Fuentes.
-Proposed questions: mirror Fuentes on access, locking, compactor, valet/storage use, and the flooding; what he was told and by whom.
-ACTION: confirm full name and position.
+### 6. Carlos Fuentes — Employee at Castle Beach (both sides)
+Corroborates Fuentes and Diaz-Sampol on condition and access.
+Questions:
+- What you saw of the storage flooding, the generator, and the ceiling liquid.
+- Any repair or cleanup work you did or witnessed in the storage areas, and when.
+- Access to and use of the valet room and CU-14 storage.
+- Instructions you received about Design Suites' units or access, and from whom.
+Note: relationship to Omar Fuentes — confirm.
 
-### 7. Mark Balzli, Esq. — called by DSM
-Contact: mark@balzli.net, 305-785-7139.
-Background: Attorney. On our list. Likely prior Association counsel or transactional counsel connected to the agreements or the fines.
-Why: if he advised the Association on DSM's rights or the fines, his testimony can pin the Association's knowledge and intent; if he was involved in the 2007 Settlement or the governing documents, he authenticates intent.
-ACTION: confirm his exact role. Watch privilege objections.
-Proposed questions (subject to privilege rulings):
-- Your involvement with the 2007 Settlement Agreement / governing documents.
-- Any advice or communications regarding DSM's valet or storage rights.
-- Involvement in the decision to fine or restrict DSM.
+### 7. Mark Balzli, Esq. — attorney at Design Suites' closing (called by us)
+mark@balzli.net, 305-785-7139.
+Why he helps us: he was in the room for the closing, so he can authenticate what Design Suites bought, including the valet and storage rights.
+Questions:
+- Your role in the Design Suites closing on the Property.
+- What the closing documents conveyed as to the valet stand and the CU-14 storage.
+- Your understanding at closing of whether the valet stand was a limited common element of CU-14.
+- Any documents you prepared, reviewed, or retained from the closing.
+Watch: privilege scope; confirm whose counsel he was.
 
-### 8. Lorenzo Draghi — called by DSM
-Contact: lorenzodraghi@gmail.com, 678-567-4950.
-Background: Tenant. Fact witness on real-world use, occupancy, and value of the storage/lobby spaces, or conditions caused by the Association's actions.
-ACTION: confirm what he rented and dates.
-Proposed questions:
-- What space you leased from DSM, dates, and amount paid (supports storage income).
-- Any flooding, smell, or loss of use you experienced; whether you left or reduced rent because of condition.
-- Any disruption from the compactor or locked rooms; interactions with Association staff about access.
+### 8. Lorenzo Draghi — Tenant of a CU-14 storage unit (called by us)
+lorenzodraghi@gmail.com, 678-567-4950.
+Why he helps us: a real paying storage tenant proving the units had rental value and then lost it.
+Questions:
+- Which unit you rented, the dates, and the rent you paid (supports storage income).
+- The condition: flooding, smell, ceiling liquid, loss of use.
+- Whether you left, moved units, or cut rent because of the condition, and when.
+- Any interaction with Association staff about the condition or access.
 
-### 9. Shane Jensen — called by DSM
-Contact: shane@puremiamibeach.com, 305-915-2528.
-Background: "Pure Miami Beach" domain suggests a hospitality / valet or short-term-rental operator. Fact witness on our side.
-Why: likely valet operation or lobby-commerce use and value; supports Item 2 revenue reality.
-ACTION: confirm relationship (valet operator, tenant, or vendor) and dates.
-Proposed questions:
-- Your business relationship with DSM and the valet/lobby operation.
-- Revenue and volume you observed or handled.
-- Any interference by the Association.
+### 9. Shane Jensen — Former board member of Castle Beach (called by us)
+shane@puremiamibeach.com, 305-915-2528.
+Why he helps us: a former insider who can speak to what the board knew about the valet economics, the storage condition, and any intent toward Design Suites.
+Questions:
+- Your dates on the board and your role.
+- Board knowledge of the valet operation, its revenue, and the 50/50 split.
+- Board knowledge of the storage flooding and any decision to defer or deny repairs.
+- Any board discussion about fines, access restrictions, or forcing Design Suites out.
 
-### 10. Eitan Lusim — called by DSM
-Contact: eitan@lusim.com, 786-863-7606.
-Background: Fact witness on our side; business email suggests a vendor, operator, or investor.
-ACTION: confirm relationship and what he testifies to.
-Proposed questions: tailor once role is confirmed; likely value/use of the spaces and any Association interference.
+### 10. Eitan Lusim — Former board member of Castle Beach (called by us)
+eitan@lusim.com, 786-863-7606. Same posture as Jensen.
+Questions:
+- Your dates and role on the board.
+- What the board knew about the storage condition and the valet split.
+- Any board statements about pressuring Design Suites or withholding repairs.
+- Any documents or minutes you can identify.
 
-### 11. TransUnion records custodian — called by Castle Beach
-Contact on list: c/o Garcia-Menocal, Irias & Pastori, LLP.
-Background: Records custodian, defense-called. TransUnion is a credit/background-data source.
-Why the Association wants it: likely to attack DSM's or an affiliated party's creditworthiness or a tenant's background, or to support a records-based defense. A credit-reporting custodian has little to do with valet/storage contract rights.
-Proposed handling: move in limine if the purpose is character/credit smearing; otherwise limit to authenticated business records only.
+### 11. Manuel Villar Mujica — defense witness (called by Castle Beach)
+Role not stated; c/o defense counsel, so likely property manager or management-company rep.
+Questions:
+- Your role and the entity you work for; the management contract with the Association.
+- Your responsibility for storage maintenance and vendor selection.
+- What you knew about the flooding, the generator, and the ceiling liquid, and when.
+- Every work order you issued for the storage areas and the outcome.
+- Your role in the fines, the compactor, and the locked rooms.
+ACTION: identify him and pull the management contract before deposition/trial.
 
-### 12. Castle Beach Investment Corp. — called by Castle Beach
-Background: Defense-listed for the storage-space lease agreements (Feb 2019). A records/entity witness on the storage leases.
-Why the Association wants it: to show who actually held and profited from storage leases, likely to argue the storage income was not DSM's to claim, and that the units were leased and generating income (to undercut the "unusable / unrentable" claim).
-Why it can help us: those same lease records prove the spaces were rented and generating income (supports Item 3 quantum) and can show rising occupancy consistent with Tsiolis.
-Proposed questions:
-- Produce and authenticate every storage-space lease, rent roll, and payment record.
-- Which specific units, condition at signing, and what happened after.
-- Whether leases were terminated, reduced, or units vacated due to flooding or the generator.
-- Rent actually collected vs. contracted; occupancy and rate trends year over year.
-- Who received the storage income and under what authority.
+### 12. Brian Macias — Coast to Coast General Contractors (called by Castle Beach)
+Purpose: to show the Association actually repaired / remediated the storage areas.
+Questions:
+- Your scope of work for the Association and the dates.
+- Exactly what you were hired to fix in the storage areas, and what you actually did.
+- The condition when you arrived: standing water, ceiling damage, pipe failures.
+- Whether your work stopped the flooding, and whether the problem recurred.
+- What you told the Association about the cause and whether a permanent fix was declined or deferred.
+ACTION: pull the Coast to Coast contract, invoices, and any report.
 
-### 13. Photographers / videographers — called by Castle Beach
-Background: Listed by the Association for impeachment and rebuttal only. Placeholder. Watch for surprise photo or video evidence of the storage or valet condition.
-Our cross: when each image was taken, by whom, and whether it is staged or post-repair.
+### 13. Milton Perez — The Falcon Group (called by Castle Beach)
+Purpose: engineering opinion on cause/condition; likely to blame the building's age or structure rather than Association neglect.
+Questions:
+- Your engagement scope and when the Association retained you.
+- Your findings on the cause of the storage flooding and the ceiling intrusion.
+- Whether the condition was maintainable and whether the Association followed your recommendations.
+- Any reserve study or 40-year recertification work and what it said about these systems.
+- Whether you inspected the generator and the ceiling-liquid source.
+ACTION: pull every Falcon Group report, proposal, and reserve study.
+
+### 14. Kevin St. Hillaire — Doyle Security Services (called by Castle Beach)
+Purpose: access logs; possibly a counter to the harassment narrative.
+Questions:
+- The scope of Doyle's service at the property and the dates.
+- What access records exist for the storage areas, the valet room, and the upper-tower rooms.
+- Who ordered the locking of the upper-tower rooms and any instruction about Design Suites' access.
+- Any incident reports involving Design Suites, its tenants, or the disputed areas.
+ACTION: pull the Doyle contract, access logs, and incident reports.
+
+### 15. Julio Hernandez — Daikin Applied (called by Castle Beach)
+Purpose: HVAC; likely to say the ceiling "white liquid" is HVAC condensate and to rebut the "toxic gas from the generator" theory.
+Questions:
+- Daikin's equipment and service at the property, and the dates.
+- Any leak, condensate, or refrigerant issue near the storage units and the ceiling.
+- Whether Daikin identified the source of the ceiling liquid, and its finding.
+- Whether the HVAC system is connected to the generator room or the areas that flooded.
+- Any service ticket recommending a repair the Association did not perform.
+ACTION: pull all Daikin service tickets and correspondence.
 
 ---
 
-## EXPERTS
+## EXPERTS — QUESTIONS
 
-### Andrew Bernstein, CPA, CFF, CVA — DSM (Plaintiff) damages expert
-Firm: Eisner Advisory Group (EisnerAmper), Coral Gables. 45+ years in forensic accounting, economic damages, valuation, lost profits.
-Opinion: Plaintiff's damages from (a) the Association's unauthorized use of the CU-14 valet stand and (b) storage lost profits from the maintenance failure. Report: Valet Office $306,747 + Storage $360,729 = $667,476. The backbone of the damages case alongside your updated figures.
-Prep:
-- Reconcile his figures against the lobby-income records ($696,225.60, 2020-2024), the storage-loss figures, and the valet 50% method used in the demand ($748,432 valet, storage to Aug 3 at $394,033).
-- Have him ready for the loss argument Tsiolis hands the defense (valet as a net-loss operation): the measure is the reasonable value of the appropriated space and the lost rent, not the Association's self-reported operating result.
-- Expect a Daubert / foundation attack on inputs, occupancy and rate assumptions, and any double-count.
-- FAC TO ADD any updated figures through 2026.
+### Andrew Bernstein, CPA, CFF, CVA — DSM damages expert
+Eisner Advisory Group (EisnerAmper), Coral Gables. 45+ years, forensic accounting / lost profits.
+Scope per disclosure: damages from the Association's unauthorized use of the CU-14 valet stand, and lost profits on the storage units made unusable/unrentable by the failure to maintain (exterior-wall/floor/ceiling flooding, burst pipes, toxic gas from the generator, white liquid from the ceiling).
+Cross-reference: his report Valet Office $306,747 + Storage $360,729 = $667,476; lobby income $696,225.60 (2020-2024); the demand's valet 50% method ($748,432) and storage to Aug 3 ($394,033).
+Direct (build the record):
+- The data he relied on and why the inputs are reliable.
+- The valet damages basis: reasonable value of the appropriated space, not the Association's self-reported operating result. This is the answer to Tsiolis's "valet loses money" testimony.
+- The storage lost-profits model: pre-failure rent roll, occupancy, and the decline.
+- Why the numbers are conservative.
+Prepare for cross / Daubert on: input reliability, occupancy and rate assumptions, any double-count, and how he treats the 2026 update.
+FAC TO ADD: updated figures through 2026.
 
-### Gustavo Alberti, AIA-NCARB — DSM (Plaintiff) element/opinion expert
-Firm: Alberti Studio, Miami. 25+ years, licensed architect.
-Opinion: The valet stand is a limited common element (LCE) appurtenant to CU-14, from the plans, diagrams, and the declaration. Also testifies to the storage maintenance failure: burst pipes, flooding, ceiling deterioration, and toxic-gas emission from the generator.
-Why: if the valet room is an LCE tied to DSM's rights, the Association's "it is a common element, you had no right to the income" defense fails. This is the legal-physical linchpin of Item 2.
-Prep:
-- Walk the plans and the declaration to the LCE conclusion.
-- Directly meet Register's "common element, not limited" position and the 1993 Amendment 3 the defense relies on.
-- Tie the physical failures to the loss of use in the storage units.
+### Gustavo Alberti, AIA-NCARB — DSM architect (LCE opinion)
+Alberti Studio, Miami. 25+ years.
+Scope per disclosure: the valet stand is a limited common element of CU-14, from the property records, the condo declaration, and by measuring the area against the plans; and the Association's contrary position is inconsistent with a clear reading of those documents.
+Direct:
+- Walk the declaration, the plat/plans, and the property records to the LCE conclusion.
+- The measurement tying the valet area to CU-14.
+- Meet head-on the Association's "common element, not limited" position and the 1993 Amendment 3.
+Prepare for cross on: reliance on the declaration text vs. interpretation, and whether the classification is a legal question.
 
-### Gregory Register — Castle Beach (Defendant) rebuttal expert
-Firm: MC Consultants, Inc., Altamonte Springs / Carlsbad CA. Architect licensed in ~25 states, building-envelope and forensic focus. Deposed.
-Opinion: Rebuts Alberti. Says CU-14, the storage rooms, the generator room, the electrical rooms, and the valet parking office/space are common elements, NOT limited common elements, and that valet usage is not exclusive to CU-14. In deposition he relied on the 1993 Amendment 3 (around p. 95).
-Why he matters: the Association's answer to our LCE theory. His deposition is already in hand, so we can pin him.
-Proposed cross:
-- Confirm he relies primarily on the 1993 Amendment 3; walk through its exact text. Was it recorded? Does it govern CU-14? Does it say what he claims?
-- Whether he accounts for the 2007 Settlement Agreement and 1996 Hotel Agreement.
+### Gregory Register, RA — Castle Beach rebuttal expert
+MC Consultants, Inc., Altamonte Springs / Carlsbad. Deposed. CV: Florida license AR92088 plus ~22 other states; Master (U. Colorado), Bachelor (U. Florida); 30+ years; building-envelope and waterproofing specialist (GDR Architect 1996-2024; Halliwell Engineering forensic 2018-2024; BDG 2017-2018; Florida AHCA 2015).
+Scope per disclosure: rebuts Alberti on whether the valet parking office/space is an LCE of CU-14, and on allowed use of the electrical rooms, storage rooms, and generator rooms.
+Cross-reference (his deposition): leans on the 1993 Amendment 3 (around p. 95) to call the areas common elements, not limited.
+Cross:
+- Confirm he relies primarily on the 1993 Amendment 3; walk its exact text. Was it recorded? Does it govern CU-14? Does it say what he claims?
+- Whether he accounts for the 2007 Settlement Agreement and the 1996 Hotel Agreement.
 - Whether the physical configuration and exclusive use support LCE regardless of label.
-- His Florida licensing specifically and his familiarity with this declaration vs. his general envelope practice.
-- Whether he inspected the actual storage condition or only opined on classification.
-- Any inconsistency between his rebuttal report and his deposition; any documents he did not review.
-- His engagement, compensation, and prior testimony for condo associations.
+- His specialty is building envelope and waterproofing, not condominium-declaration interpretation. The LCE question is a reading of the declaration, which is a legal/document question, not an envelope question.
+- Whether he inspected the actual storage condition or only opined on classification. If he did inspect, does he concede the flooding, the pipe failures, and the generator issue exist?
+- His Florida experience specifically vs. his multistate envelope practice.
+- Any inconsistency between his rebuttal report and his deposition; documents he did not review; his compensation and prior association-side testimony.
 
 ---
 
 ## OPEN ITEMS
-1. Get the filed 7/27/2026 Defendant Trial Witness List. It is only an email attachment I cannot read; it may add or drop names versus the 8/5/2025 list.
-2. Confirm whether the defense disclosed a separate rebuttal DAMAGES expert (not just Register on the element question).
-3. Confirm last names / roles: Carlos (full name and position), and the exact relationships for Draghi, Jensen, Lusim, and Balzli, so the question sets can be finalized.
-4. Overlap witnesses (Diaz-Sampol, Fuentes, Corporate Rep) will likely be called live once; coordinate order so we get our examination scope in.
-5. Confirm Bernstein's figures are updated through 2026 and reconciled to the demand numbers.
+1. Identify Manuel Villar Mujica and pull the management contract.
+2. Pull the Association's production for the four vendor witnesses: Coast to Coast (Macias) contract/invoices/report; Falcon Group (Perez) reports and reserve study; Daikin (Hernandez) service tickets; Doyle (St. Hillaire) contract, access logs, incident reports. These define the storage defense.
+3. Confirm whether the defense disclosed a separate rebuttal DAMAGES expert (only Register is disclosed on the element question).
+4. Confirm Carlos Fuentes's relationship to Omar Fuentes.
+5. Overlap witnesses (Diaz-Sampol, both Fuentes, corporate rep) will be called live once; coordinate examination order.
+6. Reconcile Bernstein's figures through 2026 with the demand numbers.
