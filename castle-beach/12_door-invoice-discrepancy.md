@@ -1,10 +1,12 @@
 # Door Replacement Invoice Discrepancy — Castle Beach / ALG
 
-Point: the Association, through Association Law Group (ALG), charged Design Suites about $25,000 for storage-door replacement on a scope that includes doors that were never replaced.
+Point: the Association, through Association Law Group (ALG), charged Design Suites $24,871.00 for storage-door replacement on a scope that includes doors that were never replaced.
 
-## What ALG claimed
-- ALG letter, February 19, 2026 (Adam Cervera, Esq., for the firm), "Notice of Violation and Demand to Reinstall Doors": demands reinstallation of "the entrance door to CU 14 facing the lobby and all removed storage room doors on tower floors 4 through 17," within 72 hours, or the Association would hire a contractor and charge Design Suites.
-- The Association then did the work and demanded about $25,000, on that same stated scope: lobby door plus floors 4 through 17.
+## What ALG claimed (verified from the letters)
+- ALG letter, February 19, 2026 (Adam Cervera, Association Law Group, 1100 Brickell Bay Dr Ste 5200): "Notice of Violation and Demand to Reinstall Doors," demanding reinstallation of the CU-14 lobby-facing door and the storage-room doors on tower floors 4 through 17 within 72 hours, or the Association would hire a contractor and charge Design Suites.
+- ALG letter, April 23, 2026 (Adam Cervera), "Demand for Reimbursement, Replacement of Common-Element Doors": states the Association retained FL Home Solution Group LLC to supply and install new fire-rated hollow metal door assemblies, and demands reimbursement of $24,871.00, "as reflected in Invoice No. 1001," within 10 days, payable to the Association c/o CADISA, Inc., Attn: Jackie Diaz Sampol.
+- ALG's stated scope, exact words: "the lobby-facing entrance door to CU 14 and the storage room doors assigned to CU 14 on tower floors 4 through 17."
+- The letter carries an FDCPA debt-collector notice, meaning ALG is treating the $24,871.00 as a collectible debt.
 
 ## What actually happened
 - The lobby door (the CU-14 entrance door facing the lobby) was never replaced.
