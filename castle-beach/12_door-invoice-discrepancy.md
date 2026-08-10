@@ -8,16 +8,16 @@ Point: the Association, through Association Law Group (ALG), charged Design Suit
 - ALG's stated scope, exact words: "the lobby-facing entrance door to CU 14 and the storage room doors assigned to CU 14 on tower floors 4 through 17."
 - The letter carries an FDCPA debt-collector notice, meaning ALG is treating the $24,871.00 as a collectible debt.
 
-## What actually happened
-- The lobby door (the CU-14 entrance door facing the lobby) was never replaced.
-- Floors 4 and 8 were never replaced either. Those two doors (4 and 8) were still in place at the time the Association replaced the others.
-- The doors actually removed and replaced were floors 5, 6, 7, and 9 through 17. This is the same list stated in the pre-suit demand letter.
+## What actually happened (confirmed by the owner)
+- The lobby door (the CU-14 entrance door facing the lobby) was never installed.
+- Floors 4 and 8 were never replaced. Those two doors were still in place when the Association replaced the others.
+- The doors actually replaced were on floors 5, 6, 7, 9, 10, 11, 12, 14, 15, 16, and 17. That is 11 doors. The building has no 13th floor.
 
 ## The discrepancy
-- Billed scope: lobby + floors 4 through 17 (15 openings: lobby, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17).
-- Actual work: floors 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17 (12 openings).
-- Never replaced but inside the billed scope: the lobby door, floor 4, and floor 8 (3 openings).
-- Design Suites was charged about $25,000 for a scope that overstates the work by at least three doors that were never touched.
+- Billed scope (ALG's words): lobby + floors 4 through 17. With no 13th floor, that is the lobby plus floors 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 15, 16, 17 = 14 openings.
+- Actual work: 11 doors (floors 5, 6, 7, 9, 10, 11, 12, 14, 15, 16, 17).
+- Never replaced but inside the billed scope: the lobby door, floor 4, and floor 8 = 3 openings.
+- Design Suites was charged $24,871.00 for a scope that includes at least three doors never installed.
 
 ## Why it matters
 - It shows the roughly $25,000 charge is inflated and unsupported, independent of the notice and due-process defects (no prior notice of violation, no opportunity to cure) already raised in the pre-suit demand.
