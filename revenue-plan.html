@@ -1,0 +1,735 @@
+<title>Design Suites Revenue Plan</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root {
+    --paper:      #F5F4F0;
+    --surface:    #FFFFFF;
+    --surface-2:  #EDEBE5;
+    --ink:        #1A1D22;
+    --ink-2:      #45484E;
+    --muted:      #6E6B65;
+    --rule:       #D9D6CE;
+    --rule-soft:  #E6E3DC;
+    --accent:     #8C3A2B;
+    --accent-ink: #8C3A2B;
+    --bar:        #8C3A2B;
+    --critical:   #A8382A;
+    --warn:       #96701A;
+    --good:       #2C6349;
+    --chip-bg:    #EDE7E4;
+
+    --serif: ui-serif, Georgia, "Iowan Old Style", "Times New Roman", serif;
+    --sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:      #15171B;
+      --surface:    #1D2026;
+      --surface-2:  #262A31;
+      --ink:        #EDEAE3;
+      --ink-2:      #C3BFB7;
+      --muted:      #918C84;
+      --rule:       #333840;
+      --rule-soft:  #292D34;
+      --accent:     #D4795F;
+      --accent-ink: #E08D74;
+      --bar:        #C96C52;
+      --critical:   #E0806C;
+      --warn:       #D2A74A;
+      --good:       #6FB292;
+      --chip-bg:    #2E2621;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --paper:      #15171B;
+    --surface:    #1D2026;
+    --surface-2:  #262A31;
+    --ink:        #EDEAE3;
+    --ink-2:      #C3BFB7;
+    --muted:      #918C84;
+    --rule:       #333840;
+    --rule-soft:  #292D34;
+    --accent:     #D4795F;
+    --accent-ink: #E08D74;
+    --bar:        #C96C52;
+    --critical:   #E0806C;
+    --warn:       #D2A74A;
+    --good:       #6FB292;
+    --chip-bg:    #2E2621;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0 20px 96px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 940px; margin: 0 auto; }
+  .prose { max-width: 68ch; }
+
+  /* ---------- masthead ---------- */
+  header.masthead {
+    padding: 64px 0 28px;
+    border-bottom: 2px solid var(--ink);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  .kicker {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+    color: var(--accent-ink);
+  }
+  h1 {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: clamp(34px, 6vw, 54px);
+    line-height: 1.04;
+    letter-spacing: -0.02em;
+    margin: 0;
+    text-wrap: balance;
+  }
+  .standfirst {
+    font-family: var(--serif);
+    font-size: clamp(17px, 2.1vw, 20px);
+    line-height: 1.5;
+    color: var(--ink-2);
+    margin: 0;
+    max-width: 60ch;
+  }
+  .byline {
+    font-family: var(--mono);
+    font-size: 11.5px;
+    color: var(--muted);
+    letter-spacing: .04em;
+  }
+
+  /* ---------- sections ---------- */
+  section { padding-top: 56px; }
+  .eyebrow {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 8px;
+    margin-bottom: 26px;
+  }
+  .eyebrow h2 {
+    font-family: var(--serif);
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 0;
+    flex: 1 1 auto;
+  }
+  .eyebrow .stake {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--accent-ink);
+    white-space: nowrap;
+  }
+  h3 {
+    font-family: var(--sans);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 34px 0 12px;
+  }
+  p { margin: 0 0 16px; }
+  .prose p + p { margin-top: -2px; }
+  strong { font-weight: 650; color: var(--ink); }
+  em.q { font-style: normal; font-family: var(--mono); font-size: .92em; color: var(--accent-ink); }
+
+  /* ---------- KPI strip ---------- */
+  .kpis {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(168px, 1fr));
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+    margin: 32px 0 8px;
+  }
+  .kpi { background: var(--surface); padding: 18px 18px 16px; display: flex; flex-direction: column; gap: 5px; }
+  .kpi .label {
+    font-family: var(--mono); font-size: 10.5px; letter-spacing: .09em;
+    text-transform: uppercase; color: var(--muted);
+  }
+  .kpi .val {
+    font-family: var(--serif); font-size: 28px; font-weight: 600;
+    font-variant-numeric: tabular-nums; letter-spacing: -0.02em; line-height: 1.1;
+  }
+  .kpi .note { font-size: 12.5px; color: var(--muted); line-height: 1.35; }
+  .val.bad  { color: var(--critical); }
+  .val.warn { color: var(--warn); }
+  .val.good { color: var(--good); }
+
+  /* ---------- tables ---------- */
+  .scroller { overflow-x: auto; margin: 20px 0 8px; border: 1px solid var(--rule); background: var(--surface); }
+  table { border-collapse: collapse; width: 100%; min-width: 560px; font-size: 14.5px; }
+  caption {
+    caption-side: bottom; text-align: left; font-size: 12.5px; color: var(--muted);
+    padding: 10px 14px; border-top: 1px solid var(--rule-soft);
+  }
+  th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--rule-soft); vertical-align: top; }
+  thead th {
+    font-family: var(--mono); font-size: 10.5px; letter-spacing: .09em; text-transform: uppercase;
+    color: var(--muted); font-weight: 500; border-bottom: 1px solid var(--rule); white-space: nowrap;
+  }
+  td.num, th.num { text-align: right; font-family: var(--mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  tbody tr:last-child td { border-bottom: none; }
+  tr.total td { border-top: 1px solid var(--rule); font-weight: 700; background: var(--surface-2); }
+  .neg { color: var(--critical); }
+  .pos { color: var(--good); }
+
+  .chip {
+    display: inline-block; font-family: var(--mono); font-size: 10px; letter-spacing: .07em;
+    text-transform: uppercase; padding: 2px 7px; border-radius: 2px;
+    background: var(--chip-bg); color: var(--accent-ink); white-space: nowrap;
+  }
+
+  /* ---------- chart ---------- */
+  figure { margin: 24px 0 8px; }
+  .chart-card { border: 1px solid var(--rule); background: var(--surface); padding: 20px 20px 12px; }
+  .chart-title { font-size: 14px; font-weight: 650; margin-bottom: 2px; }
+  .chart-sub { font-size: 12.5px; color: var(--muted); margin-bottom: 18px; }
+  .bars { display: grid; grid-template-columns: repeat(16, 1fr); gap: 4px; align-items: end; height: 150px; }
+  .bar-col { display: flex; flex-direction: column; justify-content: flex-end; height: 100%; position: relative; }
+  .bar {
+    background: var(--bar); border-radius: 3px 3px 0 0; width: 100%;
+    transition: opacity .12s ease;
+  }
+  .bar-col[data-partial="1"] .bar { opacity: .42; }
+  .bar-col:hover .bar { opacity: .72; }
+  .bar-col:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .axis {
+    display: grid; grid-template-columns: repeat(16, 1fr); gap: 4px;
+    margin-top: 7px; border-top: 1px solid var(--rule); padding-top: 6px;
+  }
+  .axis span {
+    font-family: var(--mono); font-size: 8.5px; color: var(--muted);
+    text-align: center; overflow: hidden;
+  }
+  .yr-marks {
+    display: flex; justify-content: space-between; font-family: var(--mono);
+    font-size: 10px; color: var(--muted); margin-top: 6px; letter-spacing: .06em;
+  }
+  .chart-foot { font-size: 12px; color: var(--muted); padding-top: 12px; border-top: 1px solid var(--rule-soft); margin-top: 12px; }
+
+  /* ---------- action plan ---------- */
+  .phase { margin-bottom: 40px; }
+  .phase-head {
+    display: flex; align-items: baseline; gap: 12px;
+    border-bottom: 1px solid var(--rule); padding-bottom: 7px; margin-bottom: 4px;
+  }
+  .phase-when {
+    font-family: var(--mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase;
+    color: var(--surface); background: var(--accent); padding: 3px 9px; border-radius: 2px; white-space: nowrap;
+  }
+  .phase-goal { font-size: 13.5px; color: var(--muted); }
+
+  ol.actions { list-style: none; margin: 0; padding: 0; counter-reset: act; }
+  ol.actions > li {
+    display: grid;
+    grid-template-columns: 34px 1fr auto;
+    gap: 0 14px;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--rule-soft);
+    align-items: start;
+  }
+  ol.actions > li::before {
+    counter-increment: act; content: counter(act, decimal-leading-zero);
+    font-family: var(--mono); font-size: 12px; color: var(--accent-ink);
+    padding-top: 2px; font-variant-numeric: tabular-nums;
+  }
+  .act-body { min-width: 0; }
+  .act-title { font-weight: 650; font-size: 15.5px; margin-bottom: 5px; line-height: 1.35; }
+  .act-desc { font-size: 14.5px; color: var(--ink-2); line-height: 1.55; }
+  .act-desc :last-child { margin-bottom: 0; }
+  .act-worth {
+    font-family: var(--mono); font-size: 13px; font-variant-numeric: tabular-nums;
+    text-align: right; white-space: nowrap; padding-top: 2px; font-weight: 600;
+  }
+  .act-worth small { display: block; font-size: 9.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); font-weight: 400; margin-top: 2px; }
+  @media (max-width: 620px) {
+    ol.actions > li { grid-template-columns: 26px 1fr; }
+    .act-worth { grid-column: 2; text-align: left; padding-top: 8px; }
+    .act-worth small { display: inline; margin-left: 6px; }
+  }
+
+  /* ---------- callout ---------- */
+  .callout {
+    border: 1px solid var(--rule); border-left: 3px solid var(--accent);
+    background: var(--surface); padding: 18px 20px; margin: 24px 0;
+  }
+  .callout .ct {
+    font-family: var(--mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase;
+    color: var(--accent-ink); margin-bottom: 7px;
+  }
+  .callout p { font-size: 14.5px; color: var(--ink-2); }
+  .callout p:last-child { margin-bottom: 0; }
+
+  ul.tight { margin: 0 0 16px; padding-left: 20px; }
+  ul.tight li { margin-bottom: 7px; font-size: 14.5px; color: var(--ink-2); }
+
+  footer {
+    margin-top: 72px; padding-top: 22px; border-top: 2px solid var(--ink);
+    font-family: var(--mono); font-size: 11.5px; color: var(--muted); line-height: 1.7;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; animation: none !important; }
+  }
+</style>
+
+<div class="wrap">
+
+<header class="masthead">
+  <div class="kicker">Design Suites Miami, Inc. — Operating Review</div>
+  <h1>The fastest money you have is money you already earned</h1>
+  <p class="standfirst">Revenue is flat, the books overstate profit by roughly $76,000, and $53,508 of billed rent has never been collected — because auto-pay was never switched on. Here is what to do, starting today.</p>
+  <div class="byline">Prepared 16 August 2026 · Source: QuickBooks Online (realm 1234780130), P&amp;L and A/R as of 16 Aug 2026</div>
+</header>
+
+<section>
+  <div class="eyebrow">
+    <h2>Where the business actually stands</h2>
+    <span class="stake">YTD Jan 1 – Aug 16, 2026</span>
+  </div>
+
+  <div class="kpis">
+    <div class="kpi">
+      <span class="label">Revenue YTD</span>
+      <span class="val">$393,470</span>
+      <span class="note">~$634K full-year pace</span>
+    </div>
+    <div class="kpi">
+      <span class="label">Cash in bank</span>
+      <span class="val bad">−$17,668</span>
+      <span class="note">Overdrawn on First Horizon 9664</span>
+    </div>
+    <div class="kpi">
+      <span class="label">A/R outstanding</span>
+      <span class="val bad">$53,508</span>
+      <span class="note">99.3% past due · 43 open invoices</span>
+    </div>
+    <div class="kpi">
+      <span class="label">Reported net income</span>
+      <span class="val warn">$132,980</span>
+      <span class="note">Overstated — see restatement</span>
+    </div>
+    <div class="kpi">
+      <span class="label">Legal &amp; professional</span>
+      <span class="val warn">$92,086</span>
+      <span class="note">23.4% of revenue</span>
+    </div>
+    <div class="kpi">
+      <span class="label">Long-term debt</span>
+      <span class="val">$1,293,714</span>
+      <span class="note">No interest expense booked</span>
+    </div>
+  </div>
+
+  <div class="prose">
+    <p>Ninety percent of the revenue is the store. The Clover terminal settles almost every day — 212 batches so far this year, averaging $1,681 — and that is $353,613 of the $393,470. The rest is the rent roll on CU-14: $39,234 of billed rent and $623 of ATM commission.</p>
+    <p>So there are really only two businesses to manage, and they are in very different states. The store works and is roughly flat. The rent roll is billed but not collected.</p>
+  </div>
+</section>
+
+<section>
+  <div class="eyebrow">
+    <h2>The store: flat, not growing</h2>
+    <span class="stake">89.9% of revenue</span>
+  </div>
+
+  <figure>
+    <div class="chart-card">
+      <div class="chart-title">Monthly store revenue (Clover gross sales)</div>
+      <div class="chart-sub">May 2025 — August 2026. August 2026 is partial (1–16 Aug) and shown faded.</div>
+      <div class="bars" role="img" aria-label="Monthly store revenue from May 2025 to August 2026, ranging from about $14,000 to about $62,000 per month, with no sustained upward trend.">
+        <div class="bar-col" tabindex="0" title="May 2025 — $14,136"><div class="bar" style="height:22.9%"></div></div>
+        <div class="bar-col" tabindex="0" title="Jun 2025 — $48,054"><div class="bar" style="height:77.9%"></div></div>
+        <div class="bar-col" tabindex="0" title="Jul 2025 — $43,347"><div class="bar" style="height:70.2%"></div></div>
+        <div class="bar-col" tabindex="0" title="Aug 2025 — $42,606"><div class="bar" style="height:69.0%"></div></div>
+        <div class="bar-col" tabindex="0" title="Sep 2025 — $27,166"><div class="bar" style="height:44.0%"></div></div>
+        <div class="bar-col" tabindex="0" title="Oct 2025 — $32,407"><div class="bar" style="height:52.5%"></div></div>
+        <div class="bar-col" tabindex="0" title="Nov 2025 — $37,735"><div class="bar" style="height:61.1%"></div></div>
+        <div class="bar-col" tabindex="0" title="Dec 2025 — $46,468"><div class="bar" style="height:75.3%"></div></div>
+        <div class="bar-col" tabindex="0" title="Jan 2026 — $47,784"><div class="bar" style="height:77.4%"></div></div>
+        <div class="bar-col" tabindex="0" title="Feb 2026 — $39,467"><div class="bar" style="height:63.9%"></div></div>
+        <div class="bar-col" tabindex="0" title="Mar 2026 — $61,722"><div class="bar" style="height:100%"></div></div>
+        <div class="bar-col" tabindex="0" title="Apr 2026 — $50,413"><div class="bar" style="height:81.7%"></div></div>
+        <div class="bar-col" tabindex="0" title="May 2026 — $41,651"><div class="bar" style="height:67.5%"></div></div>
+        <div class="bar-col" tabindex="0" title="Jun 2026 — $39,446"><div class="bar" style="height:63.9%"></div></div>
+        <div class="bar-col" tabindex="0" title="Jul 2026 — $54,799"><div class="bar" style="height:88.8%"></div></div>
+        <div class="bar-col" tabindex="0" data-partial="1" title="Aug 1–16 2026 — $21,043 (partial month)"><div class="bar" style="height:34.1%"></div></div>
+      </div>
+      <div class="axis">
+        <span>M</span><span>J</span><span>J</span><span>A</span><span>S</span><span>O</span><span>N</span><span>D</span>
+        <span>J</span><span>F</span><span>M</span><span>A</span><span>M</span><span>J</span><span>J</span><span>A</span>
+      </div>
+      <div class="yr-marks"><span>2025</span><span>2026 →</span></div>
+      <div class="chart-foot">Peak: March 2026, $61,722. Seven-month 2026 average: $47,897/month.</div>
+    </div>
+  </figure>
+
+  <div class="prose">
+    <p>Comparing like for like, June–July 2025 did $91,402 and June–July 2026 did $95,384 — <strong>up 4.4%</strong>. August is tracking at $1,315/day, which annualizes to about $40,800 against $42,606 last August. Call it flat.</p>
+    <p>Flat is the honest read: the store throws off real cash, but nothing in the last fifteen months has moved it to a new level. The upside here is operational — basket size, mix, hours, and the card processing rate — not a new line of business.</p>
+  </div>
+
+  <div class="callout">
+    <div class="ct">Costing you now</div>
+    <p>Merchant fees ran <strong>$19,729 on $356,325 of card volume — an effective 5.54%</strong>. Card-present retail typically blends between 2.6% and 3.2%. If that gap is real and not a mix artifact, you are paying roughly <strong>$8,200/year</strong> more than you need to, and it comes straight off the bottom line. Pull three Clover statements and put them out for a rate review.</p>
+  </div>
+</section>
+
+<section>
+  <div class="eyebrow">
+    <h2>The rent roll is billed, not collected</h2>
+    <span class="stake">$53,508 outstanding</span>
+  </div>
+
+  <div class="prose">
+    <p>This is the finding that matters most, and it has a single mechanical cause. You have four active monthly recurring invoice templates in QuickBooks. All four generate an invoice on the 1st of every month. <strong>All four have auto-pay set to OFF.</strong> The system has been faithfully producing paper and collecting nothing.</p>
+  </div>
+
+  <div class="scroller">
+    <table>
+      <caption>A/R aging detail as of 16 Aug 2026, accrual basis. 43 open invoices across five tenants.</caption>
+      <thead>
+        <tr>
+          <th>Tenant</th>
+          <th class="num">Billed monthly</th>
+          <th class="num">Outstanding</th>
+          <th>Oldest unpaid</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Miami Cheap Tours and Travel</td>
+          <td class="num">$3,500</td>
+          <td class="num neg">$38,500</td>
+          <td>Jun 2025</td>
+          <td><span class="chip">11 invoices unpaid</span></td>
+        </tr>
+        <tr>
+          <td>Girasole Apt</td>
+          <td class="num">$1,065</td>
+          <td class="num neg">$15,303</td>
+          <td>Jun 2024</td>
+          <td><span class="chip">Payments may be unapplied</span></td>
+        </tr>
+        <tr>
+          <td>Lincoln Road BID</td>
+          <td class="num">one-off</td>
+          <td class="num neg">$10,650</td>
+          <td>Feb 2025</td>
+          <td><span class="chip">Single invoice, 18 months</span></td>
+        </tr>
+        <tr>
+          <td>Swift Trust LLC</td>
+          <td class="num">$308</td>
+          <td class="num neg">$3,429</td>
+          <td>Aug 2025</td>
+          <td><span class="chip">12 invoices unpaid</span></td>
+        </tr>
+        <tr>
+          <td>Athena Bitcoin Inc</td>
+          <td class="num">$350</td>
+          <td class="num">$700</td>
+          <td>Jul 2026</td>
+          <td><span class="chip">Current — pays reliably</span></td>
+        </tr>
+        <tr>
+          <td>2Nice LLC — closing journal entry</td>
+          <td class="num">—</td>
+          <td class="num pos">−$15,074</td>
+          <td>Dec 2024</td>
+          <td><span class="chip">Not a receivable</span></td>
+        </tr>
+        <tr class="total">
+          <td>Net A/R per QuickBooks</td>
+          <td class="num">$5,223/mo</td>
+          <td class="num">$53,508</td>
+          <td>—</td>
+          <td>99.3% overdue</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="prose">
+    <p>Two things in that table need care before anyone sends a demand letter.</p>
+    <p>The <strong>2Nice line is not a receivable</strong>. It is a −$15,074 year-end closing journal entry (<em class="q">Asiento de cierre</em>, 31 Dec 2024) parked in accounts receivable, where it quietly nets against real balances. Your true gross receivable is <strong>$68,582</strong>, not $53,508. Move that entry out of A/R.</p>
+    <p>And <strong>Girasole may already have paid part of theirs</strong>. Your own 6 July email to Ignacio records Girasole payments of $5,707.68 and $4,154.47 — about $9,862, described as back invoices plus four months of rent. None of that appears applied against the open invoices. Reconcile it before you chase them, or you will demand money you have already received.</p>
+  </div>
+
+  <div class="callout">
+    <div class="ct">Deadline you may not have noticed</div>
+    <p>The Miami Cheap Tours recurring template <strong>expires 1 September 2026</strong>. They owe $38,500, have not paid since roughly October 2025, and their billing arrangement lapses in two weeks. That date is leverage, and it is the one hard deadline on this page.</p>
+  </div>
+</section>
+
+<section>
+  <div class="eyebrow">
+    <h2>The profit number is not real</h2>
+    <span class="stake">~$76,000 overstated</span>
+  </div>
+
+  <div class="prose">
+    <p>QuickBooks shows $132,980 of net income on a 64% gross margin. A convenience store does not run a 64% gross margin. What actually happened is that inventory purchases stopped being recorded partway through the year.</p>
+  </div>
+
+  <div class="scroller">
+    <table>
+      <caption>Gross margin by period, 2026. COGS recording breaks down after April.</caption>
+      <thead>
+        <tr><th>Period</th><th class="num">Income</th><th class="num">COGS</th><th class="num">Gross margin</th><th>Assessment</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Jan – Apr 2026</td><td class="num">$197,595</td><td class="num">$109,358</td><td class="num">44.7%</td><td>Plausible for the category</td></tr>
+        <tr><td>May – Aug 2026</td><td class="num">$156,019</td><td class="num">$32,278</td><td class="num neg">79.3%</td><td>Not possible — purchases missing</td></tr>
+        <tr><td>June 2026 alone</td><td class="num">$39,221</td><td class="num">$7,218</td><td class="num neg">81.6%</td><td>$39K of sales on $7K of goods</td></tr>
+        <tr><td>Aug 1–16 2026</td><td class="num">$20,939</td><td class="num">$0</td><td class="num neg">100%</td><td>Nothing recorded at all</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="prose">
+    <p>Apply the Jan–April margin of 44.7% — the only stretch where the books look complete — to the full year to date, and gross profit is about <strong>$175,700, not $251,834</strong>. That is a <strong>$76,100 overstatement</strong>, and it means the reported profit is off by roughly the same amount.</p>
+    <p>Restated operating income is therefore around <strong>$56,900</strong>. Then two large costs are missing from the P&amp;L entirely:</p>
+    <ul class="tight">
+      <li><strong>Labor.</strong> There is no wages line anywhere in the P&amp;L, yet you paid $1,283 in payroll processing fees and carry wages payable and payroll tax liabilities on the balance sheet. A store open daily has staff. That cost is sitting in another entity — <em class="q">DSM Payroll Corp</em> appears in your intercompany accounts — and needs to be pulled into this view.</li>
+      <li><strong>Interest.</strong> You carry $1,293,714 of long-term debt — a $660,000 note, a $449,796 SBA EIDL, $170,797 to Travel Rentals — and the P&amp;L books zero interest expense. The EIDL alone at 3.75% is roughly $16,900 a year.</li>
+    </ul>
+    <p>Add realistic figures for those two and the year is somewhere between breakeven and a loss. I am not going to invent the numbers — but you should put them in, because every decision below depends on knowing which side of zero you are on.</p>
+  </div>
+
+  <div class="callout">
+    <div class="ct">Two more balance-sheet items to resolve</div>
+    <p><strong>Undeposited Funds sits at $114,891</strong> against a negative bank balance. Either that is real money that never cleared into an account, or it is a posting error. Both are worth finding out about this week.</p>
+    <p><strong>Florida Department of Revenue payable is $24,776</strong>, and the City of Miami Beach resort tax audit (RTX 2145511, covering 2022–2024) is still open with the auditor stating that documentation supporting your claimed exemptions has not been received. That is an unquantified liability sitting on top of everything else.</p>
+  </div>
+</section>
+
+<section>
+  <div class="eyebrow">
+    <h2>The plan</h2>
+    <span class="stake">Sequenced by speed of cash</span>
+  </div>
+
+  <div class="prose">
+    <p>Ordered by how fast each one turns into money in the bank. The first four are today.</p>
+  </div>
+
+  <div class="phase">
+    <div class="phase-head">
+      <span class="phase-when">Today</span>
+      <span class="phase-goal">Stop the leak, then make the two calls that pay for the week</span>
+    </div>
+    <ol class="actions">
+      <li>
+        <div class="act-body">
+          <div class="act-title">Reconcile the Girasole payments before anything else</div>
+          <div class="act-desc">$5,707.68 and $4,154.47 are recorded in your July correspondence but do not appear applied in QuickBooks. Apply them, or confirm they were never received. Everything else in collections depends on your numbers being right when you pick up the phone.</div>
+        </div>
+        <div class="act-worth">$9,862<small>at stake</small></div>
+      </li>
+      <li>
+        <div class="act-body">
+          <div class="act-title">Switch on auto-pay for all four recurring templates</div>
+          <div class="act-desc">Miami Cheap Tours, Girasole, Athena Bitcoin and Swift Trust all bill on the 1st with auto-pay OFF. The next run is 1 September. Attach a saved payment method or a QuickBooks payment link to each template so the September invoice collects itself.</div>
+        </div>
+        <div class="act-worth">$5,223/mo<small>protected</small></div>
+      </li>
+      <li>
+        <div class="act-body">
+          <div class="act-title">Call Lincoln Road BID about invoice 2025-003</div>
+          <div class="act-desc">One invoice, $10,650, issued 13 February 2025, untouched for eighteen months. A business improvement district is an institutional payer with an accounts-payable process — an invoice this old is almost always lost, not refused. This is the highest return per minute on the entire list.</div>
+        </div>
+        <div class="act-worth">$10,650<small>one call</small></div>
+      </li>
+      <li>
+        <div class="act-body">
+          <div class="act-title">Force the Miami Cheap Tours decision</div>
+          <div class="act-desc">$38,500 owed, ten months without payment, and the billing arrangement lapses 1 September. Two acceptable outcomes: a signed payment plan with money down before that date, or you do not renew. Continuing to auto-generate $3,500 invoices against a tenant who has not paid since October is the single most expensive habit in the business.</div>
+        </div>
+        <div class="act-worth">$38,500<small>largest balance</small></div>
+      </li>
+    </ol>
+  </div>
+
+  <div class="phase">
+    <div class="phase-head">
+      <span class="phase-when">This week</span>
+      <span class="phase-goal">Get the books telling the truth and the margin back</span>
+    </div>
+    <ol class="actions">
+      <li>
+        <div class="act-body">
+          <div class="act-title">Send payment links on all 43 open invoices</div>
+          <div class="act-desc">Once Girasole is reconciled, run reminders with embedded payment links across the whole aged list. Small balances — Swift Trust's twelve $308 invoices, Athena's $700 — often clear immediately when paying takes one click instead of a phone call.</div>
+        </div>
+        <div class="act-worth">$53,508<small>total exposure</small></div>
+      </li>
+      <li>
+        <div class="act-body">
+          <div class="act-title">Record the missing May–August inventory purchases</div>
+          <div class="act-desc">Four months of COGS are absent. Until they are in, you cannot see your real margin, cannot price anything deliberately, and cannot tell a good month from a bad one. This also corrects a profit figure that is currently overstated by about $76,000 — which matters for your tax position.</div>
+        </div>
+        <div class="act-worth">$76,100<small>misstatement</small></div>
+      </li>
+      <li>
+        <div class="act-body">
+          <div class="act-title">Put the card processing rate out for review</div>
+          <div class="act-desc">5.54% effective on $356,325 of volume. Pull three Clover statements, confirm the blended rate is genuinely that high rather than a mix artifact, and get two competing quotes. Every basis point recovered is pure margin on 90% of your revenue.</div>
+        </div>
+        <div class="act-worth">~$8,200/yr<small>recoverable</small></div>
+      </li>
+      <li>
+        <div class="act-body">
+          <div class="act-title">Reconcile Undeposited Funds against the bank</div>
+          <div class="act-desc">$114,891 in a clearing account while the operating account runs $22,958 overdrawn. Find out which it is: uncleared deposits that need chasing, or a posting error that has been hiding the real cash position.</div>
+        </div>
+        <div class="act-worth">$114,891<small>unexplained</small></div>
+      </li>
+      <li>
+        <div class="act-body">
+          <div class="act-title">Move the 2Nice closing entry out of A/R</div>
+          <div class="act-desc">A −$15,074 journal entry from 31 December 2024 is masking $15,074 of real receivables. Ten minutes of bookkeeping, and your aging report starts reflecting reality.</div>
+        </div>
+        <div class="act-worth">$15,074<small>hidden</small></div>
+      </li>
+    </ol>
+  </div>
+
+  <div class="phase">
+    <div class="phase-head">
+      <span class="phase-when">30 days</span>
+      <span class="phase-goal">Attack the two structural costs and re-price the rent roll</span>
+    </div>
+    <ol class="actions">
+      <li>
+        <div class="act-body">
+          <div class="act-title">Get a matter budget and a settle-versus-try number</div>
+          <div class="act-desc">Legal and professional fees are $92,086 year to date — 23.4% of revenue, and your largest controllable cost by a wide margin. The spend was front-loaded ($37,907 in January, $35,088 in March) and has since settled to $733–$3,233 a month. Ask Perez Mayoral for a written budget through resolution of the Castle Beach matter and an explicit number at which settling beats trying. You cannot manage this line without both.</div>
+        </div>
+        <div class="act-worth">$92,086<small>YTD</small></div>
+      </li>
+      <li>
+        <div class="act-body">
+          <div class="act-title">Close out the Miami Beach resort tax audit</div>
+          <div class="act-desc">RTX 2145511 covers 2022–2024 and the auditor's position is that supporting documentation for claimed exemptions has not been provided. $24,776 is already booked as payable to Florida DOR; the audit exposure on top of that is unquantified. Unresolved tax assessments accrue penalties and interest and will block any refinancing.</div>
+        </div>
+        <div class="act-worth">$24,776+<small>known payable</small></div>
+      </li>
+      <li>
+        <div class="act-body">
+          <div class="act-title">Re-price the rent roll at every renewal</div>
+          <div class="act-desc">The entire tenant book bills $5,223 a month. Miami Cheap Tours at $3,500 and Girasole at $1,065 have been at those rates since 2023. Before renewing anything, get current asking rents for comparable commercial space at 5445 Collins and price to market. If Miami Cheap Tours does not sign a payment plan, that space is the largest single revenue opportunity you own.</div>
+        </div>
+        <div class="act-worth">$62,676/yr<small>current roll</small></div>
+      </li>
+      <li>
+        <div class="act-body">
+          <div class="act-title">Run one deliberate month on the store</div>
+          <div class="act-desc">$1,315–1,600 a day, flat for fifteen months. With real COGS finally recorded, you can see margin by category for the first time. Pick the three highest-margin categories, give them the best shelf position, extend hours on the strongest days, and measure basket size weekly. This is the only genuine revenue growth lever in the business — but it needs the books fixed first, which is why it sits here rather than on today's list.</div>
+        </div>
+        <div class="act-worth">$575K/yr<small>store run-rate</small></div>
+      </li>
+    </ol>
+  </div>
+
+  <div class="phase">
+    <div class="phase-head">
+      <span class="phase-when">Rest of 2026</span>
+      <span class="phase-goal">Make sure none of this comes back</span>
+    </div>
+    <ol class="actions">
+      <li>
+        <div class="act-body">
+          <div class="act-title">Never issue an invoice without a collection mechanism attached</div>
+          <div class="act-desc">This is the rule that would have prevented $53,508 from accumulating. Every recurring template gets auto-pay or a saved card before it goes live. No exceptions, including for tenants you know personally.</div>
+        </div>
+        <div class="act-worth">Policy<small>standing rule</small></div>
+      </li>
+      <li>
+        <div class="act-body">
+          <div class="act-title">Close the month by the 10th, every month</div>
+          <div class="act-desc">Purchases recorded in the month they happen, bank and Clover reconciled, A/R aged and reviewed. Three of the six problems in this document exist only because the close slipped. A monthly close is roughly two hours of work that keeps you from steering by numbers that are $76,000 wrong.</div>
+        </div>
+        <div class="act-worth">Discipline<small>monthly</small></div>
+      </li>
+      <li>
+        <div class="act-body">
+          <div class="act-title">Put labor and interest into the P&amp;L</div>
+          <div class="act-desc">Bring the DSM Payroll Corp wages and the interest on all $1.29M of debt into this entity's P&amp;L, even if only as an allocation. Until they are there, every margin and profit figure you look at is fiction — and you will keep making decisions as though the business earns $133,000 when it may not be earning anything.</div>
+        </div>
+        <div class="act-worth">$1.29M<small>debt carried</small></div>
+      </li>
+      <li>
+        <div class="act-body">
+          <div class="act-title">Set an A/R ceiling and enforce it</div>
+          <div class="act-desc">Pick a number — 45 days, or two months of billing per tenant — and make it the point at which service stops rather than a point you notice in hindsight. Miami Cheap Tours reached ten months because nothing was ever defined as too far.</div>
+        </div>
+        <div class="act-worth">45 days<small>suggested</small></div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <div class="eyebrow">
+    <h2>What this is worth</h2>
+    <span class="stake">Next 60 days</span>
+  </div>
+
+  <div class="scroller">
+    <table>
+      <caption>Recovery estimates. Collections assume partial recovery on aged balances; the store figure is a run-rate, not an increase.</caption>
+      <thead>
+        <tr><th>Lever</th><th class="num">Range</th><th>Confidence</th><th>Why</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Lincoln Road BID invoice</td><td class="num">$10,650</td><td>High</td><td>Institutional payer, likely simply lost</td></tr>
+        <tr><td>Small-balance collections</td><td class="num">$3,400 – 4,100</td><td>High</td><td>Swift Trust and Athena, one click to pay</td></tr>
+        <tr><td>Girasole reconciliation</td><td class="num">$5,400 – 15,300</td><td>Medium</td><td>Depends what was already paid</td></tr>
+        <tr><td>Miami Cheap Tours</td><td class="num">$0 – 38,500</td><td>Low</td><td>Ten months silent; payment plan or exit</td></tr>
+        <tr><td>Card processing rate</td><td class="num">$680/mo</td><td>Medium</td><td>Subject to statement review</td></tr>
+        <tr><td>Auto-pay switched on</td><td class="num">$5,223/mo</td><td>High</td><td>Protects billing already in place</td></tr>
+        <tr class="total"><td>Realistic 60-day cash recovery</td><td class="num">$19,500 – 30,000</td><td>—</td><td>Excludes the Miami Cheap Tours tail</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="prose">
+    <p>Twenty to thirty thousand dollars is roughly three to four weeks of total revenue, available without selling a single additional item — and several times over what it takes to clear the overdraft and stop the bank charges. If Miami Cheap Tours signs a payment plan, add whatever they put down on top.</p>
+    <p>The harder truth underneath: the store is flat, the reported profit is overstated by $76,000, labor and interest are not in the books at all, and $92,086 has gone to lawyers this year against $393,470 of revenue. The collections work buys breathing room. It does not fix the shape of the business — and the thirty-day items are the ones that decide whether 2027 looks different.</p>
+  </div>
+</section>
+
+<footer>
+  Design Suites Miami, Inc. · Convenience retail and commercial leasing, 5445 Collins Avenue CU-14, Miami Beach FL<br>
+  Figures drawn from QuickBooks Online as of 16 Aug 2026, accrual basis. Restatements and recovery ranges are estimates and are labeled as such.<br>
+  Correspondence context from the Girasole and Castle Beach threads. Not legal or tax advice.
+</footer>
+
+</div>
