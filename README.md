@@ -1,21 +1,32 @@
-# FLY Miami Art — Conversion Rebuild
+# FLY MIAMI · EPIC — "Ask Facundo" kiosk
 
-This delivery is organized by task:
+Touchscreen guide for Facundo Yebne's rubber-duck art show at the Kimpton EPIC Hotel, Miami (2026).
+Runs full-screen in a browser on the portable TV. No internet, no accounts, no API keys.
 
-* `audit/DIAGNOSIS.md` — Task 1, the crawl-based audit with the one-sentence diagnosis at the top.
-* `copy/all-copy-source.md` and `copy/FLY-Miami-Art-Copy-Deck.docx` — Task 2, homepage copy, the 6-product offer ladder, full product page copy, and email flow copy.
-* `data/FLY-Miami-Art-Offer-Ladder-Margin-Model.xlsx` — Task 2, the offer ladder margin model and a 30-day revenue model, both formula-driven.
-* `shopify/` — Task 3, paste-ready Liquid sections (hero, social proof/press bar, bundle upsell, email capture), the GA4 + Meta custom pixel script, and `shopify/INSTALL.md` with exact install steps and the admin permissions each step needs.
-* `plan/30-DAY-TRAFFIC-PLAN.md` — Task 4, the 30-day plan to the first 100 sales.
+## What it does
+- Shows all 13 artworks with photo, price, medium and story
+- Tap any piece → it speaks/explains it
+- Type or 🎤 ask anything about the show (ducks, themes, prices, where to find Facundo)
+- Voice read-aloud via the device's built-in speech (toggle in the corner)
 
-## Admin access needed, exactly where the build stops
+## Open it on the TV (fastest)
+1. Make sure the repo is on the TV, or use GitHub Pages (below).
+2. Open **index.html** in Chrome.
+3. Tap the menu → "Add to Home screen" / use fullscreen.
+4. Done. Tap an artwork or use the chat.
 
-Everything above is built and ready to paste in. Three things need Shopify admin access to finish, all listed with exact steps in `shopify/INSTALL.md`:
+### GitHub Pages option (gives a URL you can open on any device + use for NFC)
+- In the repo settings → Pages → deploy from this branch → root.
+- Open the published URL on the TV.
+- NFC tags can later point at `…/#<artwork-slug>` per piece.
 
-1. **Settings > Customer events** (or Themes edit access): add the GA4 + Meta custom pixel (`shopify/ga4-and-meta-events-pixel.js`) so Add to Cart, Checkout, and Purchase actually get tracked. Right now only PageView fires.
-2. **Discounts**: create the `WELCOME10`, `BUNDLE15`, and `COMEBACK10` codes referenced in the sections and email copy — Liquid can display a code, it cannot create one.
-3. **Marketing > Automations**: paste the welcome and abandoned cart email copy into Shopify Email's native automation templates and activate them.
+## Photos
+`images/<slug>.jpg` — 10 of 13 in place. Missing show a colored emoji card:
+- `peace-pride` (PNG wouldn't download — drop `images/peace-pride.png` or `.jpg`)
+- `polaroid` (only a .heic exists — export a .jpg as `images/polaroid.jpg`)
+- `unitybeak-love` (no photo yet — add `images/unitybeak-love.jpg`)
 
-## A note on the spreadsheet
+Drop a correctly-named file in `images/` and it appears automatically.
 
-`data/FLY-Miami-Art-Offer-Ladder-Margin-Model.xlsx` uses live formulas throughout (margin %, revenue totals, blended AOV), and this sandbox's LibreOffice could not recalculate or render a preview to confirm the cached values on disk. Every formula was checked by hand against its expected output before delivery, and Excel or Google Sheets will recalculate everything correctly on open regardless of what's cached. Re-open and re-save once if any cell looks stale.
+## Editing the show text
+All artwork data and the answers live in **show.js** (the `ART` array + `answer()`). Plain, easy to edit.
