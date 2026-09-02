@@ -1,0 +1,72 @@
+{{ 'fly-hero.css' | asset_url | stylesheet_tag }}
+
+<section class="fly-hero" aria-label="{{ section.settings.heading | escape }}">
+  <div class="fly-hero__media">
+    {%- if section.settings.image != blank -%}
+      {{
+        section.settings.image
+        | image_url: width: 1600
+        | image_tag:
+          loading: 'eager',
+          fetchpriority: 'high',
+          sizes: '100vw',
+          widths: '480,768,1024,1600',
+          class: 'fly-hero__img'
+      }}
+    {%- else -%}
+      <div class="fly-hero__img fly-hero__img--placeholder"></div>
+    {%- endif -%}
+  </div>
+
+  <div class="fly-hero__content">
+    <p class="fly-hero__eyebrow">{{ section.settings.eyebrow | escape }}</p>
+    <h1 class="fly-hero__heading">{{ section.settings.heading | escape }}</h1>
+    <p class="fly-hero__subhead">{{ section.settings.subhead | escape }}</p>
+
+    <div class="fly-hero__price-line">
+      <span>{{ section.settings.price_line | escape }}</span>
+    </div>
+
+    <div class="fly-hero__ctas">
+      {%- if section.settings.primary_cta_text != blank -%}
+        <a href="{{ section.settings.primary_cta_url }}" class="fly-hero__btn fly-hero__btn--primary">
+          {{ section.settings.primary_cta_text | escape }}
+        </a>
+      {%- endif -%}
+      {%- if section.settings.secondary_cta_text != blank -%}
+        <a href="{{ section.settings.secondary_cta_url }}" class="fly-hero__btn fly-hero__btn--secondary">
+          {{ section.settings.secondary_cta_text | escape }}
+        </a>
+      {%- endif -%}
+    </div>
+
+    {%- if section.settings.show_trust_row -%}
+      <ul class="fly-hero__trust" role="list">
+        <li>Handmade in Miami</li>
+        <li>Signed &amp; numbered</li>
+        <li>Ships worldwide, tracked</li>
+      </ul>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "FLY Hero",
+  "settings": [
+    { "type": "image_picker", "id": "image", "label": "Hero image" },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Miami pop art, made from rubber ducks" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Own a piece of Miami art, from $28 to one of a kind." },
+    { "type": "textarea", "id": "subhead", "label": "Subhead", "default": "Signed prints, glow in the dark originals, and gallery sculptures by Florence Biennale award winner Facundo Yebne. Start small. Collect for life." },
+    { "type": "text", "id": "price_line", "label": "Price line", "default": "Prints from $28 · Originals from $600 · Free shipping over $150" },
+    { "type": "text", "id": "primary_cta_text", "label": "Primary button text", "default": "Shop prints from $28" },
+    { "type": "url", "id": "primary_cta_url", "label": "Primary button link" },
+    { "type": "text", "id": "secondary_cta_text", "label": "Secondary button text", "default": "View originals & sculpture" },
+    { "type": "url", "id": "secondary_cta_url", "label": "Secondary button link" },
+    { "type": "checkbox", "id": "show_trust_row", "label": "Show trust row", "default": true }
+  ],
+  "presets": [
+    { "name": "FLY Hero" }
+  ]
+}
+{% endschema %}
