@@ -1,0 +1,107 @@
+.fly-bundle {
+  padding: 40px 16px;
+  background: #f7f5f2;
+}
+
+.fly-bundle__inner {
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.fly-bundle__eyebrow {
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: #a3763f;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.fly-bundle__heading {
+  font-size: 26px;
+  margin: 0 0 8px;
+}
+
+.fly-bundle__subhead {
+  font-size: 14px;
+  color: #555;
+  margin: 0 0 24px;
+}
+
+.fly-bundle__items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.fly-bundle__item {
+  width: 140px;
+}
+
+.fly-bundle__item-media img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.fly-bundle__item-title {
+  font-size: 13px;
+  font-weight: 600;
+  margin: 8px 0 2px;
+}
+
+.fly-bundle__item-price {
+  font-size: 13px;
+  color: #555;
+  margin: 0;
+}
+
+.fly-bundle__plus {
+  font-size: 22px;
+  color: #999;
+}
+
+.fly-bundle__summary {
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
+
+.fly-bundle__price-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.fly-bundle__discount-note {
+  font-size: 13px;
+  color: #2a7a3b;
+  font-weight: 600;
+  margin: 0 0 4px;
+}
+
+.fly-bundle__code {
+  font-size: 13px;
+  color: #555;
+  margin: 0 0 16px;
+}
+
+.fly-bundle__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 28px;
+  border-radius: 999px;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  min-height: 48px;
+}

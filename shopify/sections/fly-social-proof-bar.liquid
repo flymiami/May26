@@ -1,0 +1,85 @@
+{{ 'fly-social-proof-bar.css' | asset_url | stylesheet_tag }}
+
+<section class="fly-proof" aria-label="As seen in and collector trust">
+  {%- if section.settings.show_press and section.blocks.size > 0 -%}
+    <div class="fly-proof__press">
+      <p class="fly-proof__label">{{ section.settings.press_label | escape }}</p>
+      <div class="fly-proof__logos">
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'press_logo' -%}
+            <a
+              href="{{ block.settings.link | default: '#' }}"
+              class="fly-proof__logo"
+              {% if block.settings.link == blank %}
+                tabindex="-1"
+                aria-hidden="true"
+              {% endif %}
+              {{ block.shopify_attributes }}
+            >
+              {%- if block.settings.logo != blank -%}
+                {{ block.settings.logo | image_url: width: 200 | image_tag: loading: 'lazy', alt: block.settings.name }}
+              {%- else -%}
+                <span>{{ block.settings.name | escape }}</span>
+              {%- endif -%}
+            </a>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+  <ul class="fly-proof__stats" role="list">
+    {%- if section.settings.stat_1_value != blank -%}
+      <li><strong>{{ section.settings.stat_1_value | escape }}</strong><span>{{ section.settings.stat_1_label | escape }}</span></li>
+    {%- endif -%}
+    {%- if section.settings.stat_2_value != blank -%}
+      <li><strong>{{ section.settings.stat_2_value | escape }}</strong><span>{{ section.settings.stat_2_label | escape }}</span></li>
+    {%- endif -%}
+    {%- if section.settings.stat_3_value != blank -%}
+      <li><strong>{{ section.settings.stat_3_value | escape }}</strong><span>{{ section.settings.stat_3_label | escape }}</span></li>
+    {%- endif -%}
+    {%- if section.settings.stat_4_value != blank -%}
+      <li><strong>{{ section.settings.stat_4_value | escape }}</strong><span>{{ section.settings.stat_4_label | escape }}</span></li>
+    {%- endif -%}
+  </ul>
+</section>
+
+{% schema %}
+{
+  "name": "FLY Social Proof Bar",
+  "settings": [
+    { "type": "checkbox", "id": "show_press", "label": "Show press logos", "default": true },
+    { "type": "text", "id": "press_label", "label": "Press label", "default": "As seen in" },
+    { "type": "text", "id": "stat_1_value", "label": "Stat 1 value", "default": "1 of 1" },
+    { "type": "text", "id": "stat_1_label", "label": "Stat 1 label", "default": "Every original, signed & numbered" },
+    { "type": "text", "id": "stat_2_value", "label": "Stat 2 value", "default": "Florence" },
+    { "type": "text", "id": "stat_2_label", "label": "Stat 2 label", "default": "Biennale award winning artist" },
+    { "type": "text", "id": "stat_3_value", "label": "Stat 3 value", "default": "Lincoln Rd" },
+    { "type": "text", "id": "stat_3_label", "label": "Stat 3 label", "default": "Public art installation, Miami Beach" },
+    { "type": "text", "id": "stat_4_value", "label": "Stat 4 value", "default": "Worldwide" },
+    { "type": "text", "id": "stat_4_label", "label": "Stat 4 label", "default": "Tracked, insured shipping" }
+  ],
+  "blocks": [
+    {
+      "type": "press_logo",
+      "name": "Press logo",
+      "settings": [
+        { "type": "text", "id": "name", "label": "Outlet name", "default": "Press outlet" },
+        { "type": "image_picker", "id": "logo", "label": "Logo image" },
+        { "type": "url", "id": "link", "label": "Link to article" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "FLY Social Proof Bar",
+      "blocks": [
+        { "type": "press_logo" },
+        { "type": "press_logo" },
+        { "type": "press_logo" },
+        { "type": "press_logo" }
+      ]
+    }
+  ]
+}
+{% endschema %}

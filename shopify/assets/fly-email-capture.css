@@ -1,0 +1,86 @@
+.fly-capture {
+  padding: 44px 16px;
+  background: #111;
+  color: #fff;
+  text-align: center;
+}
+
+.fly-capture__inner {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.fly-capture__heading {
+  font-size: 24px;
+  margin: 0 0 8px;
+}
+
+.fly-capture__subhead {
+  font-size: 14px;
+  opacity: 0.85;
+  margin: 0 0 20px;
+}
+
+.fly-capture__row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.fly-capture__input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-size: 15px;
+  min-height: 48px;
+  box-sizing: border-box;
+}
+
+.fly-capture__input::placeholder {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.fly-capture__btn {
+  padding: 14px 20px;
+  border-radius: 999px;
+  background: #fff;
+  color: #111;
+  font-weight: 700;
+  border: none;
+  min-height: 48px;
+  cursor: pointer;
+}
+
+.fly-capture__fineprint {
+  font-size: 11px;
+  opacity: 0.6;
+  margin: 12px 0 0;
+}
+
+.fly-capture__error {
+  color: #ff8a8a;
+  font-size: 13px;
+  margin: 8px 0 0;
+}
+
+.fly-capture__success {
+  font-size: 16px;
+  margin: 0 0 6px;
+}
+
+.fly-capture__code {
+  font-size: 20px;
+  letter-spacing: 0.05em;
+}
+
+@media (min-width: 600px) {
+  .fly-capture__row {
+    flex-direction: row;
+  }
+  .fly-capture__btn {
+    flex-shrink: 0;
+  }
+}

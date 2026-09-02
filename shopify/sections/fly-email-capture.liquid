@@ -1,0 +1,54 @@
+{{ 'fly-email-capture.css' | asset_url | stylesheet_tag }}
+
+<section class="fly-capture" aria-label="{{ section.settings.heading | escape }}">
+  <div class="fly-capture__inner">
+    <h2 class="fly-capture__heading">{{ section.settings.heading | escape }}</h2>
+    <p class="fly-capture__subhead">{{ section.settings.subhead | escape }}</p>
+
+    {%- form 'customer', id: 'fly-capture-form' -%}
+      <input type="hidden" name="contact[tags]" value="{{ section.settings.klaviyo_tag | escape }}">
+      {%- if form.posted_successfully? -%}
+        <p class="fly-capture__success">{{ section.settings.success_message | escape }}</p>
+        {%- if section.settings.code != blank -%}
+          <p class="fly-capture__code">Your code: <strong>{{ section.settings.code | escape }}</strong></p>
+        {%- endif -%}
+      {%- else -%}
+        <div class="fly-capture__row">
+          <label class="visually-hidden" for="fly-capture-email">Email</label>
+          <input
+            type="email"
+            name="contact[email]"
+            id="fly-capture-email"
+            class="fly-capture__input"
+            placeholder="{{ section.settings.placeholder | escape }}"
+            required
+          >
+          <button type="submit" class="fly-capture__btn">{{ section.settings.button_text | escape }}</button>
+        </div>
+        {%- if form.errors -%}
+          <p class="fly-capture__error">{{ form.errors.messages['email'] | default: 'Please enter a valid email.' }}</p>
+        {%- endif -%}
+        <p class="fly-capture__fineprint">{{ section.settings.fineprint | escape }}</p>
+      {%- endif -%}
+    {%- endform -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "FLY Email Capture",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Get 10% off your first piece" },
+    { "type": "textarea", "id": "subhead", "label": "Subhead", "default": "Join the studio list for new drops, glow-in-the-dark previews, and one code good on your first order." },
+    { "type": "text", "id": "placeholder", "label": "Input placeholder", "default": "you@email.com" },
+    { "type": "text", "id": "button_text", "label": "Button text", "default": "Send my code" },
+    { "type": "text", "id": "code", "label": "Discount code shown after signup (create this exact code in Shopify Discounts)", "default": "WELCOME10" },
+    { "type": "text", "id": "success_message", "label": "Success message", "default": "You're on the list. Check your email for your code." },
+    { "type": "text", "id": "fineprint", "label": "Fine print", "default": "One code per customer. Valid on prints, tees, and originals." },
+    { "type": "text", "id": "klaviyo_tag", "label": "Customer tag for segmentation", "default": "welcome-10" }
+  ],
+  "presets": [
+    { "name": "FLY Email Capture" }
+  ]
+}
+{% endschema %}
