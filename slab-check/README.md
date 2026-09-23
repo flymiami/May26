@@ -47,6 +47,14 @@ API keys live only in serverless environment variables. The browser never sees o
 
 ## Deploy to Vercel
 
+### One click
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fflymiami%2FMay26%2Ftree%2Fmain%2Fslab-check&env=ANTHROPIC_API_KEY&envDescription=Server%20side%20key%20that%20reads%20the%20card%20photos&envLink=https%3A%2F%2Fconsole.anthropic.com%2Fsettings%2Fkeys&project-name=slab-check&repository-name=slab-check)
+
+The button asks for `ANTHROPIC_API_KEY`, sets the root directory to `slab-check`, and deploys. Note what it does to the repo: Vercel **copies** `slab-check/` into a new standalone GitHub repo called `slab-check` and deploys that. The copy is then its own project, disconnected from `May26`, so later changes pushed to `May26` will not redeploy it. Take the button if you want Slab Check standing on its own. Take the manual path below if you want the deployment to keep tracking `May26`.
+
+### Manual, stays linked to this repo
+
 ```bash
 cd slab-check
 npm install
