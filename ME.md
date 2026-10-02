@@ -29,6 +29,9 @@ V = VERIFIED from a source. U = UNKNOWN, needs you.
 7. Victoria, City of Hialeah, art commission (parked business). (V)
 8. Steve: close friend; paid for the new attorney. (you)
 
+## Incidents
+1. June 21: caught building garbage employee taking goods from your office. Cameras from May 10 show daily theft, 1 to 5 times per visit, 5 days a week, ~40 days. Total unknown. Management company: Cadisa Inc. (you)
+
 ## Open promises and loose ends
 1. Lawsuit DSM v Castle Beach: trial maybe week of Oct 19, status by Oct 15 or 16. (V)
 2. You owe Fernando: top 30 exhibits with bullets; itemized damages list (wet Amazon pallets, art); witness role summaries; prep session weekend before trial. (V)
