@@ -39,6 +39,7 @@ V = VERIFIED from a source. U = UNKNOWN, needs you.
 3b. Fernando promised Oct 1 to resend the opposing witness list; not received as of Oct 2. (V)
 3c. Pre trial conference with Lorenzo Draghi, Tue Oct 13, 2:00 PM, you invited. (V)
 4. EisnerAmper call on Oct 1 was missed. Needs rescheduling. (you)
+4b. Email draft to Fernando (records demand, schedule, witnesses, mediation, Esquire invoice, police and DBPR questions) sits unsent in Gmail drafts. (V)
 5. Amazon notice Sep 16: safety docs for earbuds ASIN B0G1CP68P2. Delegated to Paula on Sep 28. (V)
 6. Paula asked how many main cartons; you said 4 boxes of turkey hats, 28 each. Shipment status U.
 7. Refunds pending: Tech SG LLC app (only auto reply), Pressmaster, BabyLoveGrowth. U.
