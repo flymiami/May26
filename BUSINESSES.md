@@ -18,7 +18,7 @@
 2. Separate company: legal name Pilates Miami LLC. (you) Revenue, class schedule, client list, booking tool: U.
 
 ## 3. AMAZON (active)
-1. Store/brand name appears as Thrillzoo. (V)
+1. Store/brand Thrillzoo, under FLY FUTURE LLC. (you)
 2. Products seen: real time translation earbuds (ASIN B0G1CP68P2), turkey hats. (V)
 3. Inventory on wooden pallets got wet in the storage flood, Sep 28 to 29. (V)
 4. Sales, margins, fees: U. No Amazon connector yet.
@@ -27,8 +27,17 @@
 ## 4. FLY MIAMI ART (parked)
 1. Active City of Hialeah commission "Midnight Flamingo". Flag only. (V)
 
-## Other entities seen (role U)
-Congress C303 LLC, Arbol Real Estate LLC, FMS 814 LLC (vacation rental licenses); 2Nice LLC (closing); Whatnot order report.
+## Companies (from "Corporaciones FLY" sheet, names and activity only, V)
+1. Design Suites Miami Inc: Atelier store (Clover). 2 Nice LLC: old Market entity, closing.
+2. FLY FUTURE LLC: Amazon (Thrillzoo) and Fly Miami Art. (you)
+3. Pilates Miami LLC: Pilates.
+4. Alexander Hotel Miami Beach LLC: Hotel.
+5. Real estate: Castle Beach 1217 LLC, Congress C303 LLC, FMS 814 LLC, Ana Karina Castle LLC.
+6. Merchant / rentals: Travel Rentals Corp, Vacation Rental Argentina LLC.
+7. Support: DSM Payroll Corp, DSM Laundry LLC, DSM Marketing Group LLC (cars).
+8. Inactive: DSM INV CBC 1 LLC, DSM Investment Holding Inc, DSM Investments I Corp. Closed: Fg Vacations LLC, Alexander DSM LLC.
+9. Other: Dream Big Miami Beach LLC, Sercinco LLC. Arbol Real Estate LLC: not in sheet, U.
+Bank numbers and logins in that sheet are NOT copied here on purpose.
 
 ## Stuck
 1. No ads anywhere. (you)
