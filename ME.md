@@ -31,8 +31,8 @@ V = VERIFIED from a source. U = UNKNOWN, needs you.
 1. Lawsuit DSM v Castle Beach: trial maybe week of Oct 19, status by Oct 15 or 16. (V)
 2. You owe Fernando: top 30 exhibits with bullets; itemized damages list (wet Amazon pallets, art); witness role summaries; prep session weekend before trial. (V)
 3. Second records request letters, certified mail. Status U.
-4. EisnerAmper asked Oct 1 if you are still available for the call. Unread. (V)
-5. Amazon notice Sep 16: safety docs for translation earbuds ASIN B0G1CP68P2. Status U.
+4. EisnerAmper call on Oct 1 was missed. Needs rescheduling. (you)
+5. Amazon notice Sep 16: safety docs for earbuds ASIN B0G1CP68P2. Delegated to Paula on Sep 28. (V)
 6. Paula asked how many main cartons; you said 4 boxes of turkey hats, 28 each. Shipment status U.
 7. Refunds pending: Tech SG LLC app (only auto reply), Pressmaster, BabyLoveGrowth. U.
 8. Hialeah asked Oct 1 to make the flamingo design brighter. Unread. Parked business, flag only.
