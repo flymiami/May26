@@ -5,7 +5,13 @@
 2. COGS $156,017.19. Merchant fees $25,960.88. Gross profit $312,359.84.
 3. Legal and professional $93,552.24 plus $3,835. Payroll $16,263.47. Insurance $9,962.60.
 4. Net income $156,624.80. Monthly net ranged from -$24,337 (Jan) to $31,400 (Jul).
-5. Clover sales = Atelier. (you) Other lines and Pilates/Amazon entity: U.
+5. Clover sales = Atelier. (you)
+6. Other income by customer (QuickBooks, Jan to Sep 2026, V; roles from you):
+   Miami Cheap Tours and Travel $29,577.51, tenant of front desk.
+   Girasole Apt $9,000.00, tenant of storage 5.
+   Athena Bitcoin Inc $2,957.76, fixed fee for Bitcoin ATM.
+   Swift Trust LLC $2,602.80, commission for ATM in CU14.
+7. Possible misclassification: tours rent may sit in "Services" not "Rental". Check in QuickBooks. U.
 
 ## 1. ATELIER (active)
 1. Lobby store, 573 unit condo hotel, liquor license, no delivery, GrubHub failed. (you)
