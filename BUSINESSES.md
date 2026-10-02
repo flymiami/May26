@@ -15,7 +15,7 @@
 
 ## 2. FLY PILATES MIAMI (active)
 1. North Bay Village FL 33141. (you)
-2. No data found yet in Gmail sample, Drive or QuickBooks lines. Revenue, class schedule, client list, booking tool: U.
+2. Separate company: Fly Pilates LLC. (you) Revenue, class schedule, client list, booking tool: U.
 
 ## 3. AMAZON (active)
 1. Store/brand name appears as Thrillzoo. (V)
