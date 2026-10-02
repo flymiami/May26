@@ -41,7 +41,7 @@ V = VERIFIED from a source. U = UNKNOWN, needs you.
 4. EisnerAmper call on Oct 1 was missed. Needs rescheduling. (you)
 4b. Email draft to Fernando (records demand, schedule, witnesses, mediation, Esquire invoice, police and DBPR questions) sits unsent in Gmail drafts. (V)
 5. Amazon notice Sep 16: safety docs for earbuds ASIN B0G1CP68P2. Delegated to Paula on Sep 28. (V)
-6. Paula asked how many main cartons; you said 4 boxes of turkey hats, 28 each. Shipment status U.
+6. Turkey hats (4 boxes x 28): NOT shipped, still with you. Boxes need relabel or replacement before sending. (you)
 7. Refunds pending: Tech SG LLC app (only auto reply), Pressmaster, BabyLoveGrowth. U.
 8. Hialeah asked Oct 1 to make the flamingo design brighter. Unread. Parked business, flag only.
 9. Closing 2Nice LLC: Miami Beach BTR closure in process; HT Hackney account update sent. (V)
