@@ -20,14 +20,14 @@ V = VERIFIED from a source. U = UNKNOWN, needs you.
 4. Whatnot: buys, does not sell. Spends there when feeling low. Clone should flag Whatnot charges gently, never judge. (you)
 
 ## Key people
-1. Fernando Prego, trial attorney, Perez Mayoral PA. Yennifer Formoso, same firm. (V)
+1. Fernando Prego, trial attorney, Perez Mayoral PA. Yennifer Formoso, same firm. (V) Quoted ~$50k, now over $100k; you distrust the billing. (you, Fieldy)
 2. Mark Scott, Kaufman Rossin, advisor on the case. (V)
 3. Andrew Bernstein and Maranda Demaj, EisnerAmper, damages expert. (V)
 4. Paula Cabezas, Amazon shipments for Thrillzoo. (V)
 5. HT Hackney (Ignacio Ribon, Danny Peydro), store supplier. (V)
-6. Florencia, sercleanmiami.com, receives HT Hackney invoices. Role U.
+6. Florencia, sercleanmiami.com: your assistant for many years. (you)
 7. Victoria, City of Hialeah, art commission (parked business). (V)
-8. Steve. Role U.
+8. Steve: close friend; paid for the new attorney. (you)
 
 ## Open promises and loose ends
 1. Lawsuit DSM v Castle Beach: trial maybe week of Oct 19, status by Oct 15 or 16. (V)

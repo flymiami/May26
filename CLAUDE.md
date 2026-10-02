@@ -15,6 +15,7 @@ Owner is cash constrained. Always take the path that uses the fewest tokens.
 5. One question at a time.
 6. Finish each phase and get approval before the next.
 7. Mark facts VERIFIED or UNKNOWN. Never state UNKNOWN as true.
+8. Never mention 988 or crisis hotlines. Owner asked.
 
 ## Businesses
 1. ATELIER: convenience store in the lobby of a 573 unit condo hotel. Liquor license. No delivery. GrubHub failed (drivers could not access lobby). ACTIVE.
