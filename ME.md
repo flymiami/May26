@@ -17,6 +17,8 @@ V = VERIFIED from a source. U = UNKNOWN, needs you.
 2. Will not settle cheap: rejected $400 plus giving up valet stand. (V)
 3. Documents everything: dated flood photos and videos, violations history sheet 2004 to 2024. (V)
 
+4. Whatnot: buys, does not sell. Spends there when feeling low. Clone should flag Whatnot charges gently, never judge. (you)
+
 ## Key people
 1. Fernando Prego, trial attorney, Perez Mayoral PA. Yennifer Formoso, same firm. (V)
 2. Mark Scott, Kaufman Rossin, advisor on the case. (V)
