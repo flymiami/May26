@@ -35,7 +35,7 @@ V = VERIFIED from a source. U = UNKNOWN, needs you.
 ## Open promises and loose ends
 1. Lawsuit DSM v Castle Beach: trial maybe week of Oct 19, status by Oct 15 or 16. (V)
 2. You owe Fernando: top 30 exhibits with bullets; itemized damages list (wet Amazon pallets, art); witness role summaries; prep session weekend before trial. (V)
-3. Second records request letters, certified mail: no email proof as of Oct 2. U.
+3. Records demands dated Aug 18, delivered Aug 21 (invoice 11611). Deadline Sep 4; $50/day damages from Sep 8. Second demand: not sent as of Oct 2. (V)
 3b. Fernando promised Oct 1 to resend the opposing witness list; not received as of Oct 2. (V)
 3c. Pre trial conference with Lorenzo Draghi, Tue Oct 13, 2:00 PM, you invited. (V)
 4. EisnerAmper call on Oct 1 was missed. Needs rescheduling. (you)
