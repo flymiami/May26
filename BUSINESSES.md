@@ -29,7 +29,8 @@
 5. Vagaro, Apr 1 to Oct 7 2026 (Drive "Vagaro Reports", typed by Chrome assistant): revenue $24,857, all classes and packages; card deposits gross $21,763.65, fees $941.50, net $20,822.15. (V for payouts file)
 6. Monthly gross card sales: Apr $3,410; May $3,916; Jun $3,185; Jul $3,355; Aug $3,265; Sep $3,983. (V)
 7. Clients: 3,249 total, 134 new since April. 156 lapsed (last seen Apr 1 to Aug 7), 75 with email. No active memberships. Vagaro Marketplace = 628 of 832 online bookings. (Chrome assistant summary)
-9. ClassPass payouts were on hold pending a form; owner expects a large catch up payment around Sep or Oct. Amount U; no email found about it. (you)
+9. ClassPass catch up payment ARRIVED: $6,072.63 on Sep 24, 2026 (was on hold pending a form). (V, bank activity pasted by owner)
+10. Bank Sep 24 to Oct 6: balance $4,728.70 on Oct 6. Out early Oct: rent $1,437.75; Mindbody card charge $539.00; Pekis $3,540 (Oct 2) plus $1,200 (Sep 29); Kyla $570; Andres $550; FPL $106.37; Breezeline $134.75; MDC business tax $45. Mindbody also pays in small ACH credits ($13 to $213). (V)
 8. Bank: Chase Business ...9968, Pilates Miami LLC. Statements Jan, Feb, Mar, May, Jun 2026 (Apr missing). (V)
    Money in: Jan $7,660.78, Feb $6,350.28, Mar $8,747.07, May $7,838.15, Jun $6,439.89. Sources: Vagaro deposits, ClassPass (about $475 to $1,357 per deposit), Zelle from clients, Groupon.
    Money out: Jan $7,322.18, Feb $8,046.94, Mar $6,731.81, May $8,664.57, Jun $6,902.62.
