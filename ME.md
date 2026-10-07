@@ -48,7 +48,7 @@ Low priority (lawsuit only, one task, or past):
 4. EisnerAmper call done Oct 6; they are preparing the report. (you)
 5. Amazon earbuds safety docs (ASIN B0G1CP68P2): Paula has not replied. Follow up drafted. (you)
 6. Turkey hats (4 boxes x 28): labels found, boxes covered; ship Oct 7. (you)
-7. Refunds pending: Tech SG LLC app, Pressmaster, BabyLoveGrowth. Follow ups drafted. (you)
+7. Refunds (follow ups sent Oct 7, 7:40 AM): Pressmaster cancelled, refund 7 to 10 days. BabyLoveGrowth says no Sep 27 email received, subscription STILL ACTIVE; reply drafted. Muscle Booster (Tech SG) asked Sep 29 for a screenshot of the charge; needs you. (V)
 8. Hialeah flamingo: asked Oct 1 to make design brighter. Parked business, flag only. (V)
 10. Mindbody questions (23.7% fees, contract, term end, invoice lines) SENT to Ingrid Ortiz Oct 7. Await reply before Oct 31 billing. (V)
 9. Closing 2Nice LLC: waiting on Miami Beach BTR confirmation; HT Hackney likely done. (you)
