@@ -19,7 +19,10 @@ Sources checked twice: Vagaro files 01, 02, 07 in Drive "Vagaro Reports"; one we
 4. +5% sales = $2,349.70 a month revenue (calc: $422,946.96 / 9 months x 5%), about $1,339 gross profit at 57%. Slower: needs ordering setup, staff, signage.
 
 ## 3. Amazon (slowest)
-1. No sales data (Shopify and Windsor blocked; no Seller Central export yet). U.
-2. Open problems: earbuds safety docs pending, $9k prepaid to Paula with bad service, wet inventory.
-3. Course method (wholesale) needs cash for purchase orders. Not a 30 day cash play.
-4. 30 day action: only fix what blocks current sales (earbuds compliance, ship turkey hats).
+1. Sales Jan 1 to Oct 6 2026: $31,604.79, 1,725 units. Best month Mar $6,211.53. Source: Drive Amazon Reports 01. V (months summed twice).
+2. Settlement net proceeds Jul 7 to Oct 7: negative $562.05, before product cost. Source: Drive Amazon Reports 04. V (summed twice).
+3. Ads same period $1,966.11 on $8,076.63 sales = 24.3%. V. Aug 18 period FBA fees $1,722.83, reason U.
+4. Top sellers last 90 days: Moscow Mule mugs $2,911.04, Sprinkler Waterpark $1,818.10. Earbuds 15 units, clocks 16 units. V.
+5. Open problems: earbuds safety docs pending, $9k prepaid to Paula with bad service, wet inventory.
+6. Course method (wholesale) needs cash for purchase orders. Not a 30 day cash play.
+7. 30 day action: only fix what blocks current sales (earbuds compliance, ship turkey hats).
