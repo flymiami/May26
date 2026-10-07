@@ -11,6 +11,8 @@ Sources checked twice: Vagaro files 01, 02, 07 in Drive "Vagaro Reports"; one we
 6. Cost per extra client in an existing class: close to $0; instructors are paid per class, not per client. (you)
 7. Value of extra bookings at Vagaro's $12.42 average: +10 bookings a week = $124.20 a week. (calc twice: 10 x 12.42)
 8. Free lever: lapsed clients with email (75, per Chrome assistant summary; file 05b not yet checked by me).
+9. Discounts Apr 1 to Oct 7 (Vagaro file 08): 614 fully or partly free bookings, $21,322. ClassPass 533 x $35, Mindbody 20, other comps 55 ($1,925), Vera 20% deal 6. V (counts and sums checked twice). ClassPass and Mindbody bookings show $0 in Vagaro; they pay separately, so the $12.42 average understates real value per booking.
+10. Vagaro totals do not reconcile: list price $62,100.62 minus discounts $21,322 = $40,778.62, but amount paid shows $40,698.42 ($80.20 gap). Sales Summary lines do not sum to its $24,857 net. U.
 
 ## 2. Atelier (biggest base, needs setup)
 1. Clover sales $422,946.96 Jan to Sep 2026, about $47k a month. (V)
