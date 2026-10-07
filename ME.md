@@ -50,4 +50,5 @@ Low priority (lawsuit only, one task, or past):
 6. Turkey hats (4 boxes x 28): labels found, boxes covered; ship Oct 7. (you)
 7. Refunds pending: Tech SG LLC app, Pressmaster, BabyLoveGrowth. Follow ups drafted. (you)
 8. Hialeah flamingo: asked Oct 1 to make design brighter. Parked business, flag only. (V)
+10. Mindbody questions (23.7% fees, contract, term end, invoice lines) SENT to Ingrid Ortiz Oct 7. Await reply before Oct 31 billing. (V)
 9. Closing 2Nice LLC: waiting on Miami Beach BTR confirmation; HT Hackney likely done. (you)
