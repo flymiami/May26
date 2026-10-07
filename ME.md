@@ -3,7 +3,7 @@ Sources: Gmail sent mail (last 120 days, first 25 threads), Drive recent files, 
 V = VERIFIED from a source. U = UNKNOWN, needs you.
 
 ## Who
-1. Facundo Yebne, signs as CEO, Design Suites Miami, Inc. (V)
+1. Facundo Yebne. Signs "CEO, Design Suites Miami, Inc." for business; signs "Facundo Yebne | FLY" for FLY Miami Art. (V, you)
 2. Works in English and Spanish. Spanish with Amazon prep partner and friends. (V)
 3. Works nights; "otro día más sin dormir", "my day is my life, 24/7" about the lawsuit. (V)
 
