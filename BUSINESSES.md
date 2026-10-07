@@ -44,6 +44,14 @@
    Instructor pay: $30 per class (Pekis Jan: 135 classes, $4,050). Sep 2026 weekly classes paid: 23, 23, 31, 33, 22. (V)
    SECURITY: the chat contains the ClassPass payment portal login and the bank account number in plain text. Change that password. (V)
 
+12. Mindbody (Drive "Mindbody Reports", 00 INDEX, pulled Oct 7; totals rechecked by me):
+   Invoiced $3,671.45 Jan 1 to Oct 7 plus card fees $995.74 = $4,667.19 cost. Plan Ultimate $539/mo (was $169 Jan to Mar, $269.50 Apr to Jun). Unexplained $199.95 on Mar 9. Next bill Oct 31, Visa 7831.
+   Net payouts $7,591.08 (gross $8,586.82, 94 payouts). Net after invoices: $3,919.63 for Jan to Oct 7.
+   Net payout minus $539 subscription: Jul $634.60, Aug $115.03, Sep $867.62.
+   Fee anomaly: 70 of 94 payouts charged about 23.66% ($699.75 on $2,957.08); agreed rate 3.50% + $0.15. Cause U.
+   ClassPass Sep 2026: 116 paid reservations, 40 unique users, 2,075 revenue, 17.89 per visit.
+   Cancellation per public terms (signed contract not found): 30 day renewals, 30 days notice, early exit owes the term.
+
 ## 3. AMAZON (active)
 1. Store/brand Thrillzoo, under FLY FUTURE LLC. (you)
 2. Products seen: real time translation earbuds (ASIN B0G1CP68P2), turkey hats, wall clock 13.5 in: white (ASIN B0HGP17DT8) and red listed; black "coming soon", units with you, none shipped, listing status U. (V, you)
