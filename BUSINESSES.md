@@ -26,6 +26,11 @@
 3. Booking software: Vagaro. Mindbody (account #2646163) is a paid, expensive distribution channel, billed monthly. Neither is connected. (you, V)
  Separate company: legal name Pilates Miami LLC. (you) Revenue, class schedule, client list, booking tool: U.
 
+5. Vagaro, Apr 1 to Oct 7 2026 (Drive "Vagaro Reports", typed by Chrome assistant): revenue $24,857, all classes and packages; card deposits gross $21,763.65, fees $941.50, net $20,822.15. (V for payouts file)
+6. Monthly gross card sales: Apr $3,410; May $3,916; Jun $3,185; Jul $3,355; Aug $3,265; Sep $3,983. (V)
+7. Clients: 3,249 total, 134 new since April. 156 lapsed (last seen Apr 1 to Aug 7), 75 with email. No active memberships. Vagaro Marketplace = 628 of 832 online bookings. (Chrome assistant summary)
+8. Studio costs (rent, instructors): U.
+
 ## 3. AMAZON (active)
 1. Store/brand Thrillzoo, under FLY FUTURE LLC. (you)
 2. Products seen: real time translation earbuds (ASIN B0G1CP68P2), turkey hats. (V)
