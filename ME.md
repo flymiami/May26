@@ -22,14 +22,17 @@ V = VERIFIED from a source. U = UNKNOWN, needs you.
 5. Talks to the clone by voice when possible: phone keyboard dictation for chat, Fieldy for long thoughts. (you)
 
 ## Key people
+Core:
 1. Fernando Prego, trial attorney, Perez Mayoral PA. Yennifer Formoso, same firm. (V) Quoted ~$50k, now over $100k; you distrust the billing. (you, Fieldy)
 2. Mark Scott, Kaufman Rossin, advisor on the case. (V)
-3. Andrew Bernstein and Maranda Demaj, EisnerAmper, damages expert. (V)
-4. Paula Cabezas, Amazon shipments for Thrillzoo. (V)
-5. HT Hackney (Ignacio Ribon, Danny Peydro), store supplier. (V)
-6. Florencia, sercleanmiami.com: your assistant for many years. (you)
-7. Victoria, City of Hialeah, art commission (parked business). (V)
-8. Steve: close friend; paid for the new attorney. (you)
+3. Steve: new friend; paid for the new attorney. (you)
+
+Low priority (lawsuit only, one task, or past):
+4. Andrew Bernstein, Maranda Demaj, EisnerAmper: damages expert, lawsuit only. (you)
+5. Paula Cabezas: Amazon shipments for Thrillzoo. You prepaid about $9k; service is really bad. (you)
+6. HT Hackney (Ignacio Ribon, Danny Peydro): store supplier, little contact. (you)
+7. Victoria, City of Hialeah: art commission only. (you)
+8. Florencia, sercleanmiami.com: former assistant for many years; no longer works for you. (you)
 
 ## Incidents
 1. June 21: caught building garbage employee taking goods from your office. Cameras from May 10 show daily theft, 1 to 5 times per visit, 5 days a week, ~40 days. Total unknown. Management company: Cadisa Inc. (you)
