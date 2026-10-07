@@ -22,8 +22,8 @@
 ## 2. FLY PILATES MIAMI (active)
 1. North Bay Village FL 33141. (you)
 2. Drive folder "FLY Pilates Miami" holds only logo, icon and photos; no business data. (V)
-3. Booking system: Mindbody, account "FLY Pilates Miami" #2646163; monthly Mindbody statements arrive Sep 1 and Oct 1. Sales data lives in Mindbody, not connected. (V)
-4. A "Carillon Miami Wellness Resort" monthly maintenance invoice ($3,127.15, due 09/15) appears next to Mindbody in the invoice routine; link to Pilates U. Separate company: legal name Pilates Miami LLC. (you) Revenue, class schedule, client list, booking tool: U.
+3. Booking software: Vagaro. Mindbody (account #2646163) is a paid, expensive distribution channel, billed monthly. Neither is connected. (you, V)
+ Separate company: legal name Pilates Miami LLC. (you) Revenue, class schedule, client list, booking tool: U.
 
 ## 3. AMAZON (active)
 1. Store/brand Thrillzoo, under FLY FUTURE LLC. (you)
@@ -45,7 +45,8 @@
 6. Merchant / rentals: Travel Rentals Corp, Vacation Rental Argentina LLC.
 7. Support: DSM Payroll Corp, DSM Laundry LLC, DSM Marketing Group LLC (cars).
 8. Inactive: DSM INV CBC 1 LLC, DSM Investment Holding Inc, DSM Investments I Corp. Closed: Fg Vacations LLC, Alexander DSM LLC.
-9. Other: Dream Big Miami Beach LLC, Sercinco LLC. Arbol Real Estate LLC: not in sheet, U.
+9. Other: Dream Big Miami Beach LLC, Sercinco LLC.
+10. Arbol Real Estate LLC: co owned with a partner; pays Carillon Miami Wellness Resort monthly maintenance ($3,127.15 on the Sep invoice). (you, V)
 Bank numbers and logins in that sheet are NOT copied here on purpose.
 
 ## Stuck

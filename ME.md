@@ -19,6 +19,8 @@ V = VERIFIED from a source. U = UNKNOWN, needs you.
 
 4. Whatnot: buys, does not sell. Spends there when feeling low. Clone should flag Whatnot charges gently, never judge. (you)
 
+5. Talks to the clone by voice when possible: phone keyboard dictation for chat, Fieldy for long thoughts. (you)
+
 ## Key people
 1. Fernando Prego, trial attorney, Perez Mayoral PA. Yennifer Formoso, same firm. (V) Quoted ~$50k, now over $100k; you distrust the billing. (you, Fieldy)
 2. Mark Scott, Kaufman Rossin, advisor on the case. (V)
