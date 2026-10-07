@@ -22,6 +22,7 @@
 ## 2. FLY PILATES MIAMI (active)
 1. North Bay Village FL 33141. (you)
 2. Drive folder "FLY Pilates Miami" holds only logo, icon and photos; no business data. (V)
+4. Vagaro calendar, week Oct 5 to 11, instructor Isabel Castro: about 34 Pilates Reformer slots, Mon to Sat, 7 AM to 12 PM; most show 0 to 3 booked. Owner: occupancy really bad. Reformer count per class U. (screenshot, you)
 3. Booking software: Vagaro. Mindbody (account #2646163) is a paid, expensive distribution channel, billed monthly. Neither is connected. (you, V)
  Separate company: legal name Pilates Miami LLC. (you) Revenue, class schedule, client list, booking tool: U.
 
