@@ -26,6 +26,7 @@ Core:
 1. Fernando Prego, trial attorney, Perez Mayoral PA. Yennifer Formoso, same firm. (V) Quoted ~$50k, now over $100k; you distrust the billing. (you, Fieldy)
 2. Mark Scott, Kaufman Rossin, advisor on the case. (V)
 3. Steve: new friend; paid for the new attorney. (you)
+3b. Sebastian Yebne: your brother; runs Travel Rentals Corp. Also received $550 from the Pilates account in Jan, Mar, May. (you, V)
 
 Low priority (lawsuit only, one task, or past):
 4. Andrew Bernstein, Maranda Demaj, EisnerAmper: damages expert, lawsuit only. (you)

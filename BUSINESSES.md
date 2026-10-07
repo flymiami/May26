@@ -56,10 +56,10 @@ Active:
 2. FLY FUTURE LLC: Amazon (Thrillzoo) and FLY Miami Art.
 3. Pilates Miami LLC: Pilates studio.
 4. Real estate: Castle Beach 1217 LLC, Congress C303 LLC, FMS 814 LLC, Vacation Rental Argentina LLC, Ana Karina Castle LLC.
+6. Travel Rentals Corp: OPERATIONAL merchant business, about $10M a year revenue, low margin, run by your brother Sebastian Yebne. TASK: find a cheaper merchant processor (current rates U). (you)
 5. Arbol Real Estate LLC: co owned with a partner; owns 6801 Collins Ave, Unit 216, Miami Beach FL 33141 (Carillon Hotel); pays Carillon maintenance ($3,127.15 on the Sep invoice). (V for invoice)
 Not operating:
 6. Alexander Hotel Miami Beach LLC: not operational.
-7. Travel Rentals Corp: no rentals.
 8. DSM Marketing Group LLC (cars): not operational.
 Closed or sold:
 9. 2 Nice LLC (old Market entity): closed. DSM Payroll Corp: closed. DSM Laundry LLC: sold. Fg Vacations LLC, Alexander DSM LLC: closed.
