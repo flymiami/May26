@@ -16,7 +16,7 @@ Sources checked twice: Vagaro files 01, 02, 07 in Drive "Vagaro Reports"; one we
 11. ClassPass Jan 1 to Oct 6 (Drive "ClassPass Reports"): 1,002 reservations, $18,090.47 earned, $18.05 each; paid $17,600.47 through Sep 30, matches payouts to the dollar. V (summed twice). Apr to Sep avg $1,972.77 a month. V.
 12. SmartRate floor $17.50 a visit, top $19.25. Busiest: Sat 8 AM 87%, Sat 11 AM 76%. Tue 1 to 3 PM nearly empty. V (assistant capture).
 13. Mismatch: ClassPass shows 687 reservations Apr 1 to Oct 6; Vagaro logged 533 ClassPass bookings Apr 1 to Oct 7. U.
-14. Bank Sep 24 $6,072.63 not in ClassPass payouts (Sep 21 $788.54, Oct 2 $1,286.28). Source of that deposit U.
+14. Bank Sep 24 $6,072.63 = 7 ClassPass payouts Jun 19 to Sep 21 paid together (Tipalti invoices 2520983 to 2716522). V (summed twice, owner CSV). So ClassPass money was held about 3 months.
 15. Vagaro gross card sales Apr to Sep avg $3,519.00 a month (21,114 / 6). V.
 
 ## 2. Atelier (biggest base, needs setup)
