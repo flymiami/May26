@@ -35,7 +35,7 @@ Shared problem: no ads anywhere.
 ## Connector status (2026-10-02)
 1. Gmail, Google Drive, Notion (keyword search only), QuickBooks (Design Suites Miami, Inc.), Airtable (base "Atelier Market"): working.
 2. Fieldy: free plan, 7 day window, recordings not transcribed.
-3. Shopify, Windsor.ai: enabled by owner, but calls were denied on 2026-10-02. Recheck.
+3. Shopify, Windsor.ai: owner set tools to Always allowed on 2026-10-07. Read tools still missing in that session; recheck in next session.
 4. Two connectors pending sign in; names not visible to the agent.
 
 ## Status
