@@ -21,7 +21,9 @@
 
 ## 2. FLY PILATES MIAMI (active)
 1. North Bay Village FL 33141. (you)
-2. Drive folder "FLY Pilates Miami" holds only logo, icon and photos; no business data. (V) Separate company: legal name Pilates Miami LLC. (you) Revenue, class schedule, client list, booking tool: U.
+2. Drive folder "FLY Pilates Miami" holds only logo, icon and photos; no business data. (V)
+3. Booking system: Mindbody, account "FLY Pilates Miami" #2646163; monthly Mindbody statements arrive Sep 1 and Oct 1. Sales data lives in Mindbody, not connected. (V)
+4. A "Carillon Miami Wellness Resort" monthly maintenance invoice ($3,127.15, due 09/15) appears next to Mindbody in the invoice routine; link to Pilates U. Separate company: legal name Pilates Miami LLC. (you) Revenue, class schedule, client list, booking tool: U.
 
 ## 3. AMAZON (active)
 1. Store/brand Thrillzoo, under FLY FUTURE LLC. (you)
