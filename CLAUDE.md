@@ -32,11 +32,12 @@ Shared problem: no ads anywhere.
 3. AGENTS (after approval): Ads, Atelier, Pilates, Amazon. Art agent later.
 4. DAILY RHYTHM: morning brief (money in, money out, agent actions, 3 decisions). Weekly review.
 
-## Connector status (2026-10-02)
-1. Gmail, Google Drive, Notion (keyword search only), QuickBooks (Design Suites Miami, Inc.), Airtable (base "Atelier Market"): working.
-2. Fieldy: free plan, 7 day window, recordings not transcribed.
-3. Shopify, Windsor.ai: owner set tools to Always allowed on 2026-10-07. Read tools still missing in that session; recheck in next session.
-4. Two connectors pending sign in; names not visible to the agent.
+## Connector status (updated 2026-10-07)
+1. Working: Gmail, Google Drive, Notion (keyword search only), QuickBooks (Design Suites Miami, Inc.), Airtable (base "Atelier Market").
+2. Fieldy: PAID plan since early Oct; transcripts available.
+3. Shopify, Windsor.ai: owner set tools to Always allowed. Read tools (orders, analytics, get_data) still not exposed to the agent as of Oct 7; no local deny rule in the repo. Likely blocked at org or connector level. Recheck each session.
+4. The two pending connectors were connected by owner the week of Sep 28.
+5. Vagaro, Mindbody, ClassPass, Amazon Seller Central: not connected. Data comes via Claude in Chrome exports to Drive.
 
 ## Status
 Phase 1 in progress.
