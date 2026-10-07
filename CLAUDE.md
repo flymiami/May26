@@ -18,6 +18,7 @@ Owner is cash constrained. Always take the path that uses the fewest tokens.
 8. Never mention 988 or crisis hotlines. Owner asked.
 9. When drafting anything, show the full text in chat. Never send a link plus a separate facts list.
 10. Stay on the current phase. Side tasks only when owner asks; finish them, then return to the phase at once.
+11. Before giving ANY number or conclusion: open the source, confirm exactly what each number counts, recompute it twice, and state the source. If any input is not verified, say so in the same line. Never present a first guess.
 
 ## Businesses
 1. ATELIER: convenience store in the lobby of a 573 unit condo hotel. Liquor license. No delivery. GrubHub failed (drivers could not access lobby). ACTIVE.
