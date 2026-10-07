@@ -21,14 +21,15 @@
 
 ## 2. FLY PILATES MIAMI (active)
 1. North Bay Village FL 33141. (you)
-2. Separate company: legal name Pilates Miami LLC. (you) Revenue, class schedule, client list, booking tool: U.
+2. Drive folder "FLY Pilates Miami" exists, not yet read. Separate company: legal name Pilates Miami LLC. (you) Revenue, class schedule, client list, booking tool: U.
 
 ## 3. AMAZON (active)
 1. Store/brand Thrillzoo, under FLY FUTURE LLC. (you)
 2. Products seen: real time translation earbuds (ASIN B0G1CP68P2), turkey hats. (V)
 3. Inventory on wooden pallets got wet in the storage flood, Sep 28 to 29. (V)
 4. Sales, margins, fees: U. No Amazon connector yet.
-5. Course materials: not received.
+5. Course: Abuv The Par (abuvthepar.com), coach Karim Anwar, student portal app.abuvthepar.com (moved to "EEC Portal"). You asked to pause it during the lawsuit (Jun, Aug, Sep emails). Materials sit behind your login; none found in Drive. (V)
+6. Drive: AMAZON folder has only the ThrillZoo logo; Alibaba folder has an empty "Kunya" subfolder. (V)
 
 ## 4. FLY MIAMI ART (parked)
 1. Active City of Hialeah commission "Midnight Flamingo". Flag only. (V)
