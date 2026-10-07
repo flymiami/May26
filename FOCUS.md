@@ -4,9 +4,9 @@ E = estimate built from real numbers; method shown.
 ## 1. FLY Pilates Miami (fastest, almost pure profit)
 1. Studio about 21% full: 29 visible classes, 116 spots, 24 booked (Oct 5 week). 92 empty spots a week. (V)
 2. Costs are mostly fixed: rent $1,437.75, instructors paid per class ($30 to $35), not per client. An extra client in an existing class costs almost nothing. (V, you)
-3. Average Vagaro revenue per online booking about $30 (E: $24,857 / 832 bookings).
+3. Bookings Apr 1 to Oct 7: 832 online + 1,238 in house = 2,070 class spots. Revenue $24,857, so about $12 per spot on average (E), because most visits use package credits. Vagaro Marketplace single bookings pay about $25 each (E: $15,989.80 / 628). (V source file 07)
 4. Free lever: 156 lapsed clients, 75 with email. Comeback offer by email, then ClassPass off peak discounts for empty slots.
-5. Target: +10 bookings a week = about $1,200 a month extra (E), close to all profit.
+5. Target: +10 spots a week = about $520 a month (E at $12); +22 spots a week (to about 40% full) = about $1,140 a month. Close to all profit.
 
 ## 2. Atelier (biggest base, needs setup)
 1. Clover sales $422,946.96 Jan to Sep 2026, about $47k a month. (V)
