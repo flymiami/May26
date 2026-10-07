@@ -33,3 +33,10 @@ Sources checked twice: Vagaro files 01, 02, 07 in Drive "Vagaro Reports"; one we
 5. Open problems: earbuds safety docs pending, $9k prepaid to Paula with bad service, wet inventory.
 6. Course method (wholesale) needs cash for purchase orders. Not a 30 day cash play.
 7. 30 day action: only fix what blocks current sales (earbuds compliance, ship turkey hats).
+
+## Owner decision 2026-10-07
+Order approved: Pilates, Atelier, Amazon. Owner seasonality notes (V, owner):
+1. Amazon enters holiday sales soon; can reverse the negative trend.
+2. Pilates enters slow season.
+3. Atelier is in high season; liquor can grow a lot.
+Amazon holiday history from past years: U. Amazon inbound inventory is 0 (V, file 03).

@@ -41,5 +41,5 @@ Shared problem: no ads anywhere.
 5. Vagaro, Mindbody, ClassPass, Amazon Seller Central: not connected. Data comes via Claude in Chrome exports to Drive.
 
 ## Status
-Phase 1 APPROVED by owner 2026-10-07. Phase 2 (focus ranking) in progress.
+Phase 1 APPROVED 2026-10-07. Phase 2 APPROVED 2026-10-07 (see FOCUS.md owner decision). Phase 3 next.
 Side task queued: cheaper merchant processor for Travel Rentals Corp.
