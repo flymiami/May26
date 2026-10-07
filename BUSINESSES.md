@@ -29,7 +29,12 @@
 5. Vagaro, Apr 1 to Oct 7 2026 (Drive "Vagaro Reports", typed by Chrome assistant): revenue $24,857, all classes and packages; card deposits gross $21,763.65, fees $941.50, net $20,822.15. (V for payouts file)
 6. Monthly gross card sales: Apr $3,410; May $3,916; Jun $3,185; Jul $3,355; Aug $3,265; Sep $3,983. (V)
 7. Clients: 3,249 total, 134 new since April. 156 lapsed (last seen Apr 1 to Aug 7), 75 with email. No active memberships. Vagaro Marketplace = 628 of 832 online bookings. (Chrome assistant summary)
-8. Studio costs (rent, instructors): U.
+8. Bank: Chase Business ...9968, Pilates Miami LLC. Statements Jan, Feb, Mar, May, Jun 2026 (Apr missing). (V)
+   Money in: Jan $7,660.78, Feb $6,350.28, Mar $8,747.07, May $7,838.15, Jun $6,439.89. Sources: Vagaro deposits, ClassPass (about $475 to $1,357 per deposit), Zelle from clients, Groupon.
+   Money out: Jan $7,322.18, Feb $8,046.94, Mar $6,731.81, May $8,664.57, Jun $6,902.62.
+   Net: Jan +$338.60, Feb -$1,696.66, Mar +$2,015.26, May -$826.42, Jun -$462.73. Roughly breakeven. (V)
+   Fixed: rent "Pilates Landlord CU8" $1,437.75/mo; Breezeline $134.75; insurance Hiscox $92; FPL about $62 to $86; Mindbody about $120; bank fee $15. (V)
+   Instructors by Zelle: "Pekis Profe Pilates" $2,360 to $5,620/mo (biggest cost); Diamelis, Kyla, Andres, Maria Espinal smaller. Sebastian Yebne $550 in Jan, Mar, May (role U). Transfers to account ...0628 (whose U).
 
 ## 3. AMAZON (active)
 1. Store/brand Thrillzoo, under FLY FUTURE LLC. (you)
