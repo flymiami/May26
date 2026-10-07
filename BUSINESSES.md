@@ -49,7 +49,7 @@
    Net payouts $7,591.08 (gross $8,586.82, 94 payouts). Net after invoices: $3,919.63 for Jan to Oct 7.
    Net payout minus $539 subscription: Jul $634.60, Aug $115.03, Sep $867.62.
    Fee anomaly: 70 of 94 payouts charged about 23.66% ($699.75 on $2,957.08); agreed rate 3.50% + $0.15. Cause U.
-   ClassPass link: Mindbody has a ClassPass dashboard; ClassPass is not listed as an installed app; what happens to ClassPass if Mindbody is cancelled is U (draft question to Mindbody CSM Maria Nadal in Gmail).
+   ClassPass worked on its own for a long time; Mindbody was added last year with a different setup and fees. You upgraded the Mindbody plan a few months ago for plans that did not happen. (you)
    ClassPass Sep 2026: 116 paid reservations, 40 unique users, 2,075 revenue, 17.89 per visit.
    Cancellation per public terms (signed contract not found): 30 day renewals, 30 days notice, early exit owes the term.
 
