@@ -32,6 +32,7 @@
 4. Sales, margins, fees: U. No Amazon connector yet.
 5. Course: Abuv The Par (abuvthepar.com), coach Karim Anwar, student portal app.abuvthepar.com (moved to "EEC Portal"). You asked to pause it during the lawsuit (Jun, Aug, Sep emails). Materials sit behind your login; none found in Drive. (V)
 6. Drive: AMAZON folder has only the ThrillZoo logo; Alibaba folder has an empty "Kunya" subfolder. (V)
+7. Course saved to Drive "Abuv The Par" (EEC 2026, 123 lesson Docs). Method summary in AMAZON_METHOD.md: wholesale of established brands via distributors plus FBA, not factories. (V)
 
 ## 4. FLY MIAMI ART (parked)
 1. Active City of Hialeah commission "Midnight Flamingo". Flag only. (V)
