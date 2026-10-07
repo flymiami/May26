@@ -40,7 +40,7 @@
 
 ## 3. AMAZON (active)
 1. Store/brand Thrillzoo, under FLY FUTURE LLC. (you)
-2. Products seen: real time translation earbuds (ASIN B0G1CP68P2), turkey hats. (V)
+2. Products seen: real time translation earbuds (ASIN B0G1CP68P2), turkey hats, wall clock 13.5 in: white (ASIN B0HGP17DT8) and red listed; black "coming soon", units with you, none shipped, listing status U. (V, you)
 3. Inventory on wooden pallets got wet in the storage flood, Sep 28 to 29. (V)
 4. Sales, margins, fees: U. No Amazon connector yet.
 5. Course: Abuv The Par (abuvthepar.com), coach Karim Anwar, student portal app.abuvthepar.com (moved to "EEC Portal"). You asked to pause it during the lawsuit (Jun, Aug, Sep emails). Materials sit behind your login; none found in Drive. (V)
