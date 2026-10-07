@@ -38,6 +38,12 @@
    Fixed: rent "Pilates Landlord CU8" $1,437.75/mo; Breezeline $134.75; insurance Hiscox $92; FPL about $62 to $86; Mindbody about $120; bank fee $15. (V)
    Instructors by Zelle: "Pekis Profe Pilates" $2,360 to $5,620/mo (biggest cost) = main instructor, also does housekeeping. Instructors paid $30 to $35 per class. (you) Diamelis, Kyla, Andres, Maria Espinal smaller. Sebastian Yebne $550 in Jan, Mar, May (role U). Transfers to account ...0628 (whose U).
 
+11. WhatsApp with Andres (admin), read Oct 7 (text only; attached reports were omitted in export):
+   Setup: ClassPass connects to Mindbody; Vagaro is the main calendar ("todo esta en Vagaro"); a generic "fly pilates" profile in Mindbody blocks spots booked in Vagaro to avoid overbooking. (V)
+   Sep 1 2026, Andres: "sometimes 1 person per class", almost no new clients, Mindbody costs 500+ a month with high commission, ClassPass brings people at low price. One private client (Bobby) pays $200 an hour, up to 2 times a week. You told him to close classes that keep getting 1 person. (V)
+   Instructor pay: $30 per class (Pekis Jan: 135 classes, $4,050). Sep 2026 weekly classes paid: 23, 23, 31, 33, 22. (V)
+   SECURITY: the chat contains the ClassPass payment portal login and the bank account number in plain text. Change that password. (V)
+
 ## 3. AMAZON (active)
 1. Store/brand Thrillzoo, under FLY FUTURE LLC. (you)
 2. Products seen: real time translation earbuds (ASIN B0G1CP68P2), turkey hats, wall clock 13.5 in: white (ASIN B0HGP17DT8) and red listed; black "coming soon", units with you, none shipped, listing status U. (V, you)
