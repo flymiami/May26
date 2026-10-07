@@ -14,7 +14,7 @@ Sources checked twice: Vagaro files 01, 02, 07 in Drive "Vagaro Reports"; one we
 
 ## 2. Atelier (biggest base, needs setup)
 1. Clover sales $422,946.96 Jan to Sep 2026, about $47k a month. (V)
-2. Margin after goods and card fees about 57% (calc twice: 1 minus ($156,017.19 + $25,960.88) / $422,946.96 = 0.5697). Assumes all COGS and merchant fees in Design Suites Miami are Atelier's. U.
+2. Margin after goods and card fees about 57% (calc twice: 1 minus ($156,017.19 + $25,960.88) / $422,946.96 = 0.5697). All COGS is Atelier (owner confirmed Oct 7, V). Goods only margin 63.1% (V). Merchant fees all Atelier U.
 3. Lever: in building delivery by own staff (QR or text ordering) for 573 units, guest bundles. Alcohol rules must be checked first.
 4. +5% sales = $2,349.70 a month revenue (calc: $422,946.96 / 9 months x 5%), about $1,339 gross profit at 57%. Slower: needs ordering setup, staff, signage.
 
