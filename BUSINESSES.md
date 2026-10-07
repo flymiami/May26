@@ -50,18 +50,23 @@
 ## 4. FLY MIAMI ART (parked)
 1. Active City of Hialeah commission "Midnight Flamingo". Flag only. (V)
 
-## Companies (from "Corporaciones FLY" sheet, names and activity only, V)
-1. Design Suites Miami Inc: Atelier store (Clover). 2 Nice LLC: old Market entity, closing.
-2. FLY FUTURE LLC: Amazon (Thrillzoo) and Fly Miami Art. (you)
-3. Pilates Miami LLC: Pilates.
-4. Alexander Hotel Miami Beach LLC: Hotel.
-5. Real estate: Castle Beach 1217 LLC, Congress C303 LLC, FMS 814 LLC, Ana Karina Castle LLC.
-6. Merchant / rentals: Travel Rentals Corp, Vacation Rental Argentina LLC.
-7. Support: DSM Payroll Corp, DSM Laundry LLC, DSM Marketing Group LLC (cars).
-8. Inactive: DSM INV CBC 1 LLC, DSM Investment Holding Inc, DSM Investments I Corp. Closed: Fg Vacations LLC, Alexander DSM LLC.
-9. Other: Dream Big Miami Beach LLC, Sercinco LLC.
-10. Arbol Real Estate LLC: co owned with a partner; pays Carillon Miami Wellness Resort monthly maintenance ($3,127.15 on the Sep invoice). (you, V)
-Bank numbers and logins in that sheet are NOT copied here on purpose.
+## Companies (names and status from you, Oct 7)
+Active:
+1. Design Suites Miami Inc: owns unit CU14; runs Atelier store (Clover).
+2. FLY FUTURE LLC: Amazon (Thrillzoo) and FLY Miami Art.
+3. Pilates Miami LLC: Pilates studio.
+4. Real estate: Castle Beach 1217 LLC, Congress C303 LLC, FMS 814 LLC, Vacation Rental Argentina LLC, Ana Karina Castle LLC.
+5. Arbol Real Estate LLC: co owned with a partner; owns 6801 Collins Ave, Unit 216, Miami Beach FL 33141 (Carillon Hotel); pays Carillon maintenance ($3,127.15 on the Sep invoice). (V for invoice)
+Not operating:
+6. Alexander Hotel Miami Beach LLC: not operational.
+7. Travel Rentals Corp: no rentals.
+8. DSM Marketing Group LLC (cars): not operational.
+Closed or sold:
+9. 2 Nice LLC (old Market entity): closed. DSM Payroll Corp: closed. DSM Laundry LLC: sold. Fg Vacations LLC, Alexander DSM LLC: closed.
+10. Inactive: DSM INV CBC 1 LLC, DSM Investment Holding Inc, DSM Investments I Corp.
+Not yours:
+11. Dream Big Miami Beach LLC, Sercinco LLC: companies of former employees who became partners. You say they stole from you; at the laundry sale you signed a document agreeing not to sue them for anything done while they worked for you.
+Bank numbers and logins in the source sheet are NOT copied here on purpose.
 
 ## Stuck
 1. No ads anywhere. (you)
