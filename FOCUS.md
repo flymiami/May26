@@ -13,6 +13,11 @@ Sources checked twice: Vagaro files 01, 02, 07 in Drive "Vagaro Reports"; one we
 8. Free lever: lapsed clients with email (75, per Chrome assistant summary; file 05b not yet checked by me).
 9. Discounts Apr 1 to Oct 7 (Vagaro file 08): 614 fully or partly free bookings, $21,322. ClassPass 533 x $35, Mindbody 20, other comps 55 ($1,925), Vera 20% deal 6. V (counts and sums checked twice). ClassPass and Mindbody bookings show $0 in Vagaro; they pay separately, so the $12.42 average understates real value per booking.
 10. Vagaro totals do not reconcile: list price $62,100.62 minus discounts $21,322 = $40,778.62, but amount paid shows $40,698.42 ($80.20 gap). Sales Summary lines do not sum to its $24,857 net. U.
+11. ClassPass Jan 1 to Oct 6 (Drive "ClassPass Reports"): 1,002 reservations, $18,090.47 earned, $18.05 each; paid $17,600.47 through Sep 30, matches payouts to the dollar. V (summed twice). Apr to Sep avg $1,972.77 a month. V.
+12. SmartRate floor $17.50 a visit, top $19.25. Busiest: Sat 8 AM 87%, Sat 11 AM 76%. Tue 1 to 3 PM nearly empty. V (assistant capture).
+13. Mismatch: ClassPass shows 687 reservations Apr 1 to Oct 6; Vagaro logged 533 ClassPass bookings Apr 1 to Oct 7. U.
+14. Bank Sep 24 $6,072.63 not in ClassPass payouts (Sep 21 $788.54, Oct 2 $1,286.28). Source of that deposit U.
+15. Vagaro gross card sales Apr to Sep avg $3,519.00 a month (21,114 / 6). V.
 
 ## 2. Atelier (biggest base, needs setup)
 1. Clover sales $422,946.96 Jan to Sep 2026, about $47k a month. (V)
