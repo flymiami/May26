@@ -21,6 +21,7 @@
 4. Revenue, margin by product, best sellers: U.
 
 ## 2. FLY PILATES MIAMI (active)
+0. Vera: AI advocate on Vagaro, activated early Oct 2026, paid a commission per new client. Its 20% deal used 6 times Apr to Oct 7 (V, file 08). (you)
 1. North Bay Village FL 33141. (you)
 2. Drive folder "FLY Pilates Miami" holds only logo, icon and photos; no business data. (V)
 4. Vagaro calendar, week Oct 5 to 11, instructor Isabel Castro: about 34 Pilates Reformer slots, Mon to Sat, 7 AM to 12 PM; most show 0 to 3 booked. Owner: occupancy really bad. 4 reformers per class. Visible: 29 classes = 116 spots, 24 booked = about 21% full. (screenshot, you)
