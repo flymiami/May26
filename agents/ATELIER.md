@@ -32,3 +32,6 @@ Grow Atelier cash, liquor first. Lobby store, 5445 Collins Ave, 573 unit condo h
 2. Unit cost per can: Coca Cola, Coke Zero, Sprite $0.686; Diet Coke $0.657; Dr Pepper $0.611; Canada Dry Ginger Ale $0.583. 20oz bottles $1.667. V.
 3. Owner took over vending machines (sodas) the week of Sep 28. Slots, prices, sales: U.
 4. Lowest cost comparison needs invoices from other vendors. Only one vendor loaded so far.
+5. Vending (owner Oct 8): two machines, Aquafina glass front and Coca Cola closed front; both take bottles and cans. 20oz bottles sell $3, one row $4. Coke Zero 20oz case = 24 (owner), unit $1.6667. V.
+6. Gross margin per 20oz bottle at Fresh Produce cost: $3 sale = $1.33 (44.4%); $4 sale = $2.33 (58.3%). Before tax and card fees (U).
+7. No Instacart, Uber Eats, Grubhub or Costco connector in this session (V). Costco Business Center same day site runs on Instacart (V, page metadata). A search snippet showed $20.08 for Coke 20oz 24 ct there; date, location and login price U.
