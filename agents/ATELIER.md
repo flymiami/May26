@@ -26,3 +26,9 @@ Grow Atelier cash, liquor first. Lobby store, 5445 Collins Ave, 573 unit condo h
 2. Liquor push ideas inside the building, each with cost and expected cash, owner approves.
 3. Google profile fixes: one name everywhere, short name, categories, description says "Hotel room delivery available" (delivery status U).
 4. Ask owner: GrubHub emailed Oct 7 about robot delivery in Miami Beach. Relevant only if robots can reach the lobby. U.
+
+## Costs and vending (Oct 8)
+1. Airtable Cost Database now holds Fresh Produce Solutions invoice 13315 (Oct 8): 42 lines, $1,637.10 plus $80 shipping = $1,717.10. Read back and summed twice. V.
+2. Unit cost per can: Coca Cola, Coke Zero, Sprite $0.686; Diet Coke $0.657; Dr Pepper $0.611; Canada Dry Ginger Ale $0.583. 20oz bottles $1.667. V.
+3. Owner took over vending machines (sodas) the week of Sep 28. Slots, prices, sales: U.
+4. Lowest cost comparison needs invoices from other vendors. Only one vendor loaded so far.
