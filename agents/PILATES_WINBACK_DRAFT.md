@@ -17,3 +17,7 @@ Classes are small, only 4 reformers each, so every session is personal.
 See you soon,
 FLY Pilates Miami
 North Bay Village
+
+## Status Oct 8
+1. FRIEND50 active in Vagaro until Oct 31 (V, Activation Report). Booking link https://www.vagaro.com/us03/flypilatesmiami (V).
+2. Audience (owner Oct 8): every client whose last visit was over 2 months ago, no upper limit. Vagaro count 888 (V). Email credits 995 left of 1,000 (V).
