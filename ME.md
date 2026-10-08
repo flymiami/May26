@@ -38,11 +38,11 @@ Low priority (lawsuit only, one task, or past):
 ## Incidents
 1. June 21: caught building garbage employee taking goods from your office. Cameras from May 10 show daily theft, 1 to 5 times per visit, 5 days a week, ~40 days. Total unknown. Management company: Cadisa Inc. (you)
 
-## Open promises and loose ends (updated Oct 7)
+## Open promises and loose ends (updated Oct 8)
 1. Lawsuit DSM v Castle Beach: set for trial week of Oct 19, 3rd case on the docket. Status by Oct 15 or 16. (V, you)
 2. You owe Fernando NOW: top 30 exhibits with bullets; itemized damages list (wet Amazon pallets, art); witness role summaries; prep session weekend before trial. (you)
 3. Records demands dated Aug 18, delivered Aug 21 (invoice 11611); deadline Sep 4. Second request SENT Oct 7, giving 90 days to mediate. (V, you)
-3b. Opposing witness list from Fernando: not received as of Oct 2. (V)
+3b. Association trial witness list RECEIVED: Fernando emailed it Oct 2 (13:23 UTC) asking you to summarize what each witness knows about the claims in the Second Amended Complaint. (V, Gmail)
 3c. Pre trial conference with Lorenzo Draghi, Tue Oct 13, 2:00 PM. (V)
 3d. Gmail draft to Fernando from Oct 2 is now partly outdated (second request already sent). Not sent.
 4. EisnerAmper call done Oct 6; they are preparing the report. (you)
@@ -50,5 +50,5 @@ Low priority (lawsuit only, one task, or past):
 6. Turkey hats (4 boxes x 28): labels found, boxes covered; ship Oct 7. (you)
 7. Refunds (follow ups sent Oct 7, 7:40 AM): Pressmaster cancelled, refund 7 to 10 days. BabyLoveGrowth says no Sep 27 email received, subscription STILL ACTIVE; reply drafted. Muscle Booster (Tech SG) asked Sep 29 for a screenshot of the charge; needs you. (V)
 8. Hialeah flamingo: asked Oct 1 to make design brighter. Parked business, flag only. (V)
-10. Mindbody questions (23.7% fees, contract, term end, invoice lines) SENT to Ingrid Ortiz Oct 7. Await reply before Oct 31 billing. (V)
-9. Closing 2Nice LLC: waiting on Miami Beach BTR confirmation; HT Hackney likely done. (you)
+10. Mindbody questions SENT to Ingrid Ortiz Oct 7. She replied Oct 7: open a ticket with Mindbody Support instead. Ticket status U. Oct 31 billing. (V, Gmail)
+9. Closing 2Nice LLC: Miami Beach confirmed Oct 7 the BTR is closed for YR26, fees removed. DONE. HT Hackney likely done. (V, Gmail)
