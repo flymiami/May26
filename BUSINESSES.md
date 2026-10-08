@@ -14,7 +14,7 @@
 7. Possible misclassification: tours rent may sit in "Services" not "Rental". Check in QuickBooks. U.
 
 ## 1. ATELIER (active)
-0. Official name: Atelier Liquor and Bites (owner, Oct 8). Google public name today: "Atelier Liquor Store & Deli @ Castle Beach". Short name "2nicemarket". Google says "Hotel room delivery available"; delivery status U.
+0. Official name: Atelier Liquor and Bites (owner, Oct 8). Phone (305) 676 2737 (owner, Oct 8); Google profile shows (561) 299 0256, wrong. Google public name today: "Atelier Liquor Store & Deli @ Castle Beach". Short name "2nicemarket". Google says "Hotel room delivery available"; delivery status U.
 1. Lobby store, 573 unit condo hotel, liquor license, no delivery, GrubHub failed. (you)
 2. Airtable "Atelier Market": tables Cost Database, Pricing (incl Clover price), Vendors, Invoices. (V)
 3. Supplier: HT Hackney. (V) State licenses: Hotel HOT2329399, Non seating food service NOS2336726. (V)
