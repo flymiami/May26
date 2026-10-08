@@ -37,3 +37,6 @@ Grow Atelier cash, liquor first. Lobby store, 5445 Collins Ave, 573 unit condo h
 7. No Instacart, Uber Eats, Grubhub or Costco connector in this session (V). Costco Business Center same day site runs on Instacart (V, page metadata). A search snippet showed $20.08 for Coke 20oz 24 ct there; date, location and login price U.
 8. Costco (costco.com, 33140, Oct 8, Drive "Vendor Price Check Costco"): 12oz cans 35 ct $18.49 ($0.528), Fiji 16.9oz 24 ct $21.99, Gatorade 20oz 24 ct $18.49 = warehouse only; Red Bull 12oz 24 ct $64.99 online. 20oz sodas, Aquafina, Zephyrhills 20oz, Snapple, Arizona not found. V.
 9. Same quantities as invoice 13315 for those items: Fresh Produce $316.50 vs Costco $260.39, saves $56.11, before Costco trip, membership, tax and the $80 delivery fee split. V (computed twice). Tax treatment U.
+10. Vending plan (owner Oct 8): Aquafina machine = water first, plus impulse drinks. Colas go in the Coca Cola machine. Each slot holds 9 to 10 bottles or cans. Photo shows 9 slots per row (A1 to A9), 5 rows = about 45 slots. Last week's fill was a trial.
+11. 5-hour Energy: Atelier sold it 2 to 3 years ago (owner). Clover history pending.
+12. Short term: Instacart price check. Long term: find proper vendors.
