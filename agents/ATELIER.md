@@ -35,3 +35,5 @@ Grow Atelier cash, liquor first. Lobby store, 5445 Collins Ave, 573 unit condo h
 5. Vending (owner Oct 8): two machines, Aquafina glass front and Coca Cola closed front; both take bottles and cans. 20oz bottles sell $3, one row $4. Coke Zero 20oz case = 24 (owner), unit $1.6667. V.
 6. Gross margin per 20oz bottle at Fresh Produce cost: $3 sale = $1.33 (44.4%); $4 sale = $2.33 (58.3%). Before tax and card fees (U).
 7. No Instacart, Uber Eats, Grubhub or Costco connector in this session (V). Costco Business Center same day site runs on Instacart (V, page metadata). A search snippet showed $20.08 for Coke 20oz 24 ct there; date, location and login price U.
+8. Costco (costco.com, 33140, Oct 8, Drive "Vendor Price Check Costco"): 12oz cans 35 ct $18.49 ($0.528), Fiji 16.9oz 24 ct $21.99, Gatorade 20oz 24 ct $18.49 = warehouse only; Red Bull 12oz 24 ct $64.99 online. 20oz sodas, Aquafina, Zephyrhills 20oz, Snapple, Arizona not found. V.
+9. Same quantities as invoice 13315 for those items: Fresh Produce $316.50 vs Costco $260.39, saves $56.11, before Costco trip, membership, tax and the $80 delivery fee split. V (computed twice). Tax treatment U.
