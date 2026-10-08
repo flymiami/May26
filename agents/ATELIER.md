@@ -40,3 +40,5 @@ Grow Atelier cash, liquor first. Lobby store, 5445 Collins Ave, 573 unit condo h
 10. Vending plan (owner Oct 8): Aquafina machine = water first, plus impulse drinks. Colas go in the Coca Cola machine. Each slot holds 9 to 10 bottles or cans. Photo shows 9 slots per row (A1 to A9), 5 rows = about 45 slots. Last week's fill was a trial.
 11. 5-hour Energy: Atelier sold it 2 to 3 years ago (owner). Clover history pending.
 12. Short term: Instacart price check. Long term: find proper vendors.
+13. Instacart check Oct 8 (Drive "Vendor Price Check Instacart and Distributors"): Zephyrhills 16.9oz 40 pk $7.14 at Costco ($0.179 each) vs Fresh Produce 20oz $0.536. Coke family 12oz cans 35 pk $20.34 at Costco ($0.581) vs FP $0.686. 20oz Coke bottles: no wholesale club; FP $1.667 beats singles ($2.49+). Dr Pepper 20oz Restaurant Depot $1.79. 5-hour Energy Sam's 24 pk $2.03. Monster Zero Ultra 16oz FP $1.919 beats Publix $2.108. Instacart service fees U. V.
+14. Distributors to call (no one contacted): Coke Florida 1-844-863-2653 (press 2 sales), Miami Beverages LLC 305-582-7092, American Beverage Depot 305-882-0199, Pepsi Miami (phone U).
