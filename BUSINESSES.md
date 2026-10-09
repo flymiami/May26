@@ -89,3 +89,11 @@ Bank numbers and logins in the source sheet are NOT copied here on purpose.
 1. No ads anywhere. (you)
 2. Lawsuit eats time and cash: legal fees ~$93.5k this year. (V)
 3. Storage flooding damaging inventory. (V)
+
+## Mindbody agreement (support case 05563692, Phil, Oct 8 2026; V from PDF)
+1. Order 00484395, Pilates Miami LLC. Ultimate Bundle $539/mo (50% off first 3 months); replaced Starter 2.0 $169/mo. First charge $74.56.
+2. Term Mar 9 2026 to Jul 31 2026. Auto renews for 12 months unless written notice 30 days before. Non terminable inside a term. So a renewal term likely runs Aug 1 2026 to Jul 31 2027 (inference).
+3. Price can rise up to 8% a year.
+4. Phil offered: credit covering the next billing, 2026 payment records from Billing, and help with downgrade or cancellation.
+5. Link Phil sent is the Booker (salon software) plan page, not Mindbody. Prices there: none.
+6. Downgrade to Starter saves $370/mo, $3,700 over Oct 2026 to Jul 2027. V (computed twice).
