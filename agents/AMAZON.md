@@ -4,7 +4,7 @@
 Drafts and read only by default. Creating shipments or accepting carrier charges needs owner yes.
 
 ## Shipments
-1. Turkey Hats: box 28 units, 16 x 17.5 x 22 in, 8 lb. Each hat bag 3.5 oz, 9 x 14.5 x 3 in. 4 boxes total; 2 sent, 2 to send (owner Oct 9).
+1. Turkey Hats: 4 boxes of 28; labels done for all 4; 2 sent, 2 to print and send (owner Oct 9). Box 16 x 17.5 x 22 in, 8 lb.
 2. Labels wanted (owner Oct 9): Moscow Mule mugs, Sprinkler Waterpark, black wall clock. Units, boxes, sizes, weights U.
 3. Black clock B0HLZZXJM7 is FBM, own family, price 0.00, no live offer (Seller Central Oct 7). Needs FBA offer before an FBA label.
 
