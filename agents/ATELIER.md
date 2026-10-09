@@ -44,3 +44,11 @@ Grow Atelier cash, liquor first. Lobby store, 5445 Collins Ave, 573 unit condo h
 14. Distributors to call (no one contacted): Coke Florida 1-844-863-2653 (press 2 sales), Miami Beverages LLC 305-582-7092, American Beverage Depot 305-882-0199, Pepsi Miami (phone U).
 15. Clover: no 5-hour Energy item in 2022 to 2026 (search "hour"). 2025 energy items: Red Bull 16oz 276 sold about $7.68 each; Monster Zero Sugar 91 about $5.17; Monster 16oz 59 about $5.07; Monster Lo Carb 36 about $5.14. Clover COGS empty. V (assistant report).
 16. Resale certificates in Drive: FLY FUTURE LLC 2025 (expired Dec 31 2025, cert 23-8019610158-2); DSM Inc 2024 (expired, cert 23-8018673226-2). 2026 copies not found in Drive or Gmail. V.
+
+## Clover deep dive (Oct 9, Drive "Clover Reports" 01, 02, 04, 06, 07; computed twice)
+1. Net sales by month 2026: Jan 50,554.64; Feb 43,113.21; Mar 64,995.16; Apr 53,579.62; May 44,596.89; Jun 43,369.37; Jul 58,076.78; Aug 45,317.47; Sep 41,864.88; Oct 1 to 8 9,236.75 (pace about 35,792 for the month). V.
+2. Tender Jan to Oct 8: cards $353,549.23, cash $141,600.84. V.
+3. Online ordering page is ON (pickup 1 hour) but had 0 orders all year. Delivery off. V.
+4. Card fees: QuickBooks merchant fees Jan to Sep $25,960.88 vs card tender Jan to Oct 8 $353,549.23 = at least 7.34% of card sales. Normal card processing is much lower. What the QuickBooks account includes is U. Strong lead for a cheaper processor (Atelier too, not only Travel Rentals).
+5. Clover net Jan to Sep $445,468.02 vs QuickBooks Clover Sales $422,946.96: $22,521.06 gap. Reason U (cash not deposited, timing, or tax).
+6. Liquor and beer: $88,724.74 net Jan to Oct. On the 65.5% of it with a Clover cost, gross margin 52.7% ($30,633.59). Top profit: Titos 750 ($3,863), Corona bottle ($1,857), Michelob Ultra ($1,843), Casamigos ($1,840). Lowest margin with volume: Bud Light can 38.1%. Clover cost dates U.
