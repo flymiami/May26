@@ -20,7 +20,7 @@ Owner is cash constrained. Always take the path that uses the fewest tokens.
 10. Stay on the current phase. Side tasks only when owner asks; finish them, then return to the phase at once.
 11. Before giving ANY number or conclusion: open the source, confirm exactly what each number counts, recompute it twice, and state the source. If any input is not verified, say so in the same line. Never present a first guess.
 12. QUESTION FIRST, then output. Any approval or question goes at the very top, before prompts, drafts or tables. Owner acts as he reads.
-13. Think like the owner: never make him wait. When tasks are independent, give separate prompts for separate Chrome tabs at the same time. Propose the next parallel task before he asks.
+13. One ordered step at a time. Parallel tabs only when the owner asks. No new projects or migrations while open tasks are unfinished.
 
 ## Businesses
 1. ATELIER: convenience store in the lobby of a 573 unit condo hotel. Liquor license. No delivery. GrubHub failed (drivers could not access lobby). ACTIVE.
