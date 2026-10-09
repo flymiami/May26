@@ -25,7 +25,7 @@ Owner is cash constrained. Always take the path that uses the fewest tokens.
 1. ATELIER: convenience store in the lobby of a 573 unit condo hotel. Liquor license. No delivery. GrubHub failed (drivers could not access lobby). ACTIVE.
 2. FLY PILATES MIAMI: Pilates studio, North Bay Village FL 33141. ACTIVE.
 3. AMAZON STORE: sells, could sell more. Owner took a factory and brand sourcing course. ACTIVE.
-4. FLY MIAMI ART: flymiami.art, Etsy, Instagram. No sales ever. PARKED. Do not work on it until owner says so.
+4. FLY MIAMI ART: flymiami.art, Etsy, Instagram. No sales ever. High ticket inventory. UNPARKED Oct 9 2026 by owner: build the Art agent.
 Shared problem: no ads anywhere.
 
 ## Phases
