@@ -29,3 +29,6 @@ Net sales $454,704.80 on 867 items. Grocery $205,700.05, Deli $62,048.67, Liquor
 ## Next 40 items to price (top sellers with no verified supplier cost)
 Titos 750ml, Fiji 1.5L, Modelo 12oz bottle and can, Corona bottle and can, Casamigos Blanco 750, Teremana Reposado 750, Titos 50ml, Simply Orange 42oz, Michelob Ultra 12oz and 12 pack, Zephyrhills 23.7oz, Absolut 750, James Farm eggs, Coke 2L, Evian 1L, Jack Daniels 750, Fiji 1L, Hennessy 750, Gonnella bread, Johnnie Walker Black 750, Electrolit Fruit Punch and Orange 21oz, Stella can, La Marca Prosecco, Sprite 20oz, Monster Zero Ultra 16oz, Grey Goose 750, Don Julio Blanco 750, San Pellegrino 16.9oz, Red Bull 12oz, White Claw 12 pack, Bacardi 750, Starbucks Vanilla and Mocha 9.5oz, Carmonas flan, Patron Silver 750, M&M Peanut share, Gatorade Cool Blue 20oz.
 Liquor: whether Atelier may buy liquor for resale at Costco or must use a licensed distributor is U. Ask the accountant before buying liquor anywhere new.
+
+## Fresh Produce (owner, Oct 9)
+High markup; value is delivery. They are creating a platform login for the owner. Plan: export their full price list once the login works, compare every item to Costco and Instacart.
