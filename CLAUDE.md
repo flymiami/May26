@@ -21,6 +21,7 @@ Owner is cash constrained. Always take the path that uses the fewest tokens.
 11. Before giving ANY number or conclusion: open the source, confirm exactly what each number counts, recompute it twice, and state the source. If any input is not verified, say so in the same line. Never present a first guess.
 12. QUESTION FIRST, then output. Any approval or question goes at the very top, before prompts, drafts or tables. Owner acts as he reads.
 13. One ordered step at a time. Parallel tabs only when the owner asks. No new projects or migrations while open tasks are unfinished.
+14. Never give the owner how to steps or homework. Do the work with my own tools. If blocked, say what is blocked in one line and stop.
 
 ## Businesses
 1. ATELIER: convenience store in the lobby of a 573 unit condo hotel. Liquor license. No delivery. GrubHub failed (drivers could not access lobby). ACTIVE.
