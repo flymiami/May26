@@ -14,3 +14,4 @@ Sales Jan 1 to Oct 6: $31,604.79, 1,725 units. Last 90 days: Moscow Mule mugs $2
 ## Routine (to build)
 Weekly: sales by ASIN, inventory days left, settlement net, Account Health, listing audit findings.
 4. Black clock B0HLZZXJM7 (Oct 10): hazmat not approved, listing down, can't ship (owner). Ships with no battery (owner). Fix: Amazon battery exemption sheet, Excel template only, from Manage dangerous goods classification (behind Seller Central login). Review takes 2 business days. Blocked until Seller Central can be reached from an agent on the owner's computer.
+5. Oct 10: two black clock ASINs. B0HLZZXJM7 (own listing): battery exemption sheet uploaded, "Not classified: Under review", 2 business days. B0HMJXYHXF (title "Wall Clock with 3D Numbers, Black", in the Send to Amazon draft): second exemption sheet built on Amazon's template, upload pending. Units per box message still not retrieved.
