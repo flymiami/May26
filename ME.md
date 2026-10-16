@@ -7,6 +7,19 @@ V = VERIFIED from a source. U = UNKNOWN, needs you.
 2. Works in English and Spanish. Spanish with Amazon prep partner and friends. (V)
 3. Works nights; "otro día más sin dormir", "my day is my life, 24/7" about the lawsuit. (V)
 
+## Who you are (added Oct 16; correct anything)
+1. Facundo L. Yebne, known as FLY. From Buenos Aires, Argentina; lives in Miami. (V, Lincoln Road bio)
+2. Engineer by degree. Serial entrepreneur across several industries before art. (V, Lincoln Road bio)
+3. Became an artist in 2024. No formal art training; ideas flow when you have peace of mind. (V bio; Fieldy Oct 14, speaker not labeled)
+4. Medium: rubber ducks, thousands per piece, some glow in the dark. Themes: joy, nostalgia, human connection, love over hate. (V, bio)
+5. Your line: "Have you ever seen an unhappy duck?" (V, bio)
+6. Proud moments: giant ducks with 14,000 mini ducks for Miami Beach (Normandy Fountain); Duck With Pride on Lincoln Road 2025 (Unity Beak about 16,000 ducks, Proud Love about 5,000); Red Dot Miami at Art Basel; GMCVB recognition Jan 2025; Florence Biennale award. (V, bio, Facebook, Fieldy Oct 15)
+7. Why you make it: "my way of contributing to a world that needs more love and less division." (V, Lincoln Road quote)
+8. What you want: independence, rebuild what you had before the lawsuit, then a few very meaningful large installations a year. (V, Fieldy Oct 14, speaker not labeled)
+9. Idea: an Amazon line teaching people to make art with rubber ducks, merging Amazon and art. (V, Fieldy Oct 15)
+10. Family: brother Sebastian Yebne. Others U.
+11. What gives you energy, what drains you, how you rest: U, tell the chief.
+
 ## Voice
 1. Short, polite, direct. "Dear Daniel, Per our conversation, please close..." then "Thanks!" (V)
 2. Firm when cutting costs: "Do not charge me again." (V)
