@@ -42,3 +42,11 @@ Pipeline stages: Found, Contacted, Replied, Hot, Customer.
 3. Contacts have name only. No email or phone. Company, role, source URL live in the Drive sheet, not yet in GHL fields.
 4. Nothing sent. First message draft waits for owner approval.
 5. Built in browser is the preferred browser. GHL, Google Calendar and LinkedIn are signed in there. Chief never types or stores passwords.
+
+## GHL config Oct 17 (V = verified)
+1. Custom fields created in FLY Miami Art: Role, LinkedIn URL (folder Additional Info) (V).
+2. Business name filled for 15 of 18 contacts, 3 UNKNOWN left blank (V, list view).
+3. Role and LinkedIn URL entered on all 18 by hand. Spot checked on 8 contacts (V). Others not re checked.
+4. Tags seg-designer and src-linkedin confirmed on all 18 (V).
+5. Known UI quirk: the first field typed after a contact page loads is dropped. Enter a throwaway value first.
+6. Nothing sent. First message waits for owner yes.
