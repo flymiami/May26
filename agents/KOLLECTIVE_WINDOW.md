@@ -11,9 +11,17 @@ Sources: kollectiveshop.com home and about 4 (fetched Oct 17), owner message Oct
 7. Sample inventory sheet (Square style import) shows price points: sticker $3, magnet $5, button $6, hat $25, shirts $30, art $250. V (attached sheet). Whether these are Kollective sales: U.
 8. flymiami.art has nothing priced between $35 and $120. V (agents/ART.md). Cost and stock of a $25 mini duck: U.
 
-## Concept: "Have you ever seen an unhappy duck?"
-1. Center rack becomes a glow window. Day: bright Joy hero on top shelf. Night: UV on, ducks glow, people stop on the sidewalk.
-2. One question sign in the window, his line: "Have you ever seen an unhappy duck?" Answer is inside.
+## Owner corrections Oct 17 (V, owner)
+1. The "Cucina by Cana Tuan" text seen in photos is a reflection of a store or restaurant across the street. Not on the duck, not ours. Never mention it.
+2. Do NOT use the line "Have you ever seen an unhappy duck?" in the window.
+3. Window theme name: "Mr. Duck and his crew" or "his happy ducks" (owner wording, final text U).
+4. Hero shelf is 24 in, holds the new Joy. Third shelf: tray, martini, mini ducks. Fourth shelf: frames and peace panel.
+5. Blue LED strip was left as is for now; needs rework (U how).
+6. Owner wants mini ducks for Halloween, Thanksgiving, Christmas from Amazon, delivery today or tomorrow. Delivery dates U until checked in his Amazon account.
+
+## Concept: "Mr. Duck and his crew"
+1. Center rack becomes a glow window. Day: bright Joy hero on the hero shelf. Night: UV on, ducks glow, people stop on the sidewalk.
+2. Sign in the window with the "Mr. Duck and his crew" wording. Answer is inside.
 3. $25 Wynwood duck on the lower shelves at hand height. Souvenir price band that already sells.
 4. One empty slot labeled "Adopt a duck". Buyer takes a duck from the rack, the slot refills.
 5. QR sticker on the glass to flymiami.art. Works at night when closed.
