@@ -27,5 +27,29 @@ Sources: kollectiveshop.com home and about 4 (fetched Oct 17), owner message Oct
 5. QR sticker on the glass to flymiami.art. Works at night when closed.
 6. Inside the door, a small table with the same ducks so the window pulls people in and sells at the counter.
 
+## Member research (Oct 17 2026)
+Sources: kollectiveshop.com home, about 4, sell (fetched Oct 17); Delray and Las Olas listing pages; web search.
+1. Wynwood members, V (site): 26 confirmed.
+   All 3 stores (13): Tiktin Art, Nomad Soul, OK4U, Art by Kiki, Earth Tones Jewelry, Espiritulibre Pasion, Great4Gifts, Meant For Both, Arboleya Moreno Art, Treasures Dream, Woofin Good Pet Accessories, Yosoy, Roxy's Enchanted Gifts.
+   Wynwood plus one other store (6): Tess Anisco, Caesmofica, Kapha Living, Private Sundays, Dicielo, Brandon Koek.
+   Wynwood only (7): Kawaii Universe, Jesus Nodarse, Desisano, DJ Nando, mundo_da_romi, Maya Hatcha, La Sensacion Boutique.
+   Store unclear, U: Red Catalina (listed Miami and Delray Beach), Dats Ill Miami (two stores, not named).
+2. What each member sells: U. The site shows names and store tags only, no products or prices. Product types are inferred from names only: Earth Tones Jewelry (jewelry), Great4Gifts and Roxy's Enchanted Gifts (gifts), Woofin Good (pet accessories), Art by Kiki and Arboleya Moreno Art (art).
+3. Model, V (Delray and Las Olas pages): members run the shop and stock shelves themselves. Collection rotates. Josh Tiktin sells originals and reproductions of his own art.
+4. Web search found nothing usable on most members. Two name matches, same person U: Jesus Nodarse (Cuban figurative artist on 1stdibs); Brandon Koek (Fort Lauderdale painter and live painter, 2017 profile).
+5. Fees, commission and display rules: not on the sell page. U.
+6. Instagram is robots blocked for fetch. Chrome not linked to the chat this session. Members' products not seen.
+
+## Product ideas for the center rack (proposals, nothing bought or posted)
+1. Wynwood Duck, numbered mini resin duck, souvenir lane. Cost U, price to test near $25 (owner: best sellers are Wynwood souvenirs around $25).
+2. Adopt a Duck: duck plus name tag and certificate. Fills the empty slot idea.
+3. Crew Pack: 3 to 5 mini ducks in a box. Fills the gap between $35 and $120 on flymiami.art. Price U.
+4. Glow Duck: UV glow mini shown lit in the window at night, same duck sold inside.
+5. Holiday drops: Halloween, Thanksgiving, Christmas minis (owner wants them). Limited weekly drops.
+6. Counter impulse: sticker, magnet, button (sample sheet price points $3, $5, $6; whether Kollective sells at these: U).
+7. Frame shelf: small Joy prints for the frames shelf. Print cost and sizes U.
+8. QR on the glass to a reserve page for big pieces ($50 or $100 deposit, owner Oct 11).
+9. Member collabs (a duck charm, a duck print with Tiktin Art). Needs the member's yes. Products U.
+
 ## Next
-Owner to give rack size and say which parts to build. Nothing bought, posted or signed.
+Owner to say which parts to build. Nothing bought, posted or signed.
