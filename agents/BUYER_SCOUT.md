@@ -4,7 +4,7 @@ Goal: find art buyers, put them in GoHighLevel, make first contact on the channe
 ## Facts
 1. Sales Navigator Core is ACTIVE, billed through Apple. LinkedIn cannot cancel it. (V, LinkedIn Manage Premium page, Oct 17)
 2. Price and renewal date: UNKNOWN (Apple subscription screen only).
-3. GHL (V, opened Oct 17): 2 sub accounts, FLY Future LLC and FLY Miami Art. FLY Miami Art has 2 pipelines: "Art Sales Pipeline" (9 stages: New Lead, Initial Contact/ Inquiry, Gallery Visit / Consultation, Artwork Interest / Shortlist, Negotiation & Follow-Up, Sale Agreed, Payment Processing, Artwork Delivered, Referral/ Review Request) and "IG Leads Art" (5 stages: Welcomed, Replied, Portfolio Requested, Lead Hot, Customer). No outbound buyer pipeline exists. Creation of "Art Buyers Outbound" was blocked by the permission system, needs explicit owner yes.
+3. GHL (V, opened Oct 17): 2 sub accounts, FLY Future LLC and FLY Miami Art. FLY Miami Art has 2 pipelines: "Art Sales Pipeline" (9 stages: New Lead, Initial Contact/ Inquiry, Gallery Visit / Consultation, Artwork Interest / Shortlist, Negotiation & Follow-Up, Sale Agreed, Payment Processing, Artwork Delivered, Referral/ Review Request) and "IG Leads Art" (5 stages: Welcomed, Replied, Portfolio Requested, Lead Hot, Customer). No outbound buyer pipeline exists. Pipeline "Art Buyers Outbound" CREATED Oct 17 after owner yes (V, 7 stages: Found, Contacted, Replied, Meeting, Offer, Won, Lost).
 
 ## Done Oct 17
 1. Sales Navigator saved leads (122, V count from LinkedIn) exported to Drive "Chief of Staff", sheet "Sales Navigator saved leads 2026-10-17". Sheet rechecked Oct 17: 122 data rows plus header (V). 7 rows had no title or company and are marked UNKNOWN.
