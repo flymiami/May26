@@ -35,3 +35,10 @@ Pipeline stages: Found, Contacted, Replied, Hot, Customer.
 2. Daily cap 25 touches, 4 minutes apart on LinkedIn, 20 seconds apart on Instagram.
 3. Every number and name from a screen, source named. Else UNKNOWN.
 4. Log every touch in GHL.
+
+## Batch 1 Oct 17 (interior designers, Miami, LinkedIn)
+1. 18 leads captured from LinkedIn search "luxury interior design founder principal owner", Miami, pages 1 and 2 (V). Drive sheet "Buyer Scout interior designers Miami LinkedIn 2026-10-17" in Chief of Staff.
+2. GHL FLY Miami Art (V): 18 contacts created (contacts 2171 to 2189), tags seg-designer and src-linkedin added by bulk action, 18 opportunities in pipeline Art Buyers Outbound, stage Found.
+3. Contacts have name only. No email or phone. Company, role, source URL live in the Drive sheet, not yet in GHL fields.
+4. Nothing sent. First message draft waits for owner approval.
+5. Built in browser is the preferred browser. GHL, Google Calendar and LinkedIn are signed in there. Chief never types or stores passwords.
