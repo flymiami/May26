@@ -6,6 +6,11 @@ Goal: find art buyers, put them in GoHighLevel, make first contact on the channe
 2. Price and renewal date: UNKNOWN (Apple subscription screen only).
 3. GHL "FLY Miami Art" sub account has pipeline "IG Leads Art" and a Claude private integration. Pipeline "Art Buyers Outbound": UNKNOWN, not yet created. (V from memory notes, not rechecked)
 
+## Done Oct 17
+1. Sales Navigator saved leads (122, V count from LinkedIn) exported to Drive "Chief of Staff", sheet "Sales Navigator saved leads 2026-10-17". Row count in the sheet not rechecked. 7 rows had no title or company and are marked UNKNOWN.
+2. Mix of the 122 (from titles): 7 Miami art advisors, 2 interior designers (both out of state), 2 real estate, rest mostly LatAm wealth managers and bankers.
+3. Owner order for sourcing: interior designers first. LinkedIn, then Instagram, then an interior design association (name UNKNOWN, owner said "Starboy, Miami" by voice).
+
 ## Order of work
 1. Export saved leads and lists from Sales Navigator to Drive "Chief of Staff/Buyer Scout" BEFORE cancel. Lists vanish after the plan ends.
 2. Owner cancels in Apple subscriptions. Blocked for the chief (Apple ID login).
