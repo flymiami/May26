@@ -6,7 +6,7 @@ Sources: kollectiveshop.com home and about 4 (fetched Oct 17), owner message Oct
 2. Site lists 59 members across 3 stores. Wynwood only members: Kawaii Universe, Jesus Nodarse, Desisano, DJ Nando, mundo_da_romi, Maya Hatcha, La Sensacion Boutique. V (site). Products per member and prices: U.
 3. Store categories: clothing, jewelry, accessories, books, art, art prints, candles, handmade gifts, perfume, coffee, tea, pet and beauty. V (site).
 4. Best sellers are Miami or Wynwood souvenirs around $25. V (owner).
-5. Owner holds the center rack on the front windows. Rack size in inches, shelf heights, power outlet: U.
+5. Owner holds the center rack on the front windows. Rack width 36 in, depth 12 to 20 in, central shelf 24 in high, fits the new Joy duck. Outlet near the window: yes. V (owner Oct 17). Number of shelves: U.
 6. Hero piece is a new Joy duck sized to the center shelf. UV lighting at night needs power from Josh. V (owner notes).
 7. Sample inventory sheet (Square style import) shows price points: sticker $3, magnet $5, button $6, hat $25, shirts $30, art $250. V (attached sheet). Whether these are Kollective sales: U.
 8. flymiami.art has nothing priced between $35 and $120. V (agents/ART.md). Cost and stock of a $25 mini duck: U.
