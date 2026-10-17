@@ -51,5 +51,12 @@ Sources: kollectiveshop.com home, about 4, sell (fetched Oct 17); Delray and Las
 8. QR on the glass to a reserve page for big pieces ($50 or $100 deposit, owner Oct 11).
 9. Member collabs (a duck charm, a duck print with Tiktin Art). Needs the member's yes. Products U.
 
+## Owner update Oct 17, store photos (V, owner and photos)
+1. Glow in the dark does NOT work in this window. The store runs bright white light 24/7, and the UV he added is too weak. Drop UV and glow from the window plan. Concept items 1 and "Glow Duck" are out.
+2. Photos show white track lights and white LED strips on the shelves. An outlet with extension cords sits at the window corner and the cords are visible from the sidewalk.
+3. Member price tags seen in a photo: beaded jewelry $11, $15, $17.99, $19.99. Souvenir lane already holds Miami magnets, pins, coasters, totes, keychains, stickers. Yellow plush ducks sit in a basket near the candles, price U.
+4. Brands seen: Woofin Good (pet), Private Sundays (perfume), Kawaii Universe (apparel, pillows, stickers), Peachy Kings (Pride apparel, mugs, bags), Belakai Jewelry, XtahZ (vinyl disc in the window). Member behind Peachy Kings and Belakai: U. A window flyer shows Friday October 30 2026, partly readable, event details U.
+5. New direction options offered: golden duck hunt with QR, color and motion hero, Pride and Halloween drops. Owner pick: U.
+
 ## Next
 Owner to say which parts to build. Nothing bought, posted or signed.
