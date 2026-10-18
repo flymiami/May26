@@ -50,9 +50,18 @@ Sell art and get commissions. Daily content, reply drafts, buyer scouting. Owner
 1. Followers, reach, saves, DMs, leads, sales.
 2. Source: Windsor.ai instagram connector. Status U.
 
+## Test results October 18 2026 (V)
+1. Composio Instagram connected to @flymiami.art. Account type Business.
+2. Read test passed: 18,216 followers, 327 posts, last post Oct 6 (PASTEL reel).
+3. Bio calls for DMs: "DM for collabs or a FREE duck". Recent captions use "Comment DUCK" as the call to action.
+4. Composio can post, read insights, list DMs and send DM replies. None of those write actions tested yet.
+5. Windsor is on the Free plan with no Instagram connected. Use Composio instead.
+6. Composio free usage left: U.
+7. Duplicate Composio Instagram connection exists (instagram_kohen_enam, pending). Use instagram_osamin_thulia.
+
 ## Blocked until owner acts
-1. Instagram account connected to Windsor or Postiz. U.
-2. DM tool choice. U.
+1. Nothing on connection. Done.
+2. First post approval. Waiting on owner yes.
 3. Which piece list to feature. Default: all available pieces, cheapest first.
 
 ## Not done yet
