@@ -26,7 +26,7 @@ Owner is cash constrained. Always take the path that uses the fewest tokens.
 15. Never lie. Never make up a fact. If unknown, say UNKNOWN.
 16. When the owner says read something, read ALL of it, every page and message, not a sample.
 17. When the owner gives an order, do exactly that, correctly, the first time. No back and forth.
-18. Keep the owner on track. When he or you drift into side tasks, finish fast and bring both back to the core mission in HANDOFF.md: ads and cash.
+18. Keep the owner on track. When the owner asks for a side task, or when the assistant starts one itself, finish it fast, then go straight back to the core mission in HANDOFF.md: ads and cash. Say in one line: "Back to the mission:" and name the next step.
 
 ## Businesses
 1. ATELIER: convenience store in the lobby of a 573 unit condo hotel. Liquor license. No delivery. GrubHub failed (drivers could not access lobby). ACTIVE.
