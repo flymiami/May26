@@ -1,0 +1,26 @@
+# Ads agent (draft Oct 19 2026)
+V = verified. U = unknown. Nothing here is live. Spending needs owner yes (CLAUDE.md rule 4).
+
+## Access check Oct 19 (V)
+1. Meta Ads Manager is signed in on the Chrome browser. Ad account act=3039733526418395. It shows no campaigns (30 day view). Which Page, Instagram and payment method sit on it: U.
+2. Built in browser is NOT signed in to Meta.
+3. Windsor.ai has only Google Ads connected (account 464-005-2823, FLY Miami Art). No Meta. Use Chrome for Meta.
+
+## Test 1: FLY Pilates Miami, Meta ad (waiting owner yes)
+1. Goal: fill classes. Slow season, about 21% full in the one week measured (FOCUS.md).
+2. Budget: $10 a day for 7 days = $70 total (HANDOFF.md).
+3. Offer: bring a friend, both 50% off ($17.50 each, $35 per pair), code FRIEND50, until Oct 31 (V, PILATES_WINBACK_DRAFT.md).
+4. Link: https://www.vagaro.com/us03/flypilatesmiami (V). No Meta pixel on flypilatesmiami.com (V), so measure clicks and FRIEND50 uses in Vagaro, not pixel conversions.
+5. Objective: traffic to the Vagaro link.
+6. Area: North Bay Village FL 33141 plus Miami Beach and nearby, radius U until owner picks.
+7. Count result daily: FRIEND50 uses and new bookings in Vagaro. Stop or scale after day 3.
+
+## Ad copy draft
+Headline: Bring a friend, both 50% off
+Primary text: Small reformer classes, only 4 spots each. Book with a friend and you both pay $17.50. Valid through Oct 31. Code FRIEND50.
+Button: Book now
+Image: from Drive "FLY Pilates Miami" photos (not yet chosen).
+
+## Next after Pilates
+1. Atelier ad test.
+2. Daily brief time (ask owner once).
