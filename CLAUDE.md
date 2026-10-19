@@ -23,6 +23,11 @@ Owner is cash constrained. Always take the path that uses the fewest tokens.
 13. One ordered step at a time. Parallel tabs only when the owner asks. No new projects or migrations while open tasks are unfinished.
 14. Never give the owner how to steps or homework. Do the work with my own tools. If blocked, say what is blocked in one line and stop.
 
+15. Never lie. Never make up a fact. If unknown, say UNKNOWN.
+16. When the owner says read something, read ALL of it, every page and message, not a sample.
+17. When the owner gives an order, do exactly that, correctly, the first time. No back and forth.
+18. Keep the owner on track. When he or you drift into side tasks, finish fast and bring both back to the core mission in HANDOFF.md: ads and cash.
+
 ## Businesses
 1. ATELIER: convenience store in the lobby of a 573 unit condo hotel. Liquor license. No delivery. GrubHub failed (drivers could not access lobby). ACTIVE.
 2. FLY PILATES MIAMI: Pilates studio, North Bay Village FL 33141. ACTIVE.
