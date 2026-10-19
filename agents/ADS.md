@@ -24,3 +24,13 @@ Image: from Drive "FLY Pilates Miami" photos (not yet chosen).
 ## Next after Pilates
 1. Atelier ad test.
 2. Daily brief time (ask owner once).
+
+## Owner rules added Oct 19 (V, owner)
+1. Every ad that ever runs gets the Meta pixel plus every tracking tool that fits. No manual counting.
+2. No yes or no questions to the owner. Decide, do, show the screen when a click is his.
+3. Audience for Pilates: 10 mile radius around North Bay Village FL 33141.
+
+## Blocker Oct 19 2am (V)
+1. Meta Business Suite shows a "You were added to the pilatesmiamiok business portfolio" popup. Accept is needed before Events Manager and the pixel open. Owner gave the yes in chat; the click was blocked for me, so owner clicks it.
+2. Ad account act=3039733526418395, Page PilatesMiamiok 106956201157758, card Amex 5005 default (V).
+3. After accept: create pixel in Events Manager, add it to Vagaro website settings (plan support U), then build the ad.
