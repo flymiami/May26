@@ -43,3 +43,12 @@ Image: from Drive "FLY Pilates Miami" photos (not yet chosen).
 5. Google Ads (Windsor, account 464-005-2823 "FLY Miami Art"): 0 campaigns and 0 conversion actions in 90 days. I can create campaign, ad group, keywords, responsive search ad, geo radius, schedule, budget. All created paused.
 6. After GA4 shows data: mark a key event, link GA4 to Google Ads, import conversion (Vagaro steps 4 to 6).
 7. Geo: 10 mile radius around North Bay Village FL 33141. Ads link to flypilatesmiami.com (MySite), not vagaro.com, so the tag can see the visit.
+
+## Google Ads campaign built Oct 19 2:28am (V, all PAUSED)
+1. Campaign "FLY Pilates Miami Local Search" id 24375856516, daily budget $10, manual CPC.
+2. Geo: 10 mile radius around 25.8473, -80.1546 (North Bay Village).
+3. Ad group "Reformer Pilates Near Me" id 199977781886, default CPC $1.50 (my placeholder, not researched).
+4. 7 keywords paused: 6 phrase, 1 exact (reformer pilates miami).
+5. Responsive search ad paused, final URL https://flypilatesmiami.com, 7 headlines, 2 descriptions, copy uses only verified facts (4 reformers, bring a friend 50% off, FRIEND50 until Oct 31).
+6. Windsor write toggle turned ON by owner order Oct 19.
+7. Still to do before enabling: Vagaro GA ID paste (G-0HF6PMC87E), GA4 key event, link GA4 to Google Ads, import conversion.
