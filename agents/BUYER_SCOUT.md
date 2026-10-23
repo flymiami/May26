@@ -50,3 +50,46 @@ Pipeline stages: Found, Contacted, Replied, Hot, Customer.
 4. Tags seg-designer and src-linkedin confirmed on all 18 (V).
 5. Known UI quirk: the first field typed after a contact page loads is dropped. Enter a throwaway value first.
 6. Nothing sent. First message waits for owner yes.
+
+## LinkedIn DM templates, draft Oct 22 2026 (owner order: 2 types, written BEFORE the agent sends)
+Status: DRAFT. Nothing sent. Waits for owner approval of the text.
+Slots: {first_name}, {their_work} (their firm, project or role), {their_post_or_role}, {hook} (one real detail from their profile or a recent post).
+Rule: every slot must come from a page I opened. If no real detail exists, use the fallback line. Never invent a detail.
+Rule: connection notes are under 190 characters. LinkedIn note limit for the free account: UNKNOWN, so kept short.
+
+### Type A: trade buyers (seg-designer, seg-realtor, seg-developer, seg-hospitality, seg-city, seg-advisor)
+Connection note (182 characters):
+Hi {first_name}, I'm Facundo, a Miami artist behind the Duck With Pride installation on Lincoln Road. I liked {their_work}. Would love to connect and share my work for your projects.
+
+Follow up after they accept:
+Thanks for connecting, {first_name}. {hook}. I build statement pieces from thousands of mini rubber ducks, some glow under UV light. The theme is joy and love over hate. If you have a space or a client who needs a piece with a story, I can send a short portfolio. Anything coming up where art fits?
+Facundo | FLY
+flymiami.art
+
+Fallback hook: I saw the work your team does in Miami and it stayed with me.
+
+### Type B: private buyers (seg-collector, wealth managers, bankers, seg-media)
+Connection note (186 characters):
+Hi {first_name}, I'm Facundo Yebne, a Miami artist. I make pieces from thousands of mini rubber ducks, some glow under UV. I saw {their_post_or_role} and thought you might enjoy my work.
+
+Follow up after they accept:
+Thanks for connecting, {first_name}. {hook}. My originals are at flymiami.art, each one signed with a certificate of authenticity. If a piece catches your eye I can send details, or hold it for a week with a small deposit that counts toward the purchase. Which one speaks to you?
+Facundo | FLY
+
+Spanish version for LatAm leads (Type B):
+Hola {first_name}, soy Facundo Yebne, artista en Miami. Hago obras con miles de patitos de goma, algunas brillan con luz UV. Vi {their_post_or_role} y pensé que te podría gustar mi trabajo. Mis obras están en flymiami.art, todas firmadas y con certificado de autenticidad. Si alguna te llama la atención, te mando los detalles.
+
+### Facts behind the text (V)
+1. Duck With Pride on Lincoln Road 2025: ME.md, Lincoln Road bio.
+2. Some pieces glow under UV, theme joy and love over hate: ME.md.
+3. Signed plus certificate of authenticity lines: owner rule for collctn.art, Oct 16.
+4. Deposit holds a piece one week and counts toward purchase: owner, Oct 11. Amount ($50 or $100) not stated in the DM on purpose. Refund policy U.
+5. No price in any first message. Prices only from flymiami.art.
+
+### Agent run rules (LinkedIn)
+1. Sourcing order: interior designers first, then the other segments.
+2. Free LinkedIn account, by hand pace in the built in browser, one profile at a time, no mass tools, no scraping behind login.
+3. Open each profile and recent posts, write the slots from what is on screen, log source URL in GHL.
+4. Cap 25 touches a day, 4 minutes apart. Daily batch shown to owner for approval until owner says auto.
+5. Every touch logged in GHL, pipeline Art Buyers Outbound, stage Contacted.
+6. Sales Navigator cancel: owner does it in Apple subscriptions, blocked for the chief.
