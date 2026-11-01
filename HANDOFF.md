@@ -30,3 +30,13 @@ A clone that thinks like Facundo and manages specialist agents so his businesses
 3. DAILY BRIEF: ask owner once for the time, then send it every morning.
 4. LAWSUIT DSM v Castle Beach (2022-003970-CA-01): trial pool week of Oct 19. Owner owes Fernando Prego: top 30 exhibits, itemized damages, summary of what each Association witness knows (list filed Jul 27: Jackie Diaz Sampol, Omar Fuentes, Manuel Villar Mujica, Carlos Fuentes, Brian Macias, Milton Perez, Kevin St. Hillaire, Julio Hernandez, Gregory Register RA). Only Facundo knows their roles; ask him one witness at a time.
 5. ART: Proud Love $25,000 and UnityBeak $50,000 everywhere; collctn.art profile; Wynwood duck supplier research.
+
+## Update Nov 1 2026 (cloud session, verified via Windsor.ai write results)
+1. Google Ads account 464-005-2823 (Windsor lists it as FLY Miami Art): campaign "FLY Pilates Miami Local Search" id 24375856516 ENABLED. Ad group 199977781886 ENABLED.
+2. New responsive search ad 830163060679 ENABLED, no FRIEND50 (expired Oct 31). Old FRIEND50 ad stays paused.
+3. 6 broad keywords added enabled. 14 campaign negatives added. Callouts "Book Online in Seconds", "Only 4 Spots Per Class". Sitelink "Book a Class" to the Vagaro booking page.
+4. NOT VERIFIED: whether it serves. Billing on 464-005-2823 UNKNOWN. Owner screenshot showed a different account, 481-352-2990 FLY PILATES, with Mastercard 7176 and "None of your ads are running". Decide which account Pilates ads belong in.
+5. Still open: paste GA4 ID G-0HF6PMC87E in Vagaro MySite, gear, General (confirm the ID in GA4 first).
+6. Rules 19 and 20 added to CLAUDE.md: never call anything live without seeing it; every ask to the owner includes the direct link.
+7. Routine "Main Clone morning brief" 7:44 AM ET created without connectors; owner must add Gmail, QuickBooks, Windsor.ai in claude.ai Routines.
+8. Next step: open Google Ads in the browser, confirm account and billing, confirm the ad shows, then Vagaro GA4 paste.
