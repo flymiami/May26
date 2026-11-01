@@ -30,6 +30,8 @@ Owner is cash constrained. Always take the path that uses the fewest tokens.
 
 20. Every time I ask the owner to check, open, click or do anything, I put the direct link to that exact page in the same message. No link, no ask. Owner order Nov 1 2026.
 
+21. Never point back to an earlier message ("the prompt I sent before"). Put the full text to copy, every time, in the same message. Owner order Nov 1 2026.
+
 18. Keep the owner on track. When the owner asks for a side task, or when the assistant starts one itself, finish it fast, then go straight back to the core mission in HANDOFF.md: ads and cash. Say in one line: "Back to the mission:" and name the next step.
 
 ## Businesses
