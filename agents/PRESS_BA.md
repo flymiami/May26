@@ -1,51 +1,50 @@
-# Press release Buenos Aires, Spanish version (draft Nov 2 2026, NOT SENT)
-Source of English draft: Kevin Hargadon email "Press release for editing", Nov 2 2026 (Gmail). It had open blanks and claims I could not verify, so the Spanish version below uses only verified facts.
+# Press release Buenos Aires, Spanish version v2 (Nov 3 2026, NOT SENT)
+Platform: EIN Presswire (owner says releases are already paid). Owner order Nov 3 5:46 PM ET: out in 20 minutes.
+Source of English draft: Kevin Hargadon email "Press release for editing", Nov 2 2026 (Gmail). It had claims I could not verify, so this version uses only verified facts.
 
-## Facts used (V = verified, from Facundo or repo files)
-1. UnityBeak Buenos Aires Edition with Soberanía Queer, Friday Nov 6 2026, BAC British Arts Centre, Suipacha, Buenos Aires. V (Facundo).
-2. Street number: Kevin's draft says 1333, Facundo said 123. UNKNOWN, left in brackets.
-3. Time of the event: UNKNOWN, left in brackets.
-4. First show in Buenos Aires as an artist. V (Facundo).
-5. Approved press quote. V (Facundo).
-6. Florence Biennale XV, Oct 2025, Fourth Prize Installation Art, UnityBeak Firenze. V (Facundo).
-7. Duck With Pride, Lincoln Road 2025, commissioned by City of Miami Beach and Lincoln Road BID, over 20,000 ducks across UnityBeak and Proud Love. V.
+## Facts used (V = from Facundo or repo files)
+1. UnityBeak Buenos Aires Edition with Soberania Queer. V (Facundo).
+2. Friday Nov 6 2026, 6 PM, cocktail at BAC British Arts Centre, Suipacha, Buenos Aires. V (Facundo Nov 3). Street number UNKNOWN (Kevin's draft says 1333, Facundo said 123), left out.
+3. Saturday Nov 7 2026, Pride march, about 1 million people expected. V (Facundo Nov 3).
+4. First art show in Buenos Aires. V (Facundo).
+5. Two ducks with UV light inside. One closes the march, the other goes on a pedestal at Avenida de Mayo and 9 de Julio. V (Facundo Nov 2). Vehicle, dates and hours for the pedestal UNKNOWN, left out. Names Hope and Resilience NOT confirmed for the BA ducks, left out.
+6. Florence last year, built with the local community: Florence Biennale XV, Oct 2025, Fourth Prize Installation Art, UnityBeak Firenze. V (Facundo).
+7. Duck With Pride, Lincoln Road 2025, City of Miami Beach and Lincoln Road BID, over 20,000 ducks across UnityBeak and Proud Love. V.
 8. GMCVB recognition Jan 2025. V (ME.md).
-9. Two ducks (owner Nov 2): UnityBeak Buenos Aires Edition is two ducks. One closes the Pride march Saturday Nov 7 2026 (Perfil), on a bus or Roman style carriage. The other goes on a pedestal at Avenida de Mayo and 9 de Julio. UV light inside both. V (Facundo). Vehicle choice UNKNOWN. Names Hope and Resilience taken from the 2025 UnityBeak pair, not confirmed for the BA ducks.
-10. Maria Becerra closes the 2026 march with a show on the main stage, Nov 7 (Caras, Perfil). Not in the release.
-11. "Lived in Miami 18 years", "25 years entrepreneur", "first Argentine artist on Lincoln Road": only in Kevin's draft. UNKNOWN, NOT used.
+9. UADE engineer, art passion found Jan 2024, LGBTQ Advisory Board of the City of Miami Beach. V (profile).
+10. Quote and thanks to Kevin and Miguel. V (Facundo Nov 3, voice, translated).
+11. NOT used (UNKNOWN): April 2024 start with ducks, Red Dot and Aqua dates, EPIC dates, CBS NBC AP coverage, Soberania Queer description, 18 years in Miami, 25 years entrepreneur, first Argentine on Lincoln Road.
 
 ## Spanish text
 
 COMUNICADO DE PRENSA
 PARA PUBLICACIÓN INMEDIATA
 
-El artista porteño FLY, premiado en la Bienal de Florencia, vuelve a Buenos Aires con UnityBeak: dos patos hechos con miles de patitos de goma e iluminados con luz UV
+El artista porteño FLY, premiado en la Bienal de Florencia, trae UnityBeak a la Marcha del Orgullo de Buenos Aires
 
-Uno cerrará la Marcha del Orgullo y el otro quedará sobre un pedestal en Avenida de Mayo y 9 de Julio. Es su primera muestra en la ciudad.
+Dos patos hechos con miles de patitos de goma, creados junto a Soberanía Queer. Es su primera muestra de arte en la ciudad.
 
-Buenos Aires, 2 de noviembre de 2026. Facundo Yebne, conocido como FLY, artista pop nacido en Buenos Aires y radicado en Miami Beach, presenta UnityBeak Buenos Aires Edition, creada junto a Soberanía Queer. Son dos patos, Hope y Resilience, y llevan luz UV en su interior, que los hace brillar.
+Buenos Aires, 3 de noviembre de 2026. Facundo Yebne, conocido como FLY, artista pop nacido en Buenos Aires y radicado en Miami Beach, presenta UnityBeak Buenos Aires Edition, un proyecto realizado junto a Soberanía Queer y la comunidad local, como hizo en Florencia el año pasado. La obra son dos patos hechos con miles de patitos de goma e iluminados por dentro con luz UV.
 
-1. Uno cerrará la Marcha del Orgullo, el sábado 7 de noviembre de 2026, a bordo de [un colectivo o un carruaje estilo romano, a definir].
-2. El otro quedará sobre un pedestal en Avenida de Mayo y 9 de Julio [fechas y horarios].
+1. Viernes 6 de noviembre de 2026, 18:00 horas: cóctel en el BAC British Arts Centre, calle Suipacha, Buenos Aires.
+2. Sábado 7 de noviembre de 2026: uno de los patos cierra la Marcha del Orgullo, para la que se espera cerca de un millón de personas.
+3. El otro pato se exhibe sobre un pedestal en Avenida de Mayo y 9 de Julio.
 
-La inauguración será el viernes 6 de noviembre de 2026 a las [hora] en el BAC British Arts Centre, en la calle Suipacha [número a confirmar], Buenos Aires. Es la primera muestra de FLY como artista en la ciudad.
+Es la primera vez que FLY presenta una muestra de arte en Buenos Aires.
 
-Soberanía Queer es una organización nueva que une a Uruguay y Argentina con una mirada integradora de la comunidad.
+"Estoy muy emocionado de volver a mi lugar, a mi ciudad natal, y traer UnityBeak, una obra sobre el amor, la esperanza, la resiliencia, la alegría y la paz. Espero que la esperanza y la resiliencia puedan aportar algo a este país. Y celebrar el amor con mi familia y mis amigos." Facundo Yebne
 
-"Volver a casa es complicado. Me fui de Buenos Aires siendo ingeniero, vuelvo siendo artista, y los últimos dos años fueron los más difíciles de mi vida. Estos patos me salvaron. Cada uno es un recordatorio de que la alegría es una decisión, no un regalo que te da otro. Los traigo a casa para construir algo con la gente que quiere construir, y eso es lo único que importa." Facundo Yebne
+FLY agradece a Kevin y a Miguel por su ayuda.
 
 SOBRE FLY
 
-Ingeniero egresado de la UADE y emprendedor, FLY descubrió su pasión por el arte en enero de 2024 y empezó a trabajar con patitos de goma en abril de ese año. Sus esculturas, hechas con miles de patitos, hablan de paz, amor y alegría. Integra el comité asesor LGBTQIA+ de la Ciudad de Miami Beach.
+Ingeniero egresado de la UADE y emprendedor, FLY descubrió su pasión por el arte en enero de 2024. Sus esculturas, hechas con miles de patitos de goma, hablan de paz, amor y alegría. Integra el comité asesor LGBTQ de la Ciudad de Miami Beach.
 
 HITOS
 
 1. Bienal de Florencia XV, octubre de 2025: Cuarto Premio en Arte de Instalación, por UnityBeak Firenze, creada junto a la comunidad local.
 2. Duck With Pride, Lincoln Road, Miami Beach, 2025: UnityBeak y Proud Love, por encargo de la Ciudad de Miami Beach y del Lincoln Road BID, con más de 20.000 patitos entre ambas obras.
-3. Red Dot Miami, diciembre de 2024, y Aqua Art Miami, diciembre de 2025, durante la semana del arte de Miami.
-4. Reconocimiento del Greater Miami Convention and Visitors Bureau, enero de 2025.
-5. ONE WORLD ONE GAME, Kimpton EPIC Hotel, Miami, junio y julio de 2026.
-6. Su obra fue cubierta por CBS, NBC y Associated Press.
+3. Reconocimiento del Greater Miami Convention and Visitors Bureau, enero de 2025.
 
 CONTACTO DE PRENSA
 
