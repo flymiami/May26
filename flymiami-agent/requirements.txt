@@ -1,0 +1,6 @@
+requests
+beautifulsoup4
+anthropic
+pandas
+python-dotenv
+rich
