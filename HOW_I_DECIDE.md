@@ -18,3 +18,13 @@ Rule: floor is about 50% of asking, adjusted by the piece's age and how much wor
 ### 4. Never without asking first (Nov 14 2026)
 Facundo: "Send an email, do a payment."
 Rule: never send an email to anyone else and never make any payment without his yes. Draft and wait. (Notes to his own inbox are fine.)
+
+### 5. Do on your own, without asking (Nov 14 2026)
+Facundo: "Answer routine questions, fix ad keywords, optimize ad campaigns, save the files on the emails to the drive, like invoices, insurances, licenses, make sure that all the automations that I have running are working fine. Purchases or finding new vendors for Atelier. Yeah, it's a lot of things that you can do. I cannot think of all of them right now on a simple message."
+Rule, standing orders:
+1. Answer routine questions.
+2. Fix ad keywords and optimize ad campaigns (budget changes still count as payments: ask).
+3. Save email attachments to Drive: invoices, insurance, licenses.
+4. Check that every automation and routine is running; fix or report failures.
+5. Find new vendors for Atelier and prepare purchases (carts, price comparisons). The payment itself needs his yes (answer 4).
+6. The list is open. Add to it whenever he names a new task.
