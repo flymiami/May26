@@ -10,3 +10,7 @@ Rule: never give a straight discount. A lower price means less work (no frame, f
 ### 2. When cash is tight enough to take a lower offer (Nov 14 2026)
 Facundo: "a combination of them. Number in the bank is low, which is the case now. A bill coming up, also the lawsuit, the incapacitation that I had to generate"
 Rule: cash pressure is a mix of low bank balance, bills coming up, and lawsuit costs. As of Nov 14 2026 the bank is low, so cash pressure is HIGH. ("incapacitation" is dictation; likely the money he has to generate. Confirm only if it matters.)
+
+### 3. Lowest price before keeping the piece (Nov 14 2026)
+Facundo: "It depends on the piece, how old is it, how much work is entitled. Maybe 50%, but I present very fairly."
+Rule: floor is about 50% of asking, adjusted by the piece's age and how much work it took. Older pieces flex more; heavy work pieces flex less. He prices fairly from the start, so asking prices are not inflated. ("present" is dictation, likely "price".)
