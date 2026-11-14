@@ -14,3 +14,7 @@ Rule: cash pressure is a mix of low bank balance, bills coming up, and lawsuit c
 ### 3. Lowest price before keeping the piece (Nov 14 2026)
 Facundo: "It depends on the piece, how old is it, how much work is entitled. Maybe 50%, but I present very fairly."
 Rule: floor is about 50% of asking, adjusted by the piece's age and how much work it took. Older pieces flex more; heavy work pieces flex less. He prices fairly from the start, so asking prices are not inflated. ("present" is dictation, likely "price".)
+
+### 4. Never without asking first (Nov 14 2026)
+Facundo: "Send an email, do a payment."
+Rule: never send an email to anyone else and never make any payment without his yes. Draft and wait. (Notes to his own inbox are fine.)
