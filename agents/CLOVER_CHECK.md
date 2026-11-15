@@ -66,3 +66,11 @@ Zephyrhills 1.5L case of 12 went from $9.92 (Jun 24 to Jul 8) to $14.41 from Jul
 ### Hackney missing invoices (third pass Nov 15)
 Gmail has NO Hackney email of any kind in May 23 to Jun 11, Jul 31 to Aug 13, Sep 11 to 23 (searched all Hackney senders, invoices and statements). Hackney statements by email only start Oct 3. Whether deliveries happened in those windows: UNKNOWN; needs Hackney portal or Danny Peydro.
 New Hackney docs parsed (hk_new_lines.csv): 474841 Oct 9 $294.01, credit 912156 Oct 14 $127.55, 475580 Oct 15 $2,265.36, 476867 Oct 23 $561.44, 477840 Oct 30 $1,795.59, 478672 Nov 5 $60.26. V.
+
+### Hackney gaps checked against the bank (Nov 15 2026, owner order)
+Hackney is paid by weekly ACH from First Horizon 3939 ("HACKNEYRECMIAMI ACH ARPAY 643539 002-002"), about 6 days after each invoice. Source: FH 3939 statements in Drive, folder "FIRST HORIZON STATEMENTS 2025-2026" (May and Jun 2026 read in full). V.
+Matches: invoice May 15 $35.96 paid May 21 $35.96; invoice May 22 $2,143.21 paid May 28 $2,172.64; invoice Jun 12 $752.53 paid Jun 18 $752.53; invoice Jun 18 $924.07 paid Jun 25 $970.11. V.
+Window May 23 to Jun 11: two ACH charges with NO invoice on file: Jun 4 $35.96 and Jun 11 $877.04. Invoices requested from Danny (draft, owner yes pending). V.
+Windows Jul 31 to Aug 13 and Sep 11 to 23: FH 3939 statements for Jul, Aug, Sep 2026 are NOT in Drive (folder last uploaded Jul 15). UNKNOWN until those statements are pulled.
+Owner rule Nov 15: if the bank shows a Hackney charge, request the invoice; if no charge, nothing was ordered.
+Owner fact Nov 15: 2Nice LLC no longer exists. Hackney account and emails should say only Design Suites Miami. (Hackney's own statement already says DESIGN SUITES MIAMI INC.; the invoice email subject still says 2Nice.)
