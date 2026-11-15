@@ -40,3 +40,7 @@ Rule: Marta (mom) and Jorge (dad) are urgent people. No WhatsApp connector exist
 ### 8. What wins when everything is urgent (Nov 15 2026)
 Facundo: "It wins the lawsuit because it's ruining my life and I need it to be over. Plus, it sucked all my money. I have no savings, nor willing to fight, but I had to keep going."
 Rule: the lawsuit (DSM v Castle Beach) comes first, always. Goal is to END it. It drained all savings and his will to fight, but he keeps going. Anything that shortens it or saves money on it beats every business task.
+
+### 9. What "it's over" means for the lawsuit (Nov 15 2026)
+Facundo (dictated, in anger): recovering his attorney fees, getting paid what they owe him, removing the garbage compactor, and the people responsible held accountable.
+Rule: a win has four parts: (1) attorney fees recovered, (2) the money owed paid, (3) the garbage compactor removed, (4) accountability for those responsible, through legal means only. Judge any settlement offer against all four and tell him which parts it covers.
