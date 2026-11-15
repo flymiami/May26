@@ -2,6 +2,11 @@
 // printed on it. Source: Bulbapedia, List of Pokemon Trading Card Game expansions,
 // pulled 2026-11-15.
 //
+// Names were derived by stripping the series prefix off each entry, which
+// over-stripped four Neo sets ("Neo Genesis" -> "Genesis") and dropped a space
+// in "Scarlet & Violet151". Both are corrected here by hand. Re-run that
+// stripper and you will reintroduce them, so fix the generator, not this file.
+//
 // `cards` is the main-set total, the denominator printed on a normal card.
 // `detail` keeps the full breakdown, because most modern sets add secret rares
 // numbered ABOVE that total (a 103-card set can run to 141).
@@ -22,15 +27,15 @@ export const SETS = [
   {"name": "Fossil", "series": "Original", "cards": 62, "detail": "62", "released": "October 10, 1999", "abb": "FO"},
   {"name": "Jungle", "series": "Original", "cards": 64, "detail": "64", "released": "June 16, 1999", "abb": "JU"},
   {"name": "Base Set 2", "series": "Original", "cards": 130, "detail": "130", "released": "February 24, 2000", "abb": "B2"},
-  {"name": "Genesis", "series": "Neo", "cards": 111, "detail": "111", "released": "December 16, 2000", "abb": "N1"},
+  {"name": "Neo Genesis", "series": "Neo", "cards": 111, "detail": "111", "released": "December 16, 2000", "abb": "N1"},
   {"name": "Gym Challenge", "series": "Original", "cards": 132, "detail": "132", "released": "October 16, 2000", "abb": "G2"},
   {"name": "Gym Heroes", "series": "Original", "cards": 132, "detail": "132", "released": "August 14, 2000", "abb": "G1"},
   {"name": "Team Rocket", "series": "Original", "cards": 82, "detail": "82 / 1 Secret card", "released": "April 24, 2000", "abb": "TR"},
-  {"name": "Discovery", "series": "Neo", "cards": 75, "detail": "75", "released": "June 1, 2001", "abb": "N2"},
-  {"name": "Revelation", "series": "Neo", "cards": 64, "detail": "64 / 2 Secret cards", "released": "September 21, 2001", "abb": "N3"},
+  {"name": "Neo Discovery", "series": "Neo", "cards": 75, "detail": "75", "released": "June 1, 2001", "abb": "N2"},
+  {"name": "Neo Revelation", "series": "Neo", "cards": 64, "detail": "64 / 2 Secret cards", "released": "September 21, 2001", "abb": "N3"},
   {"name": "Southern Islands Collection", "series": "Other Miscellaneous Sets", "cards": 18, "detail": "18", "released": "July 31, 2001", "abb": "SI"},
   {"name": "Best of Game", "series": "Other Miscellaneous Sets", "cards": 9, "detail": "9", "released": "December 2002", "abb": ""},
-  {"name": "Destiny", "series": "Neo", "cards": 105, "detail": "105 / 8 Secret cards", "released": "February 28, 2002", "abb": "N4"},
+  {"name": "Neo Destiny", "series": "Neo", "cards": 105, "detail": "105 / 8 Secret cards", "released": "February 28, 2002", "abb": "N4"},
   {"name": "Expedition", "series": "e-Card", "cards": 165, "detail": "165", "released": "September 15, 2002", "abb": "EX"},
   {"name": "Legendary Collection", "series": "Legendary Collection", "cards": 110, "detail": "110", "released": "May 24, 2002", "abb": "LC"},
   {"name": "Aquapolis", "series": "e-Card", "cards": 147, "detail": "147 / 32 Holofoil cards / 3 Secret cards", "released": "January 15, 2003", "abb": "AQ"},
@@ -161,7 +166,7 @@ export const SETS = [
   {"name": "Pokémon Trading Card Game Classic", "series": "Other Miscellaneous Sets", "cards": 102, "detail": "102", "released": "November 17, 2023", "abb": "CL"},
   {"name": "SVE Basic Energies", "series": "Basic Energy Cards", "cards": 24, "detail": "24", "released": "March 31, 2023", "abb": "SVE"},
   {"name": "Scarlet & Violet", "series": "Scarlet & Violet", "cards": 198, "detail": "198 / 60 Secret cards", "released": "March 31, 2023", "abb": "SVI"},
-  {"name": "Scarlet & Violet151", "series": "Scarlet & Violet", "cards": 165, "detail": "165 / 42 Secret cards", "released": "September 22, 2023", "abb": "MEW"},
+  {"name": "151", "series": "Scarlet & Violet", "cards": 165, "detail": "165 / 42 Secret cards", "released": "September 22, 2023", "abb": "MEW"},
   {"name": "Trick or Trade 2023", "series": "Trick or Trade", "cards": 30, "detail": "30", "released": "September 1, 2023", "abb": "TT23"},
   {"name": "McDonald's Collection 2024", "series": "McDonald's Collection", "cards": 15, "detail": "15", "released": "December 4, 2024", "abb": "M24"},
   {"name": "Paldean Fates", "series": "Scarlet & Violet", "cards": 91, "detail": "91 / 154 Secret cards", "released": "January 26, 2024", "abb": "PAF"},
