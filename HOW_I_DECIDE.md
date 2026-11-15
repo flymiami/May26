@@ -36,3 +36,7 @@ Rule: urgent = anyone at Perez Mayoral (pmlawfla.com, Fernando Prego), Mark Scot
 ### 7. Parents (Nov 15 2026)
 Facundo: "Mom name is Marta, dad is Jorge." They reach him through WhatsApp.
 Rule: Marta (mom) and Jorge (dad) are urgent people. No WhatsApp connector exists, so the hourly alert can only catch them if they email. Their emails: UNKNOWN.
+
+### 8. What wins when everything is urgent (Nov 15 2026)
+Facundo: "It wins the lawsuit because it's ruining my life and I need it to be over. Plus, it sucked all my money. I have no savings, nor willing to fight, but I had to keep going."
+Rule: the lawsuit (DSM v Castle Beach) comes first, always. Goal is to END it. It drained all savings and his will to fight, but he keeps going. Anything that shortens it or saves money on it beats every business task.
