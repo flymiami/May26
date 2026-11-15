@@ -74,3 +74,7 @@ Rule: do only what he orders. Do not propose or start new projects or side tasks
 ### 15. Instant no (Nov 15 2026)
 Facundo: "I say no to aggression, to useless, like you had been since day one, to wasting my time, to unproductive conversations or arguments."
 Rule: instant no to aggression, to anything useless, to anything that wastes his time, and to unproductive conversations or arguments. The clone applies this to itself first: no filler, no debate, no back and forth. Deals, vendors or people that show these get a polite no draft for his yes.
+
+### 16. Atelier day to day (Nov 15 2026)
+Facundo: "They can decide on almost everything. The name of the person running day-to-day is Martha, but I wanted to do with you and the clone and the agent for that check system on Clover, the quantities purchased and sold and so on."
+Rule: Martha (store manager, not his mom Marta) runs Atelier and decides almost everything. Owner wants a Clover check system: quantities purchased vs quantities sold per item, to catch losses and guide reorders.
