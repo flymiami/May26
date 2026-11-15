@@ -44,3 +44,7 @@ Rule: the lawsuit (DSM v Castle Beach) comes first, always. Goal is to END it. I
 ### 9. What "it's over" means for the lawsuit (Nov 15 2026)
 Facundo (dictated, in anger): recovering his attorney fees, getting paid what they owe him, removing the garbage compactor, and the people responsible held accountable.
 Rule: a win has four parts: (1) attorney fees recovered, (2) the money owed paid, (3) the garbage compactor removed, (4) accountability for those responsible, through legal means only. Judge any settlement offer against all four and tell him which parts it covers.
+
+### 10. Atelier: products that stop selling (Nov 15 2026)
+Facundo: "That's not into a policy, but we should do it. That if you stop selling, we should or we have stock, do a discount, try to mark it down and sell it, and stop reordering."
+Rule (new policy): when a product stops selling, stop reordering it, mark down what is left in stock, and sell it through. How many weeks without sales counts as "stopped": not set yet; propose a number from Clover sales data for his yes.
