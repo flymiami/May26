@@ -53,3 +53,7 @@ Rule (new policy): when a product stops selling, stop reordering it, mark down w
 Question: what offer would you never run, even to fill empty classes?
 Facundo: "free second class"
 Rule: never offer a free second class. CONFIRMED by Facundo.
+
+### 12. Art buyers (Nov 15 2026)
+Facundo: "So far, I had individual people, maybe collectors, new mixed-use building developed by Arquitectonica. I was commissioned by the City of Miami Beach and the Link Road Build for public installations. Regular people. How do I start a conversation with them? I don't know. I tried to do it so many times with Claude on Instagram, on LinkedIn, online. Never happened."
+Rule: real buyers so far: individuals and possible collectors, a mixed use building by Arquitectonica, the City of Miami Beach, and the Lincoln Road BID ("Link Road Build" is dictation) for public installations. Cold outreach on Instagram, LinkedIn and online has never produced a sale. Do not repeat cold online outreach as the main plan.
