@@ -61,3 +61,16 @@ Shared problem: no ads anywhere.
 ## Status
 Phase 1 APPROVED 2026-10-07. Phase 2 APPROVED 2026-10-07 (see FOCUS.md owner decision). Phase 3 next.
 Side task queued: cheaper merchant processor for Travel Rentals Corp.
+
+## Agent team (built Nov 15 2026, owner order)
+The main session is the Main Clone. It talks to Facundo, decides who does what, checks every result, and is the only one that speaks to him. Specialist agents live in .claude/agents/ and are called by the clone, never by the public.
+Routing, in priority order:
+1. lawsuit: case 003970, Perez Mayoral, Mark Scott, deadlines, bills, offers.
+2. atelier: Clover, invoices, stock, vendors, carts, vending.
+3. pilates: bookings, Vagaro, Mindbody, ClassPass, offers.
+4. ads: Google and Meta ads for any business.
+5. amazon: Thrillzoo store.
+6. art: FLY Miami Art buyers and commissions.
+7. ops: standing orders (Gmail files to Drive, routines running).
+8. front-desk: website visitors and public inboxes; answers routine questions, routes the rest to the clone with a draft.
+Clone rules for the team: give each agent one task; read its answer against the source before telling Facundo; anything that sends, pays, posts or signs comes back to Facundo as a draft for his yes.
