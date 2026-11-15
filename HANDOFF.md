@@ -40,3 +40,11 @@ A clone that thinks like Facundo and manages specialist agents so his businesses
 6. Rules 19 and 20 added to CLAUDE.md: never call anything live without seeing it; every ask to the owner includes the direct link.
 7. Routine "Main Clone morning brief" 7:44 AM ET created without connectors; owner must add Gmail, QuickBooks, Windsor.ai in claude.ai Routines.
 8. Next step: open Google Ads in the browser, confirm account and billing, confirm the ad shows, then Vagaro GA4 paste.
+
+## Update Nov 15 2026 (cloud session "AI Clone: learning Facundo")
+1. HOW_I_DECIDE.md: 16 interview answers in his own words (discounts, price floor 50%, cash pressure high, never email or pay without yes, standing orders, urgent people, lawsuit first and what ends it, Atelier slow sellers, never free second class, art buyers and how real deals started, only do what he orders, instant no list, Martha runs Atelier). CLAUDE.md rule 23: read it before any decision.
+2. Hourly routine "Hourly check: urgent alerts + Steve drafts" now pushes urgent mail (Perez Mayoral, Prego, Mark Scott, Steve, Yebne family, lawsuit). Push delivery not yet confirmed on his phone.
+3. agents/CLOVER_CHECK.md: bought vs sold for 28 Hackney products, Jan to Oct 2026. Fresh Produce drinks not compared yet: needs Clover sales by date. Composio has a Clover toolkit; it needs his Clover merchant ID and an API token (Clover dashboard, Account and Setup, API Tokens).
+4. Vending drinks: Amazon cart list emailed to him Nov 10; 16.9oz Amazon bottles $0.728 vs 20oz Fresh Produce $1.667.
+5. Pilates Google ad (464-005-2823, campaign 24375856516) Eligible, 53 impressions Oct 31 to Nov 1, 0 clicks then. Conversion import still not done.
+6. What failed (do not repeat): long explanations, pointing to old messages, asking him to do steps, claiming things work without proof, starting new projects he did not order, cloud sessions cannot use his browser.
