@@ -2,6 +2,7 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 import ScanScreen from './components/ScanScreen.jsx';
 import CollectionScreen from './components/CollectionScreen.jsx';
 import SettingsScreen from './components/SettingsScreen.jsx';
+import SetsScreen from './components/SetsScreen.jsx';
 import { money } from './lib/pricing.js';
 import { totals } from './lib/csv.js';
 import { applyTheme, loadSettings, loadTheme, saveSettings } from './lib/settings.js';
@@ -13,6 +14,7 @@ import {
 const TABS = [
   { id: 'scan', label: 'Scan' },
   { id: 'collection', label: 'Collection' },
+  { id: 'sets', label: 'Sets' },
   { id: 'settings', label: 'Settings' },
 ];
 
@@ -339,6 +341,8 @@ export default function App() {
           />
         )}
 
+        {tab === 'sets' && <SetsScreen />}
+
         {tab === 'settings' && (
           <SettingsScreen
             settings={settings}
@@ -363,7 +367,7 @@ export default function App() {
       </main>
 
       <nav className="safe-bottom fixed inset-x-0 bottom-0 z-40 mx-auto max-w-lg border-t border-slate-200 bg-slate-50/95 backdrop-blur dark:border-slate-800 dark:bg-[#0b0f14]/95">
-        <div className="grid grid-cols-3">
+        <div className="grid grid-cols-4">
           {TABS.map((x) => (
             <button
               key={x.id}

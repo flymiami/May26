@@ -86,9 +86,15 @@ export default function ScanScreen({
                   {[product.set, product.number && `#${product.number}`].filter(Boolean).join(' · ') ||
                     'set unknown'}
                 </p>
-                {card && (card.variant || card.language) && (
+                {card && (card.variant || card.language || card.setTotal) && (
                   <p className="mt-1 text-xs text-slate-500">
-                    {[card.variant, card.language].filter(Boolean).join(' · ')}
+                    {[
+                      card.setTotal && `${card.number || '?'}/${card.setTotal}`,
+                      card.variant,
+                      card.language,
+                    ]
+                      .filter(Boolean)
+                      .join(' · ')}
                   </p>
                 )}
               </div>
@@ -96,6 +102,12 @@ export default function ScanScreen({
                 New scan
               </button>
             </div>
+            {card?.setConflict && card.setCandidates?.length > 0 && (
+              <p className="mt-3 rounded-xl bg-amber-500/10 px-3 py-2 text-xs text-amber-700 dark:text-amber-300">
+                The card reads /{card.setTotal}, which in English is {card.setCandidates.join(', ')}.
+                That does not match the set name read off the photo. Check the chips below.
+              </p>
+            )}
             {owned > 0 && (
               <p className="mt-3 rounded-xl bg-emerald-500/10 px-3 py-2 text-xs font-semibold text-emerald-700 dark:text-emerald-400">
                 Already in your collection ({owned} {owned === 1 ? 'line' : 'lines'}). This scan refreshed its prices.

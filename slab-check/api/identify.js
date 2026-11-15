@@ -1,6 +1,7 @@
 import Anthropic from '@anthropic-ai/sdk';
 import { cors, send, fail, readJson, splitImage } from './_util.js';
 import { search, rankMatches, fetchProduct, LookupError } from './_pricecharting.js';
+import { setsByTotal } from '../shared/sets.js';
 
 const MODEL = process.env.CLAUDE_MODEL || 'claude-sonnet-4-6';
 
@@ -9,7 +10,8 @@ const SYSTEM = `You identify Pokemon trading cards from a photo taken at a live 
 Rules:
 - Report only what you can actually see. Never invent a set, a card number or a grade.
 - If the card is unreadable, set readable to false and say exactly what is wrong in "problem".
-- "number" is the collector number printed on the card, digits only or the printed form (e.g. "4", "058", "SV49", "TG12"). Do not include the set total.
+- "number" is the collector number printed on the card: the part BEFORE the slash, in its printed form (e.g. "4", "058", "SV49", "TG12"). Do not include the slash or the total.
+- "set_total" is the number AFTER the slash, the set total (e.g. 103 from "87/103"). This is the single best clue to which set a card belongs to, so read it carefully and do not guess. Use 0 when the card prints no total, which is normal for promos, older e-Card sets and some Japanese cards. A number higher than the total is a secret rare and is still correct: report both as printed.
 - Graded slabs: read the label across the top. Company is PSA, BGS, CGC, SGC, ACE or TAG. Grade is the printed number ("10", "9.5", "8"). Set graded to true.
 - Raw cards: judge centering, corners, edges and surface from the photo and give a PSA grade RANGE. Be conservative. A photo cannot show every flaw, so widen the range and lower confidence when you are unsure. psa_low must be less than or equal to psa_high.
 - For a graded slab, set psa_low and psa_high to the slab grade rounded down to a whole number, and leave the four condition notes empty.
@@ -27,7 +29,8 @@ const TOOL = {
       problem: { type: 'string', description: 'If unreadable, exactly what is wrong. Otherwise empty.' },
       name: { type: 'string', description: 'Card name as printed, e.g. "Charizard ex".' },
       set: { type: 'string', description: 'Set name, e.g. "Base Set", "Obsidian Flames". Empty if unknown.' },
-      number: { type: 'string', description: 'Collector number as printed. Empty if unknown.' },
+      number: { type: 'string', description: 'Collector number as printed, the part before the slash. Empty if unknown.' },
+      set_total: { type: 'integer', description: 'The number after the slash, i.e. the set total. 0 if the card prints none or it is illegible.' },
       variants: {
         type: 'array',
         items: {
@@ -52,7 +55,7 @@ const TOOL = {
       alt_queries: { type: 'array', items: { type: 'string' } },
     },
     required: [
-      'readable', 'problem', 'name', 'set', 'number', 'variants', 'language', 'graded',
+      'readable', 'problem', 'name', 'set', 'number', 'set_total', 'variants', 'language', 'graded',
       'slab_company', 'slab_grade', 'cert_number', 'centering', 'corners', 'edges', 'surface',
       'psa_low', 'psa_high', 'grade_notes', 'confidence', 'search_query', 'alt_queries',
     ],
@@ -62,7 +65,19 @@ const TOOL = {
 
 function toCard(v) {
   const variants = (v.variants || []).filter((x) => x && x !== 'None');
+  const setTotal = Number(v.set_total) > 0 ? Number(v.set_total) : null;
+  // The printed total is a near-unique fingerprint for the set, so use it to
+  // confirm (or correct) the set name the model read off the card.
+  const byTotal = setTotal ? setsByTotal(setTotal) : [];
+  const norm = (x) => String(x || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+  const agrees = byTotal.find((c) => v.set && norm(c.name).includes(norm(v.set)));
+  const resolvedSet = agrees ?? (byTotal.length === 1 ? byTotal[0] : null);
+
   return {
+    setTotal,
+    setCandidates: byTotal.map((c) => `${c.name} (${c.series}, ${c.released})`),
+    resolvedSet: resolvedSet ? resolvedSet.name : null,
+    setConflict: Boolean(setTotal && v.set && byTotal.length && !agrees),
     name: v.name || '',
     set: v.set || '',
     number: v.number || '',
@@ -84,7 +99,15 @@ function toCard(v) {
           confidence: v.confidence,
         },
     confidence: v.confidence,
-    searchQuery: v.search_query || [v.name, v.set, v.number && `#${v.number}`].filter(Boolean).join(' '),
+    searchQuery: (() => {
+      const base = v.search_query || [v.name, v.set, v.number && `#${v.number}`].filter(Boolean).join(' ');
+      // One unambiguous set for this total, and the model named a different one
+      // or none: search the set the total actually points at.
+      if (resolvedSet && !agrees) {
+        return [v.name, resolvedSet.name, v.number && `#${v.number}`].filter(Boolean).join(' ');
+      }
+      return base;
+    })(),
     altQueries: (v.alt_queries || []).filter(Boolean).slice(0, 3),
   };
 }
@@ -161,7 +184,13 @@ export default async function handler(req, res) {
   }
 
   // --- step 2: price it -------------------------------------------------
-  const queries = [card.searchQuery, ...card.altQueries].filter(Boolean);
+  // Try the set the printed total points at as well, in case the model read the
+  // set name wrong but the denominator right.
+  const byTotalQuery =
+    card.resolvedSet && card.name
+      ? [card.name, card.resolvedSet, card.number && `#${card.number}`].filter(Boolean).join(' ')
+      : null;
+  const queries = [...new Set([card.searchQuery, byTotalQuery, ...card.altQueries].filter(Boolean))];
   let matches = [];
   let lastError = null;
 
