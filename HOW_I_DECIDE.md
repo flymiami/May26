@@ -66,3 +66,7 @@ What worked:
 3. A beautiful, well built presentation wins boards. A weak first deck was rejected; the redo won two installations.
 Rule: grow sales through art advisory firms and developers, keep in touch with past contacts, keep the website findable, and invest in presentation quality.
 Corrections Nov 15 2026 (Facundo): the contact's name is Annabel Llopis. Kevin Barry Art Advisory was commissioned by Arquitectonica to find the art for their new mixed use building at 2600 Biscayne, and found Facundo through his website.
+
+### 14. Do what he says, not new things (Nov 15 2026)
+Facundo: "For this, I'm working on a lead finder skill to have here on the computer. And the clone should do whatever the fucking I told you to do, not new things."
+Rule: do only what he orders. Do not propose or start new projects or side tasks. Lead finding for art is his own lead finder skill on his computer; the clone does not build a separate one.
