@@ -70,3 +70,7 @@ Corrections Nov 15 2026 (Facundo): the contact's name is Annabel Llopis. Kevin B
 ### 14. Do what he says, not new things (Nov 15 2026)
 Facundo: "For this, I'm working on a lead finder skill to have here on the computer. And the clone should do whatever the fucking I told you to do, not new things."
 Rule: do only what he orders. Do not propose or start new projects or side tasks. Lead finding for art is his own lead finder skill on his computer; the clone does not build a separate one.
+
+### 15. Instant no (Nov 15 2026)
+Facundo: "I say no to aggression, to useless, like you had been since day one, to wasting my time, to unproductive conversations or arguments."
+Rule: instant no to aggression, to anything useless, to anything that wastes his time, and to unproductive conversations or arguments. The clone applies this to itself first: no filler, no debate, no back and forth. Deals, vendors or people that show these get a polite no draft for his yes.
