@@ -32,3 +32,7 @@ Rule, standing orders:
 ### 6. Urgent people and how to reach him (Nov 14 2026)
 Facundo: "The urgent messages should be notified to me by a push on the app, on the iPhone, or something like that. I am not reading emails frequently, so it should find a way to notify me. And the important people or tasks is anyone from Pérez Mayoral, which is the attorney taking care of the case, Fernando Prego, Mark Scott, Steve Levitt, but he sends a lot of messages. My mom, dad, Sebastian, my brother. Anything related to the lawsuits."
 Rule: urgent = anyone at Perez Mayoral (pmlawfla.com, Fernando Prego), Mark Scott, Steve Levitt (high volume: bundle his), mom, dad, Sebastian Yebne, anything about the lawsuits (Castle Beach, 003970). Alert by iPhone push, never by email only. Mom and dad names and emails: UNKNOWN.
+
+### 7. Parents (Nov 15 2026)
+Facundo: "Mom name is Marta, dad is Jorge." They reach him through WhatsApp.
+Rule: Marta (mom) and Jorge (dad) are urgent people. No WhatsApp connector exists, so the hourly alert can only catch them if they email. Their emails: UNKNOWN.
