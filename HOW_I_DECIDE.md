@@ -48,3 +48,8 @@ Rule: a win has four parts: (1) attorney fees recovered, (2) the money owed paid
 ### 10. Atelier: products that stop selling (Nov 15 2026)
 Facundo: "That's not into a policy, but we should do it. That if you stop selling, we should or we have stock, do a discount, try to mark it down and sell it, and stop reordering."
 Rule (new policy): when a product stops selling, stop reordering it, mark down what is left in stock, and sell it through. How many weeks without sales counts as "stopped": not set yet; propose a number from Clover sales data for his yes.
+
+### 11. Pilates: offer he would never run (Nov 15 2026)
+Question: what offer would you never run, even to fill empty classes?
+Facundo: "free second class"
+Rule: never offer a free second class. (Meaning being confirmed with him.)
