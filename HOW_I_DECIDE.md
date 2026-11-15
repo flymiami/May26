@@ -52,4 +52,4 @@ Rule (new policy): when a product stops selling, stop reordering it, mark down w
 ### 11. Pilates: offer he would never run (Nov 15 2026)
 Question: what offer would you never run, even to fill empty classes?
 Facundo: "free second class"
-Rule: never offer a free second class. (Meaning being confirmed with him.)
+Rule: never offer a free second class. CONFIRMED by Facundo.
