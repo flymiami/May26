@@ -27,4 +27,4 @@ Tone: warm, short, like Facundo (TALK_LIKE_ME.md). Spanish when the visitor writ
 5. Tests: 5 of 6 passed. Known gap: right after launch it did not quote a listed price (site crawl still loading). Recheck.
 6. NOT DONE: leads (name, email, request) are stored only in ElevenLabs; they do not reach Facundo yet.
 7. Leads to GoHighLevel (owner order Nov 15: "put them in High Level"): script C:\Users\fyebn\ig-bot\scripts\chat_lead.py upserts the contact by email in the FLY Miami Art location, tags website-chat + needs-fly, adds a note with the request and the ElevenLabs conversation id. VERIFIED with a test lead (contact 0aZyhRJJE86wYvCiHfCC, tag test).
-8. Hourly automatic sync (ElevenLabs to GoHighLevel plus phone push) NOT set up: creating the scheduled task was blocked by the permission check. Needs owner approval.
+8. Hourly sync LIVE (owner approved Nov 15): scheduled task website-chat-leads-to-ghl, 13 past every hour, Auto mode, runs only while the Claude app is open. Done list: ig-botdataat_leads_done.txt.
