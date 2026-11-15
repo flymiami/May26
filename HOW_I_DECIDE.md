@@ -57,3 +57,11 @@ Rule: never offer a free second class. CONFIRMED by Facundo.
 ### 12. Art buyers (Nov 15 2026)
 Facundo: "So far, I had individual people, maybe collectors, new mixed-use building developed by Arquitectonica. I was commissioned by the City of Miami Beach and the Link Road Build for public installations. Regular people. How do I start a conversation with them? I don't know. I tried to do it so many times with Claude on Instagram, on LinkedIn, online. Never happened."
 Rule: real buyers so far: individuals and possible collectors, a mixed use building by Arquitectonica, the City of Miami Beach, and the Lincoln Road BID ("Link Road Build" is dictation) for public installations. Cold outreach on Instagram, LinkedIn and online has never produced a sale. Do not repeat cold online outreach as the main plan.
+
+### 13. How the real art deals started (Nov 15 2026)
+Facundo: "Architectonica was through Kevin Barry Art Advisory, based in LA, and they were in charge of the decoration or art for this new office building. They contact me through the Shopify website. Supposedly, they found me online. And then the city and the Lincoln bit, I was involved with them the previous year, helping a friend with a nonprofit to do a project for Pride. And that project didn't happen, but I kept in touch with Annabel Lopez, who, after I did my first Arbasel, she was loving my work and believing me more than I did. I did a first presentation. She said it was a waste of time. I could do better. And the second one, I did a beautiful presentation and she loved it. And so the board didn't like it. They loved it and they wanted two installations."
+What worked:
+1. Art advisory firms that buy art for new buildings (Kevin Barry Art Advisory, LA, for the Arquitectonica office building). They found him through the Shopify website.
+2. Warm relationships kept alive after a project fell through (Annabel Lopez, Lincoln Road BID). Art Basel exposure made her a believer.
+3. A beautiful, well built presentation wins boards. A weak first deck was rejected; the redo won two installations.
+Rule: grow sales through art advisory firms and developers, keep in touch with past contacts, keep the website findable, and invest in presentation quality.
