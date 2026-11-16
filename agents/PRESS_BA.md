@@ -7,7 +7,7 @@ Source of English draft: Kevin Hargadon email "Press release for editing", Nov 2
 2. Friday Nov 6 2026, 6 PM, cocktail reception (not an opening) at BAC British Arts Centre, Suipacha 1333. V (Facundo Nov 3 confirmed 1333).
 3. Saturday Nov 7 2026, Pride march, about 1 million people expected. V (Facundo Nov 3).
 4. First art show in Buenos Aires. V (Facundo).
-5. Two ducks with UV light inside. Hope: pedestal at Avenida de Mayo and 9 de Julio, Saturday Nov 7. Resilience: Roman style carriage in the march on Avenida de Mayo. Names confirmed. V (Facundo Nov 3). Pedestal hours UNKNOWN (Canal26: march from 10 AM; BAE Negocios: concentration from noon at Plaza de los Dos Congresos, conflict). March direction UNKNOWN (Facundo: Casa Rosada to Congreso; BAE: Congreso to Plaza de Mayo; Ciudad proposed an alternate route due to the Pope visit), left out.
+5. Two ducks. CORRECTION Nov 16 (owner): NOT lit from inside. Hope: pedestal at Avenida de Mayo and 9 de Julio, Saturday Nov 7. Resilience: Roman style carriage in the march on Avenida de Mayo. Names confirmed. V (Facundo Nov 3). Pedestal hours UNKNOWN (Canal26: march from 10 AM; BAE Negocios: concentration from noon at Plaza de los Dos Congresos, conflict). March direction UNKNOWN (Facundo: Casa Rosada to Congreso; BAE: Congreso to Plaza de Mayo; Ciudad proposed an alternate route due to the Pope visit), left out.
 6. Florence last year, built with the local community: Florence Biennale XV, Oct 2025, Fourth Prize Installation Art, UnityBeak Firenze. V (Facundo).
 7. Duck With Pride, Lincoln Road 2025, City of Miami Beach and Lincoln Road BID, over 20,000 ducks across UnityBeak and Proud Love. V.
 8. GMCVB recognition Jan 2025. V (ME.md).

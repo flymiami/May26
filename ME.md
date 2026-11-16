@@ -13,7 +13,7 @@ V = VERIFIED from a source. U = UNKNOWN, needs you.
 3. Became an artist in 2024. No formal art training; ideas flow when you have peace of mind. (V bio; Fieldy Oct 14, speaker not labeled)
 4. Medium: rubber ducks, thousands per piece, some glow in the dark. Themes: joy, nostalgia, human connection, love over hate. (V, bio)
 5. Your line: "Have you ever seen an unhappy duck?" (V, bio)
-6. Proud moments: giant ducks with 14,000 mini ducks for Miami Beach (Normandy Fountain); Duck With Pride on Lincoln Road 2025 (Unity Beak about 16,000 ducks, Proud Love about 5,000); Red Dot Miami at Art Basel; GMCVB recognition Jan 2025; Florence Biennale award. (V, bio, Facebook, Fieldy Oct 15)
+6. Proud moments: Duck With Pride on Lincoln Road 2025 (UnityBeak 14,000 mini ducks, Proud Love 7,000 medium ducks), now installed at Normandy Fountain, Miami Beach (owner Nov 16); shows: Art Miami, Context Art Miami, Aqua Art Miami (Red Dot Miami was his first show, do not lead with it); GMCVB recognition Jan 2025; Florence Biennale award. (V, bio, Facebook, Fieldy Oct 15)
 7. Why you make it: "my way of contributing to a world that needs more love and less division." (V, Lincoln Road quote)
 8. What you want: independence, rebuild what you had before the lawsuit, then a few very meaningful large installations a year. (V, Fieldy Oct 14, speaker not labeled)
 9. Idea: an Amazon line teaching people to make art with rubber ducks, merging Amazon and art. (V, Fieldy Oct 15)
