@@ -1,0 +1,74 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+@page { size: 5in 7in; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Inter, sans-serif; }
+.page { width: 5in; height: 7in; position: relative; overflow: hidden; page-break-after: always; }
+
+/* ATELIER */
+.atelier { background: #0f0f0f; color: #f5efe4; padding: .45in .42in; display: flex; flex-direction: column; }
+.atelier .brand { font-family: 'Playfair Display', serif; font-weight: 800; font-size: 50pt; letter-spacing: .5pt; line-height: 1; }
+.atelier .sub { font-size: 9.5pt; letter-spacing: 3.5pt; text-transform: uppercase; color: #c9a96e; margin-top: 6pt; }
+.atelier .rule { height: 1.5pt; background: #c9a96e; width: 1.1in; margin: 18pt 0 16pt; }
+.atelier h2 { font-family: 'Playfair Display', serif; font-style: italic; font-weight: 600; font-size: 27pt; line-height: 1.12; }
+.atelier .list { margin-top: 12pt; font-size: 11pt; line-height: 1.7; color: #e8e0d2; }
+.atelier .list b { color: #f5efe4; font-weight: 700; }
+.atelier .scan { margin-top: auto; display: flex; align-items: center; gap: 16pt; }
+.atelier .qr { background: #f5efe4; padding: 8pt; border-radius: 6pt; width: 1.55in; height: 1.55in; flex: none; }
+.atelier .qr img { width: 100%; height: 100%; display: block; }
+.atelier .how { font-size: 10.5pt; line-height: 1.45; }
+.atelier .how .big { font-size: 15pt; font-weight: 700; display: block; margin-bottom: 4pt; color: #fff; }
+.atelier .how .tel { color: #c9a96e; font-weight: 600; }
+.atelier .foot { margin-top: 14pt; font-size: 8pt; color: #8d8578; letter-spacing: .3pt; }
+
+/* ART */
+.art { background: #fbf8f2; color: #141414; padding: .45in .42in; display: flex; flex-direction: column; }
+.art .duck { width: .62in; height: .62in; border-radius: 50%; background: #ffcf1a; position: relative; }
+.art .duck:after { content: ''; position: absolute; width: .22in; height: .12in; background: #f28c1b; border-radius: 50%; right: -.07in; top: .27in; }
+.art .kicker { font-size: 9.5pt; letter-spacing: 3.5pt; text-transform: uppercase; color: #8a6d1d; margin-top: 16pt; }
+.art h1 { font-family: 'Playfair Display', serif; font-weight: 800; font-size: 34pt; line-height: 1.05; margin-top: 6pt; }
+.art h1 em { font-style: italic; font-weight: 600; }
+.art p { font-size: 11pt; line-height: 1.55; margin-top: 14pt; color: #333; }
+.art .works { margin-top: 10pt; font-size: 10.5pt; line-height: 1.6; }
+.art .works span { display: inline-block; border: 1pt solid #141414; border-radius: 20pt; padding: 1pt 9pt; margin: 3pt 4pt 0 0; }
+.art .scan { margin-top: auto; display: flex; align-items: center; gap: 16pt; border-top: 1pt solid #d9cfbd; padding-top: 16pt; }
+.art .qr { width: 1.45in; height: 1.45in; flex: none; }
+.art .qr img { width: 100%; height: 100%; display: block; }
+.art .how { font-size: 10.5pt; line-height: 1.45; }
+.art .how .big { font-size: 15pt; font-weight: 700; display: block; margin-bottom: 4pt; }
+.art .how .url { color: #8a6d1d; font-weight: 600; }
+</style></head><body>
+
+<section class="page atelier">
+  <div class="brand">Atelier</div>
+  <div class="sub">Liquor &amp; Bites · In the Lobby</div>
+  <div class="rule"></div>
+  <h2>Forgot something?<br>We're downstairs.</h2>
+  <div class="list">
+    <b>Ice cold</b> water, sodas, energy drinks<br>
+    <b>Wine, beer &amp; spirits</b><br>
+    <b>Snacks</b>, sweets &amp; quick bites<br>
+    <b>Essentials</b> for your stay
+  </div>
+  <div class="scan">
+    <div class="qr"><img src="qr_atelier.svg"></div>
+    <div class="how"><span class="big">Text your order</span>Scan, add your room number, and we'll have it ready.<br><span class="tel">(305) 676 2737</span></div>
+  </div>
+  <div class="foot">Must be 21+ for alcohol. ID required.</div>
+</section>
+
+<section class="page art">
+  <div class="duck"></div>
+  <div class="kicker">Art in this lobby · For sale</div>
+  <h1>Made of<br><em>rubber ducks.</em></h1>
+  <p>By FLY, the Miami artist behind the giant ducks commissioned by the City of Miami Beach and the Lincoln Road BID, with 14,000 mini ducks glued by hand.</p>
+  <div class="works"><span>Hope</span><span>Resilience</span><span>Proud Love</span><span>Glow in the dark</span><span>Wall art</span></div>
+  <div class="scan">
+    <div class="qr"><img src="qr_art.svg"></div>
+    <div class="how"><span class="big">See prices &amp; buy</span>Scan to see every piece.<br><span class="url">flymiami.art</span></div>
+  </div>
+</section>
+
+</body></html>

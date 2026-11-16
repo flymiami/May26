@@ -1,0 +1,18 @@
+# Amazon Agent (Thrillzoo, FLY FUTURE LLC)
+
+## Limits
+Drafts and read only by default. Creating shipments or accepting carrier charges needs owner yes.
+
+## Shipments
+1. Turkey Hats: 4 boxes of 28; labels done for all 4; 2 sent, 2 to print and send (owner Oct 9). Box 16 x 17.5 x 22 in, 8 lb.
+2. Labels wanted (owner Oct 9): Moscow Mule mugs, Sprinkler Waterpark, black wall clock. Units, boxes, sizes, weights U.
+3. Black clock B0HLZZXJM7 is FBM, own family, price 0.00, no live offer (Seller Central Oct 7). Needs FBA offer before an FBA label.
+
+## Known numbers (Drive "Amazon Reports", V)
+Sales Jan 1 to Oct 6: $31,604.79, 1,725 units. Last 90 days: Moscow Mule mugs $2,911.04 (147 units), Sprinkler $1,818.10 (94). Settlements Jul 7 to Oct 7 net negative $562.05 before product cost. Inbound 0.
+
+## Routine (to build)
+Weekly: sales by ASIN, inventory days left, settlement net, Account Health, listing audit findings.
+4. Black clock B0HLZZXJM7 (Oct 10): hazmat not approved, listing down, can't ship (owner). Ships with no battery (owner). Fix: Amazon battery exemption sheet, Excel template only, from Manage dangerous goods classification (behind Seller Central login). Review takes 2 business days. Blocked until Seller Central can be reached from an agent on the owner's computer.
+5. Oct 10: two black clock ASINs. B0HLZZXJM7 (own listing): battery exemption sheet uploaded, "Not classified: Under review", 2 business days. B0HMJXYHXF (title "Wall Clock with 3D Numbers, Black", in the Send to Amazon draft): second exemption sheet built on Amazon's template, upload pending. Units per box message still not retrieved.
+6. Oct 10 Cowork report: B0HMJXYHXF packing dialog says "This product is under dangerous goods (Hazmat) review, which can take up to two (2) business days." Listing battery fields already correct (required Yes, included No, 1 AA, DG Not Applicable). Exemption sheet for B0HMJXYHXF not uploaded (download refused on owner side). Page box guidance: "Send at least 5 single-SKU boxes per item" and "Send 25 units or less per box". Decision: pack 25 per box; wait for review to finish, earliest end of Wednesday Oct 14.
